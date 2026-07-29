@@ -4,71 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRAKONIA SMP - Wiki</title>
+    <title>KOROSOFT SMP - Wiki Oficial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">DRAKONIA SMP</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="mobs.html">Bestiario</a></li>
-            <li><a href="jefes.html">Jefes</a></li>
-            <li><a href="accessories.html">Accesorios</a></li>
-            <li><a href="guia.html">Guía de Inicio</a></li>
-            <li><a href="updates.html">Actualizaciones</a></li>
-        </ul>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
     </nav>
 
-    <header class="hero">
-        <h1>Bienvenido a Drakonia</h1>
-        <p>Adéntrate en un mundo lleno de peligros, misterios y leyendas. Descubre las mecánicas únicas de nuestro
-            servidor y prepárate para enfrentar a las criaturas que acechan en la oscuridad.</p>
-    </header>
-
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <!-- Ring Icon -->
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11.5,7V13H8L12,17L16,13H12.5V7H11.5Z" />
-                        </svg>
-                    </div>
-                    <h3 class="card-title">Accesorios</h3>
-                </div>
-                <div class="card-content">
-                    <p>Descubre los anillos y amuletos que te darán ventaja en combate. Aprende cómo obtenerlos y sus
-                        efectos.</p>
-                </div>
-                <a href="accessories.html" class="btn">Ver Accesorios</a>
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS CON LISTA Y VIÑETAS AZULES) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <!-- Skull Icon -->
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,9A2,2 0 0,1 11,11A2,2 0 0,1 9,13A2,2 0 0,1 7,11A2,2 0 0,1 9,9M15,9A2,2 0 0,1 17,11A2,2 0 0,1 15,13A2,2 0 0,1 13,11A2,2 0 0,1 15,9Z" />
-                        </svg>
-                    </div>
-                    <h3 class="card-title">Bestiario</h3>
-                </div>
-                <div class="card-content">
-                    <p>Conoce a tus enemigos. Desde esqueletos armados hasta mineros corruptos, infórmate sobre sus
-                        debilidades y botines.</p>
-                </div>
-                <a href="mobs.html" class="btn">Ver Bestiario</a>
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="paginas/guia.html">Guía de Inicio</a></li>
+                    <li><a href="paginas/comandos.html">Comandos</a></li>
+                </ul>
             </div>
-        </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="paginas/mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="paginas/jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="paginas/armaduras.html">Armaduras</a></li>
+                    <li><a href="paginas/accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="paginas/cocina.html">Guía de Cocina</a></li>
+                    <li><a href="paginas/minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="paginas/mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Wiki Oficial de Korosoft SMP</h1>
+                <p>Conocimiento verificado sobre criaturas del Overworld, jefes de mundo, armaduras crafteables, arte culinario, sets de accesorios y comandos del reino.</p>
+            </header>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Armaduras Crafteables</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Guía de los 3 conjuntos oficiales de armadura (Cuero Básico, Malla y Bronce) con estadísticas totales por set completo.</p>
+                    </div>
+                    <a href="paginas/armaduras.html" class="btn">Ver Armaduras</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Bestiario & Calculadora</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Consulta criaturas de superficie y cuevas (Geeko, Tucán, Arquero, Flowey) y calcula el daño real por golpe.</p>
+                    </div>
+                    <a href="paginas/mobs.html" class="btn">Entrar al Bestiario</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Jefes del Overworld</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Enfrenta a <strong>Jack el Cosechador</strong> y al <strong>Oso Espíritu Ancestral</strong>: conoce sus fases, habilidades y estrategias de combate.</p>
+                    </div>
+                    <a href="paginas/jefes.html" class="btn">Ver Jefes</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Guía de Cocina & Alimentos</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Aprende a procesar alimentos en el Ahumador, elaborar Medallones de Carne y descubre qué ingredientes están disponibles.</p>
+                    </div>
+                    <a href="paginas/cocina.html" class="btn">Ver Cocina</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Sets de Accesorios</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Equipa reliquias del Set Caza Monstruos y Set de Aventura con <strong>Shift + G</strong> para potenciar tu daño PvE y movilidad.</p>
+                    </div>
+                    <a href="paginas/accesorios.html" class="btn">Ver Accesorios</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Minerales & Bloques</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Información de capas Y, picos requeridos y drops de menas de Estaño, Plomo y Mithril.</p>
+                    </div>
+                    <a href="paginas/minerales.html" class="btn">Ver Minerales</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Comandos del Servidor</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Uso del mercado de subastas con <code>/ah</code>, canje de recompensas con <code>/canjear</code> y matrimonios con <code>/marry</code>.</p>
+                    </div>
+                    <a href="paginas/comandos.html" class="btn">Ver Comandos</a>
+                </div>
+            </div>
+        </main>
     </div>
 
     <footer>
-        <p>&copy; 2026 Drakonia SMP - Todos los derechos reservados.</p>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
     </footer>
 </body>
 

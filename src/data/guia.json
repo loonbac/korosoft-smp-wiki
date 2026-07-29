@@ -1,0 +1,49 @@
+{
+  "serverName": "Korosoft SMP",
+  "version": "1.21.1 Paper / Purpur",
+  "ip": "play.korosoftsmp.com",
+  "statsRef": {
+    "maxHealth": "20 HP (base: 20, per-level: 0)",
+    "maxMana": "50 Mana (base: 50, per-level: 0)",
+    "maxStamina": "50 Stamina (base: 50, per-level: 0)",
+    "maxStellium": "20 Stellium (base: 20, per-level: 0)",
+    "healthRegen": "0.15 HP/seg",
+    "manaRegen": "0.15/seg base + 0.03/nivel",
+    "staminaRegen": "0.15/seg base + 0.03/nivel",
+    "stelliumRegen": "0.01/seg base"
+  },
+  "rarityTiers": [
+    { "tier": "COMÚN", "stars": "✦ (1 estrella)", "color": "#ADADAD" },
+    { "tier": "NO COMÚN", "stars": "✦✦ (2 estrellas)", "color": "#A2D982" },
+    { "tier": "RARO", "stars": "✦✦✦ (3 estrellas)", "color": "#379BDE" },
+    { "tier": "ÉPICO", "stars": "✦✦✦✦ (4 estrellas)", "color": "#9D4EDD" },
+    { "tier": "LEGENDARIO", "stars": "✦✦✦✦✦ (5 estrellas)", "color": "#D1114D" }
+  ],
+  "chapters": [
+    {
+      "id": "cap-1",
+      "title": "Capítulo 1: Atributos & Curación",
+      "content": "Al iniciar en Korosoft SMP tu personaje cuenta con 20 HP base, 50 de Maná y 50 de Stamina. La regeneración de vida natural de Minecraft se encuentra deshabilitada; la curación se realiza a través de alimentos preparados en la Guía de Cocina, pociones de alquimia o la interacción con criaturas mágicas como Flowey."
+    },
+    {
+      "id": "cap-2",
+      "title": "Capítulo 2: Libro de Crafteos & Mesas",
+      "content": "Para forjar armaduras superiores a la básica requerirás construir mesas especializadas como la Estación de Forja Pesada o la Mesa de Alquimia Arcana. Consulta el catálogo de Mesas & Estaciones para ver cada receta exacta."
+    },
+    {
+      "id": "cap-3",
+      "title": "Capítulo 3: Progresión de Armaduras & Sets",
+      "content": "Comienzas con la Armadura Básica de Cuero (+7.0 Def | +10 HP | +50 Stamina). A medida que extraigas Estaño y Plomo podrás avanzar a la Armadura de Malla y posteriormente a la Armadura de Bronce (+13.5 Def | +3.0 Toughness | +30 HP | +150 Stamina)."
+    },
+    {
+      "id": "cap-4",
+      "title": "Capítulo 4: Sistema de Accesorios (Shift + G)",
+      "content": "Con la tecla Shift + G se abre tu panel de artefactos. Equipar 2, 4 o 6 piezas del Set Caza Monstruos o Set de Aventura otorga bonificaciones acumulativas únicas que aumentan dramáticamente tu daño PvE y velocidad de movimiento."
+    },
+    {
+      "id": "cap-5",
+      "title": "Capítulo 5: Generación Mineral & Capas Y",
+      "content": "El Estaño se genera entre Y: 20 y Y: 90. El Plomo entre Y: -10 y Y: 40. Para hallar Mithril deberás descender por debajo de la capa Y: -40 en las profundidades de pizarra abisal equipando al menos un Pico de Diamante."
+    }
+  ]
+}

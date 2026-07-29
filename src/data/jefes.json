@@ -1,0 +1,94 @@
+[
+  {
+    "id": "jack_cosechador",
+    "name": "Jack el Cosechador",
+    "title": "Jefe Demoniaco de la Calabaza",
+    "badge": "Jefe Supremo del Llanura",
+    "hp": "1,200 HP",
+    "dmg": "24.0 Físico / Fuego",
+    "armor": "15 Def | 8 Toughness",
+    "speed": "0.32 (Intermedio)",
+    "location": "Llanuras & Campos Agrícolas Nocturnos",
+    "spawnConditions": "Invócalo con la Calabaza Embrujada o aparece en eventos nocturnos de luna llena.",
+    "desc": "Espíritu maligno que rige las cosechas malditas. Posee guadaña ígnea y proyectiles de fuego embrujado.",
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Fase 1: La Carga de la Guadaña (100% - 60% HP)",
+        "skills": [
+          "Tajo Flamígero: Embiste en línea recta dejando un rastro de magma.",
+          "Invocar Esbirros Calabaza: Invoca 3 Esbirros Calabaza explosivos."
+        ]
+      },
+      {
+        "phase": 2,
+        "title": "Fase 2: Tormenta de Espantapájaros (60% - 25% HP)",
+        "skills": [
+          "Lluvia de Fuego: Lanza proyectiles de fuego desde el cielo en un área de 15 bloques.",
+          "Ceguera Agrícola: Ciega a todos los jugadores cercanos durante 5 segundos."
+        ]
+      },
+      {
+        "phase": 3,
+        "title": "Fase 3: La Cosecha Final (25% - 0% HP)",
+        "skills": [
+          "Furia Descontrolada: Aumenta su velocidad un 40% y duplica su cadencia de ataque.",
+          "Explosión de Cosecha: Explota al morir liberando botín legendario."
+        ]
+      }
+    ],
+    "tips": [
+      "Lleva pociones de Inmunidad al Fuego.",
+      "Usa arcos o armas a distancia durante la Fase 2 para evitar la lluvia de fuego.",
+      "Mantené el inventario limpio de objetos inútiles antes de iniciar la batalla."
+    ],
+    "drops": [
+      { "item": "Guadaña Ígnea de Jack", "qty": "1", "prob": "15%" },
+      { "item": "Calabaza Demoniaca", "qty": "1", "prob": "100%" },
+      { "item": "Monedas de Oro", "qty": "5-15", "prob": "100%" },
+      { "item": "Esencia Arcana Superior", "qty": "3", "prob": "80%" }
+    ]
+  },
+  {
+    "id": "oso_espiritu",
+    "name": "Oso Espíritu Ancestral",
+    "title": "Guardián Milenario de los Bosques",
+    "badge": "Jefe Legendario de la Taiga",
+    "hp": "2,500 HP",
+    "dmg": "38.0 Garrazo / Hielo",
+    "armor": "22 Def | 12 Toughness",
+    "speed": "0.28 (Pesado)",
+    "location": "Picos Helados & Taiga Antigua",
+    "spawnConditions": "Aparece en la cima de los Picos Helados en la noche invernal.",
+    "desc": "Espíritu ancestral de coraza gélida. Sus zarpazos congelan el suelo e inmovilizan a los guerreros.",
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Fase 1: Pisotón de Escarcha (100% - 50% HP)",
+        "skills": [
+          "Garrazo de Escarcha: Inflige congelamiento profundo al objetivo.",
+          "Pisotón Sísmico: Crea una onda expansiva de hielo que empuja y lisiar."
+        ]
+      },
+      {
+        "phase": 2,
+        "title": "Fase 2: Ventisca Ancestral (50% - 0% HP)",
+        "skills": [
+          "Aura de Congelación: Daña continuamente a todo jugador sin protección térmica.",
+          "Escudo de Hielo Eterno: Gana 500 HP de escudo temporal que debe ser destruido con fuego."
+        ]
+      }
+    ],
+    "tips": [
+      "Equipá Armadura con protección contra congelamiento.",
+      "Las armas encantadas con Aspecto Ígneo rompen su escudo el doble de rápido.",
+      "Evitá acorralarlo contra paredes o rocas."
+    ],
+    "drops": [
+      { "item": "Garra de Oso Espíritu Ancestral", "qty": "1", "prob": "25%" },
+      { "item": "Piel Gélida Reforzada", "qty": "2-4", "prob": "100%" },
+      { "item": "Monedas de Platino", "qty": "1-3", "prob": "100%" },
+      { "item": "Experiencia masiva", "qty": "500 XP", "prob": "100%" }
+    ]
+  }
+]

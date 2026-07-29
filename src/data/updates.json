@@ -1,0 +1,24 @@
+[
+  {
+    "date": "28 de Julio, 2026",
+    "version": "v2.4 - Actualización de Rendimiento & Bun Server",
+    "title": "Migración a Servidor Dinámico Bun & Corrección de Tumbas",
+    "changes": [
+      "🚀 Wiki Oficial migrada a arquitectura ultra-rápida basada en Bun con API REST dinámica.",
+      "🦴 Optimización del sistema de Tumbas (Graves): Eliminado el bug de multiplicación de coordenadas de chunk que congelaba el servidor.",
+      "💬 Integración de Discord sin addons de terceros (0-Plugin Skript Reflect + Java HttpClient).",
+      " Bestiario dinámico con 42 criaturas con calculadora de daño real según armadura y dureza (Toughness).",
+      "🌾 Sistema de plantaciones y agricultura custom evolucionable con Nexo."
+    ]
+  },
+  {
+    "date": "15 de Julio, 2026",
+    "version": "v2.3 - Expansión del Bestiario & Sets de Acero",
+    "title": "Nuevas Criaturas Élite y Sets de Especialización",
+    "changes": [
+      "🦁 Añadido el Jaguar, la Pantera Negra y el Tigre de Selva a las junglas del Overworld.",
+      " Introducidos los Sets de Especialización de Acero para clases (Guerrero, Cazador, Alquimista).",
+      "🐺 Ajustado el balance del Set Caza Monstruos y acumulación de bonos de escalón."
+    ]
+  }
+]

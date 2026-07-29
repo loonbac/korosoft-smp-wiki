@@ -1,0 +1,73 @@
+[
+  {
+    "id": "cuero_basico",
+    "tier": "Tier 1: Inicial",
+    "name": "Armadura Básica de Cuero",
+    "color": "#ADADAD",
+    "desc": "Equipamiento inicial confeccionado con cuero curtido e hilo místico en la Mesa de Trabajo.",
+    "totalDef": "+7.0 Def",
+    "totalHp": "+10.0 HP",
+    "totalStamina": "+50.0 Stamina",
+    "pieces": [
+      { "name": "Casco Básico", "def": "+1.0 Def", "stats": "+2.0 HP | +10 Stamina" },
+      { "name": "Pechera Básica", "def": "+3.0 Def", "stats": "+4.0 HP | +20 Stamina" },
+      { "name": "Pantalones Básicos", "def": "+2.0 Def", "stats": "+3.0 HP | +15 Stamina" },
+      { "name": "Botas Básicas", "def": "+1.0 Def", "stats": "+1.0 HP | +5 Stamina" }
+    ]
+  },
+  {
+    "id": "malla",
+    "tier": "Tier 2: Intermedio",
+    "name": "Armadura de Malla",
+    "color": "#8C9E8C",
+    "desc": "Protección reforzada con eslabones metálicos para combatientes en exploración subterránea.",
+    "totalDef": "+10.0 Def",
+    "totalHp": "+20.0 HP",
+    "totalStamina": "+100.0 Stamina",
+    "pieces": [
+      { "name": "Casco de Malla", "def": "+1.5 Def", "stats": "+4.0 HP | +20 Stamina" },
+      { "name": "Pechera de Malla", "def": "+4.0 Def", "stats": "+8.0 HP | +40 Stamina" },
+      { "name": "Pantalones de Malla", "def": "+3.0 Def", "stats": "+6.0 HP | +30 Stamina" },
+      { "name": "Botas de Malla", "def": "+1.5 Def", "stats": "+2.0 HP | +10 Stamina" }
+    ]
+  },
+  {
+    "id": "bronce",
+    "tier": "Tier 3: Avanzado",
+    "name": "Armadura de Bronce",
+    "color": "#C58A5F",
+    "desc": "Armadura pesada forjada con aleación de cobre refinado en la Estación de Forja.",
+    "totalDef": "+13.5 Def",
+    "totalHp": "+30.0 HP",
+    "totalStamina": "+150.0 Stamina",
+    "totalToughness": "+3.0 Toughness",
+    "pieces": [
+      { "name": "Casco de Bronce", "def": "+2.0 Def | +0.5 Tough", "stats": "+6.0 HP | +30 Stamina" },
+      { "name": "Pechera de Bronce", "def": "+5.5 Def | +1.0 Tough", "stats": "+12.0 HP | +60 Stamina" },
+      { "name": "Pantalones de Bronce", "def": "+4.0 Def | +1.0 Tough", "stats": "+9.0 HP | +45 Stamina" },
+      { "name": "Botas de Bronce", "def": "+2.0 Def | +0.5 Tough", "stats": "+3.0 HP | +15 Stamina" }
+    ]
+  },
+  {
+    "id": "acero_guerrero",
+    "tier": "Tier 4: Especialización",
+    "name": "Set de Guerrero de Acero",
+    "color": "#379BDE",
+    "specialization": "Clase: Guerrero",
+    "desc": "Armadura balanceada enfocada en maximizar el daño directo y los golpes críticos pesados.",
+    "totalDef": "+18.0 Def",
+    "totalHp": "+45.0 HP",
+    "totalStamina": "+200.0 Stamina",
+    "totalToughness": "+5.0 Toughness",
+    "setBonus": {
+      "twoPieces": "+10% Daño Crítico | +2.0 Daño de Ataque Base",
+      "fourPieces": "+15% Probabilidad Crítica | Impacto Pesado (+20% Daño acumulado)"
+    },
+    "pieces": [
+      { "name": "Casco de Guerrero de Acero", "def": "+3.0 Def | +1.0 Tough", "stats": "+8.0 HP | +40 Stamina | +3% Crit" },
+      { "name": "Pechera de Guerrero de Acero", "def": "+7.5 Def | +2.0 Tough", "stats": "+18.0 HP | +80 Stamina | +5% Crit" },
+      { "name": "Pantalones de Guerrero de Acero", "def": "+5.0 Def | +1.5 Tough", "stats": "+13.0 HP | +55 Stamina | +4% Crit" },
+      { "name": "Botas de Guerrero de Acero", "def": "+2.5 Def | +0.5 Tough", "stats": "+6.0 HP | +25 Stamina | +3% Crit" }
+    ]
+  }
+]

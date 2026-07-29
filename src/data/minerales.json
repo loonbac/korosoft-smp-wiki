@@ -1,0 +1,29 @@
+[
+  {
+    "id": "estano",
+    "name": "Mena de Estaño (Tin Ore)",
+    "layer": "Capa Y: 20 a 90",
+    "pickaxe": "Pico de Piedra o Superior",
+    "rarity": "Común",
+    "uses": ["Aleación de Bronce", "Componentes de Mesas", "Herramientas de Bronce"],
+    "drops": "Estaño Bruto (1-2)"
+  },
+  {
+    "id": "plomo",
+    "name": "Mena de Plomo (Lead Ore)",
+    "layer": "Capa Y: -10 a 40",
+    "pickaxe": "Pico de Hierro o Superior",
+    "rarity": "Intermedio",
+    "uses": ["Armadura de Malla Reforzada", "Lingotes de Plomo", "Escudos de Protección"],
+    "drops": "Plomo Bruto (1)"
+  },
+  {
+    "id": "mithril",
+    "name": "Mena de Mithril (Mithril Ore)",
+    "layer": "Capa Y: Por debajo de -40",
+    "pickaxe": "Pico de Diamante o Superior",
+    "rarity": "Muy Raro / Abisal",
+    "uses": ["Equipamiento de Acero Místico", "Herramientas Legendarias", "Mecanismos Arcanos"],
+    "drops": "Fragmento de Mithril (1)"
+  }
+]

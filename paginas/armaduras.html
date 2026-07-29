@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armaduras & Sets - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .set-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+        }
+        .piece-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.8rem;
+            margin-top: 1rem;
+            background: rgba(0,0,0,0.3);
+            padding: 0.8rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+        .piece-item {
+            font-size: 0.85rem;
+        }
+        .piece-item strong {
+            color: var(--accent-color);
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS CON LISTA Y VIÑETAS AZULES) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html" class="active">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Armaduras Oficiales del Reino</h1>
+                <p>Conoce los 3 conjuntos de armaduras forjables y sus estadísticas totales al equipar el set completo.</p>
+            </header>
+        <!-- 1. Armadura Básica de Cuero -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #ADADAD;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Tier 1: Inicial</span>
+                    <h3 class="card-title" style="color: #ADADAD;">Armadura Básica de Cuero</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Equipamiento inicial confeccionado con cuero curtido e hilo místico en la Mesa de Trabajo.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Totales del Set Completo (4 Piezas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"/></svg> <strong>Armadura Total:</strong> +7.0 Def</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ff4444;"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg> <strong>Vida Máxima Extra:</strong> +10.0 HP</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ffb74d;"><path d="M7,2v11h3v9l7-12h-4l4-8H7z"/></svg> <strong>Stamina Máxima Extra:</strong> +50.0 Stamina</span>
+                    </div>
+                </div>
+
+                <div class="piece-grid">
+                    <div class="piece-item">
+                        <strong>Casco Básico</strong>
+                        <span>+1.0 Armadura</span><br>
+                        <span>+2.0 HP | +10 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pechera Básica</strong>
+                        <span>+3.0 Armadura</span><br>
+                        <span>+4.0 HP | +20 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pantalones Básicos</strong>
+                        <span>+2.0 Armadura</span><br>
+                        <span>+3.0 HP | +15 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Botas Básicas</strong>
+                        <span>+1.0 Armadura</span><br>
+                        <span>+1.0 HP | +5 Stamina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Set de Malla -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #8C9E8C;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Tier 2: Intermedio</span>
+                    <h3 class="card-title" style="color: #8C9E8C;">Armadura de Malla</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Protección reforzada con eslabones metálicos para combatientes en exploración subterránea.</p>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Totales del Set Completo (4 Piezas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"/></svg> <strong>Armadura Total:</strong> +10.0 Def</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ff4444;"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg> <strong>Vida Máxima Extra:</strong> +20.0 HP</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ffb74d;"><path d="M7,2v11h3v9l7-12h-4l4-8H7z"/></svg> <strong>Stamina Máxima Extra:</strong> +100.0 Stamina</span>
+                    </div>
+                </div>
+
+                <div class="piece-grid">
+                    <div class="piece-item">
+                        <strong>Casco de Malla</strong>
+                        <span>+1.5 Armadura</span><br>
+                        <span>+4.0 HP | +20 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pechera de Malla</strong>
+                        <span>+4.0 Armadura</span><br>
+                        <span>+8.0 HP | +40 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pantalones de Malla</strong>
+                        <span>+3.0 Armadura</span><br>
+                        <span>+6.0 HP | +30 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Botas de Malla</strong>
+                        <span>+1.5 Armadura</span><br>
+                        <span>+2.0 HP | +10 Stamina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Set de Bronce -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #C58A5F;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Tier 3: Avanzado</span>
+                    <h3 class="card-title" style="color: #C58A5F;">Armadura de Bronce</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armadura pesada forjada con aleación de cobre refinado en la <a href="mesas.html">Estación de Forja</a>.</p>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Totales del Set Completo (4 Piezas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"/></svg> <strong>Armadura Total:</strong> +13.5 Def</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg> <strong>Dureza de Armadura:</strong> +3.0 Toughness</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ff4444;"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg> <strong>Vida Máxima Extra:</strong> +30.0 HP</span>
+                        <span><svg class="svg-icon" viewBox="0 0 24 24" style="fill: #ffb74d;"><path d="M7,2v11h3v9l7-12h-4l4-8H7z"/></svg> <strong>Stamina Máxima Extra:</strong> +150.0 Stamina</span>
+                    </div>
+                </div>
+
+                <div class="piece-grid">
+                    <div class="piece-item">
+                        <strong>Casco de Bronce</strong>
+                        <span>+2.0 Def | +0.5 Tough</span><br>
+                        <span>+6.0 HP | +30 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pechera de Bronce</strong>
+                        <span>+5.5 Def | +1.0 Tough</span><br>
+                        <span>+12.0 HP | +60 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Pantalones de Bronce</strong>
+                        <span>+4.0 Def | +1.0 Tough</span><br>
+                        <span>+9.0 HP | +45 Stamina</span>
+                    </div>
+                    <div class="piece-item">
+                        <strong>Botas de Bronce</strong>
+                        <span>+2.0 Def | +0.5 Tough</span><br>
+                        <span>+3.0 HP | +15 Stamina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 1px dashed var(--border-color); margin: 3rem 0;">
+        <header class="hero" style="padding: 1.5rem 1rem; border-radius: 8px; margin-bottom: 2rem; background: rgba(55, 155, 222, 0.1); border-left: 4px solid #379BDE;">
+            <h2 style="color: #379BDE;">Especializaciones Avanzadas: Sets de Acero</h2>
+            <p style="font-size: 0.95rem;">Equipamiento de alto nivel forjado con Acero. Cada set define un estilo de combate único (Clases) y otorga poderosos bonos pasivos al equipar 2 o 4 piezas del mismo set.</p>
+        </header>
+
+        <!-- 4. Set de Guerrero (Acero) -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #379BDE;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge" style="background: rgba(55, 155, 222, 0.15); color: #379BDE;">Clase: Guerrero</span>
+                    <h3 class="card-title" style="color: #379BDE;">Set de Guerrero de Acero</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armadura balanceada enfocada en maximizar el daño directo y los golpes críticos pesados.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid #379BDE; border-radius: 4px;">
+                    <strong style="color: #379BDE; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Base (4 Piezas Juntas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Armadura:</strong> +15.0 Def</span>
+                        <span><strong>Vida Extra:</strong> +30.0 HP</span>
+                        <span><strong>Stamina:</strong> +150.0</span>
+                        <span><strong>Crit Chance:</strong> +2.5%</span>
+                        <span><strong>Crit Power:</strong> +40.0%</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Bonos de Set (Sinergia):</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li style="margin-bottom: 0.3rem;"><strong style="color: #fff;">Bono 2 Piezas:</strong> +20 Stamina | +10 HP | +5% Daño PvE | +4% Daño Físico</li>
+                        <li><strong style="color: #fff;">Bono 4 Piezas:</strong> +30 Stamina | +15 HP | +10% Daño PvE | +6% Daño Físico | +35% Crit Power</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Set de Asesino (Acero) -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #9D4EDD;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge" style="background: rgba(157, 78, 221, 0.15); color: #9D4EDD;">Clase: Asesino</span>
+                    <h3 class="card-title" style="color: #9D4EDD;">Set de Asesino de Acero</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armadura ligera para letalidad veloz, centrada en probabilidad de críticos, evasión y movilidad extrema.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid #9D4EDD; border-radius: 4px;">
+                    <strong style="color: #9D4EDD; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Base (4 Piezas Juntas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Armadura:</strong> +15.0 Def</span>
+                        <span><strong>Vida Extra:</strong> +15.0 HP</span>
+                        <span><strong>Stamina:</strong> +125.0</span>
+                        <span><strong>Crit Chance:</strong> +15.0%</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Bonos de Set (Sinergia):</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li style="margin-bottom: 0.3rem;"><strong style="color: #fff;">Bono 2 Piezas:</strong> +20 Stamina | +10 HP | +4% Esquivar | +0.02 Velocidad | Movimiento Sigiloso Aumentado</li>
+                        <li><strong style="color: #fff;">Bono 4 Piezas:</strong> +30 Stamina | +15 HP | +6% Esquivar | +25% Crit Power | +0.03 Velocidad | +0.1 Salto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Set de Tanque (Acero Stalwart) -->
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #D1114D;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge" style="background: rgba(209, 17, 77, 0.15); color: #D1114D;">Clase: Tanque (Stalwart)</span>
+                    <h3 class="card-title" style="color: #D1114D;">Set de Tanque de Acero</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armadura pesada colosal. Convierte al usuario en una fortaleza andante, sacrificando movilidad por supervivencia absoluta.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid #D1114D; border-radius: 4px;">
+                    <strong style="color: #D1114D; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Estadísticas Base (4 Piezas Juntas):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Armadura:</strong> +19.0 Def</span>
+                        <span><strong>Dureza:</strong> +6.0 Toughness</span>
+                        <span><strong>Vida Extra:</strong> +44.0 HP</span>
+                        <span><strong>Stamina:</strong> +140.0</span>
+                        <span><strong>Resistencia Empuje:</strong> +20.0%</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Bonos de Set (Sinergia):</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li style="margin-bottom: 0.3rem;"><strong style="color: #fff;">Bono 2 Piezas:</strong> +40 Stamina | +14 HP | +5% Resistencia Empuje | Ligera penalización de velocidad</li>
+                        <li><strong style="color: #fff;">Bono 4 Piezas:</strong> +70 Stamina | +22 HP | +10% Resistencia Empuje | <strong>+5.0% Reducción Daño Físico</strong> | Penalización de velocidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

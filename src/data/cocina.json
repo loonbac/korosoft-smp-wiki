@@ -1,0 +1,55 @@
+[
+  {
+    "id": "medallon_carne",
+    "name": "Medallón de Carne Marinada",
+    "category": "Plato Fuerte",
+    "station": "Ahumador / Hoguera",
+    "time": "15 segundos",
+    "hungerRestored": "8 Muslos (16 HP)",
+    "effects": ["Regeneración I (10s)", "Saturación Duradera"],
+    "ingredients": [
+      { "name": "Carne Cruda de Bisonte", "qty": "1" },
+      { "name": "Especias del Bosque", "qty": "1" }
+    ]
+  },
+  {
+    "id": "sopa_champiñones_espiritual",
+    "name": "Sopa Espiritual de Champiñones",
+    "category": "Sopas & Guiados",
+    "station": "Caldero / Mesa de Trabajo",
+    "time": "Instantáneo",
+    "hungerRestored": "6 Muslos (12 HP)",
+    "effects": ["Absorción I (2 Corazones amarillos)", "Curación Instantánea I"],
+    "ingredients": [
+      { "name": "Champiñón Rojo", "qty": "1" },
+      { "name": "Champiñón Marrón", "qty": "1" },
+      { "name": "Cuenco de Madera", "qty": "1" }
+    ]
+  },
+  {
+    "id": "pescado_ahumado_hierbas",
+    "name": "Pescado Ahumado a las Finas Hierbas",
+    "category": "Pescados",
+    "station": "Ahumador",
+    "time": "10 segundos",
+    "hungerRestored": "7 Muslos (14 HP)",
+    "effects": ["Velocidad de Nado +20% (60s)", "Respiración Acuática I (30s)"],
+    "ingredients": [
+      { "name": "Bacalao / Salmón Crudo", "qty": "1" },
+      { "name": "Hojas de Selva", "qty": "1" }
+    ]
+  },
+  {
+    "id": "pan_artesanal_miel",
+    "name": "Pan Artesanal con Miel",
+    "category": "Postres & Panadería",
+    "station": "Horno de Piedra",
+    "time": "12 segundos",
+    "hungerRestored": "5 Muslos (10 HP)",
+    "effects": ["Velocidad I (45s)", "Remueve Efecto de Lentitud"],
+    "ingredients": [
+      { "name": "Trigo", "qty": "3" },
+      { "name": "Botella de Miel", "qty": "1" }
+    ]
+  }
+]

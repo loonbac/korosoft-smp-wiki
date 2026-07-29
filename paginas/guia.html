@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Inicio - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS CON LISTA Y VIÑETAS AZULES) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="guia.html" class="active">Guía de Inicio</a>
+                        <ul class="sidebar-sub-menu">
+                            <li><a href="#cap-1">Atributos & Curación Custom</a></li>
+                            <li><a href="#cap-2">Libro de Crafteos</a></li>
+                            <li><a href="#siguientes-pasos">Siguientes Pasos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="pvp.html">Sistema PvP & Tumbas</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/blaze_powder.png" class="mc-icon" alt="stamina"> Guía de Inicio & Sobrevivencia en Korosoft-SMP</h1>
+                <p>Manual definitivo para aventureros: estadísticas de personaje, supervivencia sin regeneración pasiva, crafteos custom, progresión de equipo y minerales del reino.</p>
+            </header>
+
+            <!-- CAPÍTULO 1: ESTADÍSTICAS DEL JUGADOR & SUPERVIVENCIA SÍN REGENERACIÓN VANILLA -->
+            <section id="cap-1" style="margin-bottom: 3.5rem;">
+                <h2 style="color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
+                    1. Atributos Generales del Jugador & Sistema de Curación Custom
+                </h2>
+                <p style="font-size: 0.95rem; color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6;">
+                    En <strong>Korosoft-SMP</strong>, el combate y la supervivencia han sido completamente redefinidos. Las mecánicas tradicionales de Minecraft Vanilla respecto a la recuperación de salud y energía han sido reemplazadas por un ecosistema más exigente y estratégico.
+                </p>
+
+                <div class="grid" style="margin-bottom: 2rem;">
+                    <!-- Salud (HP) y Regla No-Vanilla -->
+                    <div class="card" style="border-color: #ff4444;">
+                        <div class="card-header">
+                            <h3 class="card-title" style="color: #ff4444;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glistering_melon_slice.png" class="mc-icon" alt="vida"> Salud (HP) - <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/barrier.png" class="mc-icon" alt="alerta"> ¡SIN REGENERACIÓN VANILLA!</h3>
+                        </div>
+                        <div class="card-content">
+                            <div style="font-size: 0.9rem; line-height: 1.6;">
+                                <p><strong>Base Inicial:</strong> 20.0 HP (10 Corazones)</p>
+                                <p><strong>Regeneración Pasiva / Saturación:</strong> <span style="color: #ff4444; font-weight: bold;">0.0 HP/s (DESACTIVADA)</span></p>
+                            </div>
+                            <div style="margin-top: 0.8rem; background: rgba(255, 68, 68, 0.1); border-left: 3px solid #ff4444; padding: 0.8rem; border-radius: 4px; font-size: 0.88rem;">
+                                <strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/barrier.png" class="mc-icon" alt="alerta"> REGLA DE ORO DE SUPERVIVENCIA:</strong> Tener la barra de comida llena o saturación <strong>NO TE CURARÁ</strong>. La única forma de sanar heridas en el reino es utilizando <strong>Pociones de Curación Mística</strong> o consumiendo <strong>Platos Procesados en la Estación de Cocina</strong>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stamina (Resistencia) -->
+                    <div class="card" style="border-color: #ffb74d;">
+                        <div class="card-header">
+                            <h3 class="card-title" style="color: #ffb74d;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/blaze_powder.png" class="mc-icon" alt="stamina"> Stamina (Resistencia de Acción)</h3>
+                        </div>
+                        <div class="card-content">
+                            <div style="font-size: 0.9rem; line-height: 1.6;">
+                                <p><strong>Base Inicial:</strong> 50.0 Puntos</p>
+                                <p><strong>Regeneración Base Pasiva:</strong> 0.1 Stamina / seg</p>
+                            </div>
+                            <p style="margin-top: 0.8rem; color: var(--text-muted); font-size: 0.88rem;">
+                                La Stamina es tu recurso para realizar esprintar a alta velocidad, esquives acrobáticos y desencadenar habilidades físicas de combate. Para regenerarla rápidamente en batalla se requiere consumir platillos elaborados en el <a href="cocina.html">Ahumador</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mana -->
+                    <div class="card" style="border-color: #379BDE;">
+                        <div class="card-header">
+                            <h3 class="card-title" style="color: #379BDE;">🔮 Mana (Energía Arcana)</h3>
+                        </div>
+                        <div class="card-content">
+                            <div style="font-size: 0.9rem; line-height: 1.6;">
+                                <p><strong>Base Inicial:</strong> 50.0 Puntos</p>
+                                <p><strong>Regeneración Base Pasiva:</strong> 0.1 Mana / seg</p>
+                            </div>
+                            <p style="margin-top: 0.8rem; color: var(--text-muted); font-size: 0.88rem;">
+                                Recurso canalizado para lanzar hechizos, invocar talismanes y activar efectos arcanos de <a href="accesorios.html">Accesorios Raros</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUBSECCIÓN DROPS DE RECOLECCIÓN EN HIERBA Y HOJAS -->
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 1.2rem; margin-top: 1.5rem;">
+                    <h3 style="color: var(--accent-color); margin-top: 0; margin-bottom: 0.8rem;">🌱 Recolección Temprana: Drops al Romper Pasto y Hojas de Árboles</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        Dado que la comida es vital para sobrevivir y curarse, los recién llegados pueden obtener semillas y frutos directamente de la vegetación del Overworld:
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                        <!-- Drops de Pasto -->
+                        <div style="background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; border-left: 3px solid #A2D982;">
+                            <strong style="color: #A2D982; display: block; margin-bottom: 0.4rem;">🌾 Al Romper Pasto Alto / Hierba:</strong>
+                            <ul style="margin-left: 1.2rem; font-size: 0.88rem; color: var(--text-color);">
+                                <li>Semillas de Trigo Vanilla (100% habitual).</li>
+                                <li>Semillas de Tomate Custom (Drop Raro de Botánica).</li>
+                                <li>Semillas de Lechuga Custom (Drop Raro).</li>
+                                <li>Semillas de Arroz Custom (En biomas de pantano/ríos).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Drops de Hojas -->
+                        <div style="background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; border-left: 3px solid #ffb74d;">
+                            <strong style="color: #ffb74d; display: block; margin-bottom: 0.4rem;">🍃 Al Romper Hojas de Árboles:</strong>
+                            <ul style="margin-left: 1.2rem; font-size: 0.88rem; color: var(--text-color);">
+                                <li>Manzanas Frescas (Hojas de Roble / Roble Oscuro).</li>
+                                <li>Bayas Silvestres (Hojas de Taiga / Pinos).</li>
+                                <li>Naranjas & Bananas Custom (Hojas de Selva / Jungla).</li>
+                                <li>Brote de Olivo (Hojas de Abedul).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CAPÍTULO 2: LIBRO DE CRAFTEOS & PRIMERAS MESAS CUSTOM -->
+            <section id="cap-2" style="margin-bottom: 3.5rem;">
+                <h2 style="color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
+                    2. El Libro de Crafteos Custom & Primeras Estaciones
+                </h2>
+                <p style="font-size: 0.95rem; color: var(--text-color); margin-bottom: 1.2rem; line-height: 1.6;">
+                    La inmensa mayoría de recetas de armaduras, herramientas, accesorios y comidas en Korosoft-SMP son <strong>Customizadas</strong>. Para consultar la receta exacta de cualquier objeto dentro del juego, debes forjar tu primer artefacto de conocimiento:
+                </p>
+
+                <div style="background: rgba(212, 175, 55, 0.08); border: 1px solid var(--accent-color); border-radius: 6px; padding: 1.2rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div style="font-size: 2.5rem;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"></div>
+                    <div style="flex-grow: 1;">
+                        <h3 style="color: var(--accent-color); margin: 0 0 0.4rem 0;">¿Cómo Crear tu Libro de Crafteos Oficial?</h3>
+                        <p style="font-size: 0.92rem; color: var(--text-color); margin: 0;">
+                            Coloca <strong>1 Libro Normal + 1 Mesa de Crafteo Vanilla</strong> en cualquier rejilla de fabricación. ¡Obtendrás el <strong>Libro de Crafteos de Korosoft-SMP</strong>, el cual al hacer clic derecho te abrirá una interfaz gráfica interactiva con todas las recetas!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SIGUIENTES PASOS -->
+            <section id="siguientes-pasos" style="margin-bottom: 2rem;">
+                <h2 style="color: var(--accent-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
+                    3. Siguientes Pasos
+                </h2>
+                <p style="font-size: 0.95rem; color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6;">
+                    Ahora que conoces las mecánicas básicas de supervivencia, te recomendamos explorar las demás secciones de la wiki para dominar el reino y no morir en el intento:
+                </p>
+
+                <div class="grid">
+                    <div class="card" style="border-color: #379BDE;">
+                        <h3 style="color: #379BDE; margin-top: 0;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> Armaduras</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Conoce la progresión estricta desde equipo de cuero básico hasta las complejas aleaciones avanzadas y sets de acero.</p>
+                        <a href="armaduras.html" class="btn" style="padding: 0.5rem 1rem; border-color: #379BDE; color: #379BDE;">Ir a Armaduras</a>
+                    </div>
+
+                    <div class="card" style="border-color: #ffb74d;">
+                        <h3 style="color: #ffb74d;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/filled_map.png" class="mc-icon" alt="mapa"> Minerales y Estaciones</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Descubre dónde y en qué capas minar vetas custom, y cómo utilizar la Forja y la Mesa de Joyería a tu favor.</p>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="minerales.html" class="btn" style="padding: 0.5rem 1rem; border-color: #ffb74d; color: #ffb74d; margin-top: 0;">Ir a Minerales</a>
+                            <a href="mesas.html" class="btn" style="padding: 0.5rem 1rem; border-color: #ffb74d; color: #ffb74d; margin-top: 0;">Ir a Mesas</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="border-color: #e57373;">
+                        <h3 style="color: #e57373;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/skeleton_skull.png" class="mc-icon" alt="calavera"> Jefes y PvP</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Investiga los letales Jefes del Overworld y entérate de cómo funciona el sistema de Tumbas y Asesinatos.</p>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="jefes.html" class="btn" style="padding: 0.5rem 1rem; border-color: #e57373; color: #e57373; margin-top: 0;">Ir a Jefes</a>
+                            <a href="pvp.html" class="btn" style="padding: 0.5rem 1rem; border-color: #e57373; color: #e57373; margin-top: 0;">Sistema PvP</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

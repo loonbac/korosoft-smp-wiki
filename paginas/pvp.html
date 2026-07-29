@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvP & Tumbas - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .pvp-card {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .pvp-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+        }
+        .tag-green {
+            background: rgba(46, 125, 50, 0.2);
+            color: #81c784;
+            border: 1px solid #388e3c;
+        }
+        .tag-orange {
+            background: rgba(230, 81, 0, 0.2);
+            color: #ffb74d;
+            border: 1px solid #f57c00;
+        }
+        .tag-red {
+            background: rgba(198, 40, 40, 0.2);
+            color: #e57373;
+            border: 1px solid #c62828;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="pvp.html" class="active">Sistema PvP & Tumbas</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> Sistema de PvP y Reputación</h1>
+                <p>Descubre cómo funciona el sistema de asesinos (Killtag) y cómo tu reputación afecta a tu cuerpo y tumba al morir.</p>
+            </header>
+
+            <div class="container">
+                <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 2rem; line-height: 1.6;">
+                    El servidor cuenta con un <strong>sistema de reputación dinámico</strong> que rastrea tus asesinatos injustificados. Asesinar a jugadores inocentes te marcará, y esta marca dictará la penalización que sufrirás al morir y el comportamiento de tu Tumba.
+                </p>
+
+                <h2 style="color: var(--accent-color); margin-bottom: 1.5rem;">Estados de Reputación (Killtag)</h2>
+                
+                <div class="grid">
+                    <!-- Estado Verde -->
+                    <div class="pvp-card" style="border-color: #388e3c;">
+                        <span class="pvp-tag tag-green">🟢 ESTADO VERDE (Inocente)</span>
+                        <p style="color: #ccc; margin-bottom: 1rem;">
+                            Eres un jugador pacífico o que solo combate en defensa propia.
+                        </p>
+                        <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-left: 1.2rem;">
+                            <li><strong>Condición:</strong> 0 asesinatos a jugadores inocentes.</li>
+                            <li><strong>Tumba al morir:</strong> Dura <strong>10 minutos</strong> en total.</li>
+                            <li><strong>Protección:</strong> Los primeros <strong>5 minutos</strong> la tumba es privada (solo tú puedes lootearla). Tras esto, queda pública otros 5 minutos.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Estado Naranja -->
+                    <div class="pvp-card" style="border-color: #f57c00;">
+                        <span class="pvp-tag tag-orange">🟠 ESTADO NARANJA (Peligroso)</span>
+                        <p style="color: #ccc; margin-bottom: 1rem;">
+                            Has comenzado a derramar sangre inocente. Eres un objetivo válido.
+                        </p>
+                        <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-left: 1.2rem;">
+                            <li><strong>Condición:</strong> Matar a <strong>1 o 2</strong> jugadores estado Verde.</li>
+                            <li><strong>Tumba al morir:</strong> Se reduce a <strong>5 minutos</strong> de duración.</li>
+                            <li><strong>Penalización:</strong> <strong>CERO minutos de protección</strong>. Cualquiera puede saquear tu cuerpo de inmediato.</li>
+                            <li><strong>Limpieza:</strong> Debes jugar 3 horas en Survival (fuera del lobby) para volver a Verde.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Estado Rojo -->
+                    <div class="pvp-card" style="border-color: #c62828;">
+                        <span class="pvp-tag tag-red">🔴 ESTADO ROJO (Asesino)</span>
+                        <p style="color: #ccc; margin-bottom: 1rem;">
+                            Eres un asesino a sangre fría. Todo el servidor puede cazarte.
+                        </p>
+                        <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-left: 1.2rem;">
+                            <li><strong>Condición:</strong> Matar a <strong>3 o más</strong> jugadores estado Verde.</li>
+                            <li><strong>Penalización Extrema:</strong> <strong>¡NO HAY TUMBA!</strong> Si mueres, todos tus items caerán directamente al suelo como en Vanilla, y cualquiera podrá tomarlos.</li>
+                            <li><strong>Limpieza:</strong> Debes jugar 24 horas continuas en Survival para limpiar tu nombre.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Detalles Adicionales del Sistema</h3>
+                    
+                    <h4 style="color: #e0e0e0; margin-top: 1rem;">Justicia y Legítima Defensa</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+                        Solo cuenta como "asesinato" matar a un jugador <strong>VERDE</strong>. Si matas a un jugador Naranja o Rojo, el servidor lo considera legítima defensa o cazarrecompensas, por lo que <strong>NO SUMARÁS kills</strong> a tu contador. Sin embargo, si estás en estado Naranja/Rojo y vuelves a matar a un inocente, tu tiempo de limpieza se reiniciará.
+                    </p>
+
+                    <h4 style="color: #e0e0e0; margin-top: 1.5rem;">Robo de Billeteras (Monedero)</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+                        Cuando un jugador muere, sus monedas quedan guardadas en su cuerpo. 
+                        Si el jugador muere por el entorno (mobs, caída), solo el dueño puede reclamar su billetera. 
+                        <strong>PERO</strong> si mueres asesinado por otro jugador, <strong>el asesino (y solo él)</strong> podrá reclamar tu billetera haciendo clic en ella desde tu tumba.
+                    </p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

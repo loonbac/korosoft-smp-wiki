@@ -1,0 +1,146 @@
+[
+  {
+    "id": "set-caza",
+    "name": "Set Caza Monstruos (Reliquias de Criaturas)",
+    "type": "PvE Combat",
+    "color": "#ff4444",
+    "desc": "Artefactos arcanos forjados con restos de criaturas subterráneas y nocturnas. Equipables abriendo el inventario especial con Shift + G.",
+    "summary": {
+      "pveDmg": "+47.0 a +63.0 Daño PvE",
+      "atkDmg": "+3.3 a +5.3 Atq",
+      "armor": "+5.0 a +6.0 Def",
+      "toughness": "+1.0 Toughness",
+      "extraHp": "+3.0 a +6.0 HP",
+      "critChance": "+5.5% Crítico"
+    },
+    "bonuses": {
+      "pieces2": "+5.0 Daño PvE | +0.3 Daño de Ataque Base",
+      "pieces4": "Total Acumulado: +12.0 Daño PvE | +0.8 Daño de Ataque | +1.0 Armadura",
+      "pieces6": "Total Acumulado Supremo: +21.0 Daño PvE | +1.8 Daño de Ataque | +2.5 Armadura"
+    },
+    "pieces": [
+      {
+        "name": "Carne Podrida",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+5.0 a +7.0 Daño PvE", "+0.5 Armadura"],
+        "source": "Zombie de Superficie / Zombie de Cueva (20% Prob.)",
+        "desc": "Resto purificado de no-muerto que canaliza instinto cazador."
+      },
+      {
+        "name": "Ojo Arácnido",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+6.0 a +8.0 Daño PvE", "+1.0 a +2.0 HP Máxima"],
+        "source": "Jokey Skeleton / Arañas Cavernarias (15% Prob.)",
+        "desc": "Órgano ocular que agudiza la visión contra monstruos."
+      },
+      {
+        "name": "Hueso Reforzado",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+7.0 a +9.0 Daño PvE", "+0.5 a +1.0 Daño Ataque Base"],
+        "source": "Arquero de Cueva / Espadachín (15% Prob.)",
+        "desc": "Fragmento calcificado resplandeciente."
+      },
+      {
+        "name": "Diente de Oso",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+8.0 a +10.0 Daño PvE", "+1.0 a +1.5 Armadura Base"],
+        "source": "Bisonte / Depredadores Élite (10% Prob.)",
+        "desc": "Colmillo salvaje que desgarra la piel de las bestias."
+      },
+      {
+        "name": "Frasco de Sangre",
+        "rarity": "LEGENDARIO",
+        "stars": "5 Estrellas",
+        "starIcon": "✦✦✦✦✦",
+        "color": "#D1114D",
+        "stats": ["+9.0 a +11.0 Daño PvE", "+1.5 a +2.0 Prob. Crítica"],
+        "source": "Vampiros / Jefes de Evento (5% Prob.)",
+        "desc": "Elixir vital purificado en ritual alquímico."
+      },
+      {
+        "name": "Reliquia del Cazador",
+        "rarity": "LEGENDARIO",
+        "stars": "5 Estrellas",
+        "starIcon": "✦✦✦✦✦",
+        "color": "#D1114D",
+        "stats": ["+10.0 a +12.0 Daño PvE", "+1.0 Dureza Armadura (Toughness)"],
+        "source": "Jack el Cosechador / Recompensa Final",
+        "desc": "Artefacto supremo grabado con las runas de la cacería eterna."
+      }
+    ]
+  },
+  {
+    "id": "set-aventura",
+    "name": "Set de Aventura (Exploración & Movilidad)",
+    "type": "Exploración",
+    "color": "#379BDE",
+    "desc": "Reliquias de cartografía, resistencia física y agilidad para exploradores de terrenos hostiles.",
+    "summary": {
+      "pveDmg": "+10.0 Daño General",
+      "atkDmg": "+2.0 Atq",
+      "armor": "+4.0 Def",
+      "toughness": "+2.0 Toughness",
+      "extraHp": "+25.0 HP",
+      "critChance": "+10% Velocidad de Movimiento"
+    },
+    "bonuses": {
+      "pieces2": "+5% Velocidad de Movimiento | +10 Stamina Máxima",
+      "pieces4": "+10% Velocidad de Movimiento | +25 Stamina Máxima | Reducción de Daño por Caída -30%",
+      "pieces6": "+20% Velocidad de Movimiento | Resistencia al Hambre | Salto Potenciado"
+    },
+    "pieces": [
+      {
+        "name": "Cantimplora de Aventurero",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+10 Stamina Máxima", "+0.05 Reg. Stamina/seg"],
+        "source": "Mono (15% Prob.)",
+        "desc": "Recipiente térmico para hidratación constante."
+      },
+      {
+        "name": "Brújula de Aventurero",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+3% Vel. Movimiento", "Orientación en Cuevas"],
+        "source": "Arquero de Cueva (15% Prob.)",
+        "desc": "Instrumento magnético que vibra cerca de minerales raros."
+      },
+      {
+        "name": "Botas de Viajero",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+5% Vel. Movimiento", "+1.0 Def"],
+        "source": "Arenero de Desierto (10% Prob.)",
+        "desc": "Calzado de cuero reforzado para largas caminatas."
+      },
+      {
+        "name": "Mapa de Aventurero",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["Revelación de Biomas", "+5.0 HP Máxima"],
+        "source": "Verdugo de Cueva (8% Prob.)",
+        "desc": "Pergamino místico que traza el relieve subterráneo."
+      }
+    ]
+  }
+]

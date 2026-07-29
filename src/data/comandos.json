@@ -1,0 +1,88 @@
+[
+  {
+    "category": "Economía & Mercado",
+    "commands": [
+      {
+        "command": "/ah",
+        "permission": "Todos los jugadores",
+        "desc": "Abre la Casa de Subastas interactiva para comprar y vender ítems a otros jugadores.",
+        "example": "/ah sell <precio>"
+      },
+      {
+        "command": "/pay <jugador> <monto>",
+        "permission": "Todos los jugadores",
+        "desc": "Transfiere monedas de tu balance directamente al inventario de otro jugador.",
+        "example": "/pay Insent 500"
+      },
+      {
+        "command": "/bal",
+        "permission": "Todos los jugadores",
+        "desc": "Consulta tu saldo actual de Monedas de Cobre, Plata y Oro.",
+        "example": "/bal"
+      }
+    ]
+  },
+  {
+    "category": "Equipamiento & Inventarios Especiales",
+    "commands": [
+      {
+        "command": "Shift + G",
+        "permission": "Todos los jugadores",
+        "desc": "Atajo de teclado para abrir el Menú de Equipamiento de Accesorios & Reliquias.",
+        "example": "Presionar Shift + G"
+      },
+      {
+        "command": "/accesorios",
+        "permission": "Todos los jugadores",
+        "desc": "Comando directo para inspeccionar tus ranuras de accesorios equipados.",
+        "example": "/accesorios"
+      }
+    ]
+  },
+  {
+    "category": "Social, Recompensas & Matrimonios",
+    "commands": [
+      {
+        "command": "/canjear <código>",
+        "permission": "Todos los jugadores",
+        "desc": "Canjea un código de premio promocional o recompensa de evento en el servidor.",
+        "example": "/canjear BIENVENIDA2026"
+      },
+      {
+        "command": "/marry <jugador>",
+        "permission": "Todos los jugadores",
+        "desc": "Envía una propuesta de matrimonio a otro jugador para obtener bonos de exp en pareja y teletransporte mutuo.",
+        "example": "/marry Insent"
+      },
+      {
+        "command": "/g <mensaje>",
+        "permission": "Todos los jugadores",
+        "desc": "Envía un mensaje al canal global de chat del servidor.",
+        "example": "/g ¡Hola a todos en Korosoft SMP!"
+      }
+    ]
+  },
+  {
+    "category": "Comandos de Administración & Tumba (Graves)",
+    "commands": [
+      {
+        "command": "/korograve list [jugador]",
+        "permission": "Administradores (group.admin)",
+        "desc": "Lista todas las tumbas activas o cuerpos de maniquí en el mundo.",
+        "example": "/korograve list Insent"
+      },
+      {
+        "command": "/korograve history [jugador]",
+        "permission": "Administradores (group.admin)",
+        "desc": "Muestra el historial permanente de respaldos de tumbas recuperables.",
+        "example": "/korograve history Insent"
+      },
+      {
+        "command": "/korograve restore <gid> [objetivo]",
+        "permission": "Administradores (group.admin)",
+        "desc": "Restaura todos los ítems de un respaldo de tumba directamente al inventario del jugador.",
+        "example": "/korograve restore 1042 Insent"
+      }
+    ]
+  }
+]

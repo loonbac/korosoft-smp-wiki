@@ -1,0 +1,13 @@
+{
+  "name": "Korosoft SMP",
+  "ip": "play.korosoftsmp.com",
+  "port": 25565,
+  "discordUrl": "https://discord.gg/korosoft",
+  "webmaster": "Korosoft Dev Team",
+  "version": "1.21.1 Paper / Purpur",
+  "onlinePlayers": 18,
+  "maxPlayers": 100,
+  "status": "online",
+  "tps": 20.0,
+  "motd": "§a§lKOROSOFT SMP §7| §e¡Wiki Oficial Dinámica!"
+}

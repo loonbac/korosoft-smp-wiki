@@ -1,0 +1,23 @@
+[
+  {
+    "id": "estacion_forja",
+    "name": "Estación de Forja Pesada",
+    "recipe": "4 Lingotes de Hierro + 2 Bloques de Piedra + 1 Yunque",
+    "use": "Permite forjar Armaduras de Bronce, Sets de Acero y armas pesadas custom de Korosoft SMP.",
+    "category": "Forja & Armas"
+  },
+  {
+    "id": "mesa_alquimia",
+    "name": "Mesa de Alquimia Arcana",
+    "recipe": "1 Soporte para Pociones + 2 Cristales Arcanos + 4 Obsidiana",
+    "use": "Elaboración de elixires de regeneración, pociones avanzadas y purificación de reliquias.",
+    "category": "Alquimia"
+  },
+  {
+    "id": "ahumador_avanzado",
+    "name": "Ahumador de Cocina Maestro",
+    "recipe": "1 Ahumador Vanilla + 4 Madera Tratada + 2 Troncos",
+    "use": "Procesamiento de carnes de bestias custom (Bisonte, Marbled Meat) e ingredientes gastronómicos.",
+    "category": "Cocina"
+  }
+]

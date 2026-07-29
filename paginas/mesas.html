@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas & Estaciones - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .station-card {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+        .station-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+        .station-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+        .gem-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .gem-table th {
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--accent-color);
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+        }
+        .gem-table td {
+            padding: 0.8rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html" class="active">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Mesas de Trabajo & Estaciones Custom</h1>
+                <p>Descubre todas las estaciones de crafteo disponibles en el servidor y su función actual.</p>
+            </header>
+
+            <div class="container">
+                
+                <h2 style="color: var(--accent-color); margin-bottom: 1.5rem;">Forja y Herrería</h2>
+                <div class="grid">
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/campfire.png" class="mc-icon" alt="fuego"></div>
+                        <h3>Estación de Forja (Aleaciones)</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Utilizada para fundir metales primarios y crear aleaciones místicas o lingotes refinados (Ej. Estaño, Bronce, etc.).
+                        </p>
+                    </div>
+                    
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"></div>
+                        <h3>Yunque de Armas (Armería)</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Elabora espadas, hachas, arcos y todo tipo de armas especializadas para el combate.
+                        </p>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"></div>
+                        <h3>Forja de Armaduras & Acero</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Dedicada a la creación de armaduras pesadas y los poderosos Sets de Acero (Guerrero, Asesino, Tanque).
+                        </p>
+                    </div>
+                </div>
+
+                <h2 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1.5rem;">Magia, Alquimia & Utilidad</h2>
+                <div class="grid">
+                    <div class="station-card">
+                        <div class="station-icon">🧪</div>
+                        <h3>Mesa de Alquimia</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Destinada a la fabricación de pociones, elixires y polvos mágicos de sanación y potenciación.
+                        </p>
+                    </div>
+                    
+                    <div class="station-card">
+                        <div class="station-icon">🔮</div>
+                        <h3>Estación de Encantamientos</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Lugar místico donde se elaboran runas mágicas, tomos y los <strong>Invocadores de Jefes</strong> (Galahad, Harvester, Bear Spirit).
+                        </p>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-icon">🪑</div>
+                        <h3>Carpintería (Muebles)</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
+                            Crea decoraciones y muebles interactivos personalizados para tu base.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN ESPECIAL: MESA DE JOYERÍA Y GEMAS -->
+                <div class="station-card" style="margin-top: 2rem; border-color: #379BDE;">
+                    <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond.png" class="mc-icon" alt="diamante"></div>
+                    <h2 style="color: #379BDE; margin-bottom: 1rem;">Mesa de Joyería & Sistema de Gemas</h2>
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        La Mesa de Joyería es la estación especializada en pulir <strong>Vetas de Gemas</strong> (obtenidas en la minería) para convertirlas en Gemas en Bruto y posteriormente refinarlas. Las Gemas se engastan en armaduras y accesorios para obtener mejoras increíbles. Existen 4 Tiers: <span style="color: #ADADAD;">Pepita (Común)</span>, <span style="color: #ADADAD;">Fragmento (Común)</span>, <span style="color: #A2D982;">Fino (Poco Común)</span> y <span style="color: #379BDE;">Final (Raro)</span>.
+                    </p>
+
+                    <div style="overflow-x: auto;">
+                        <table class="gem-table">
+                            <thead>
+                                <tr>
+                                    <th>Gema</th>
+                                    <th>Estadística Mejorada</th>
+                                    <th>Tier 1 (Pepita)</th>
+                                    <th>Tier 2 (Fragmento)</th>
+                                    <th>Tier 3 (Fino)</th>
+                                    <th>Tier 4 (Final)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="color: #ff5252; font-weight: bold;">Granate</td>
+                                    <td>Poder de Golpe Crítico</td>
+                                    <td>+3.5%</td>
+                                    <td>+7.5%</td>
+                                    <td>+14.0%</td>
+                                    <td>+25.0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #ff5252; font-weight: bold;">Corazón</td>
+                                    <td>Vida Máxima (HP)</td>
+                                    <td>+1.0 HP</td>
+                                    <td>+2.25 HP</td>
+                                    <td>+4.25 HP</td>
+                                    <td>+7.5 HP</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #69f0ae; font-weight: bold;">Jade</td>
+                                    <td>Probabilidad Crítica</td>
+                                    <td>+1.0%</td>
+                                    <td>+2.25%</td>
+                                    <td>+4.25%</td>
+                                    <td>+7.5%</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #e040fb; font-weight: bold;">Ópalo</td>
+                                    <td>Velocidad de Ataque</td>
+                                    <td>+0.07</td>
+                                    <td>+0.15</td>
+                                    <td>+0.30</td>
+                                    <td>+0.50</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #ff1744; font-weight: bold;">Rubí</td>
+                                    <td>Daño de Ataque Base</td>
+                                    <td>+0.4</td>
+                                    <td>+0.75</td>
+                                    <td>+1.5</td>
+                                    <td>+2.5</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #536dfe; font-weight: bold;">Tanzanita</td>
+                                    <td>Daño de Habilidades</td>
+                                    <td>+5.0%</td>
+                                    <td>+10.5%</td>
+                                    <td>+20.0%</td>
+                                    <td>+35.0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #448aff; font-weight: bold;">Zafiro</td>
+                                    <td>Daño Mágico</td>
+                                    <td>+0.4</td>
+                                    <td>+0.75</td>
+                                    <td>+1.5</td>
+                                    <td>+2.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

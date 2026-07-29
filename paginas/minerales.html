@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerales & Extracción - DRAKONIA SMP</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html" class="active">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Minerales Custom & Extracción</h1>
+                <p>Guía de generación natural de minerales personalizados en el mundo. Descubre dónde obtener cada recurso para tus forjas.</p>
+            </header>
+
+            <div class="container">
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; overflow-x: auto;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem; font-size: 1.2rem;">Ubicación y Generación de Minerales (NexoAddon)</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">A continuación se detalla la dimensión, el bloque base y las capas (profundidad Y) donde encontrarás de manera natural nuestras vetas de minerales custom.</p>
+                    
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--accent-color); color: var(--accent-color);">
+                                <th style="padding: 1rem 0.5rem;">Mineral / Veta Custom</th>
+                                <th style="padding: 1rem 0.5rem;">Dimensión & Bloque Origen</th>
+                                <th style="padding: 1rem 0.5rem;">Capas Y (Profundidad)</th>
+                                <th style="padding: 1rem 0.5rem;">Probabilidad & Veta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #ADADAD;">Mineral de Estaño (Tin Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Overworld (Piedra & Deepslate)</td>
+                                <td style="padding: 1rem 0.5rem; color: #379BDE;">Capa Y: -64 a 64</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 35% | Veta: 7 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #9E9E9E;">Mineral de Plomo (Lead Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Overworld (Piedra & Deepslate)</td>
+                                <td style="padding: 1rem 0.5rem; color: #379BDE;">Capa Y: -64 a 64</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 35% | Veta: 7 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #A2D982;">Vetas de Gemas (Gem Vein)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Overworld (Piedra & Deepslate)</td>
+                                <td style="padding: 1rem 0.5rem; color: #379BDE;">Capa Y: -64 a 64</td>
+                                <td style="padding: 1rem 0.5rem; color: #00E676;">Prob: 65% (Media) | Veta: 3 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #e0e0e0;">Mineral de Níquel (Nickel Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Overworld (Piedra & Deepslate)</td>
+                                <td style="padding: 1rem 0.5rem; color: #379BDE;">Capa Y: -64 a 64</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 20% | Veta: 8 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #9D4EDD;">Mineral de Mythril (Mythril Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Overworld (Piedra & Deepslate)</td>
+                                <td style="padding: 1rem 0.5rem; color: #379BDE;">Capa Y: -64 a 16</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 20% | Veta: 4 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #ffeb3b;">Mena de Azufre (Sulfur Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">El Nether (Netherrack)</td>
+                                <td style="padding: 1rem 0.5rem; color: #f44336;">Capa Y: 110 a 127</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 40% | Veta: 3 bloques</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #2196f3;">Mena de Cobalto (Cobalt Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">El Nether (Basalt Deltas)</td>
+                                <td style="padding: 1rem 0.5rem; color: #f44336;">Capa Y: 30 a 120</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 10% | Veta: 2 bloques</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem 0.5rem; font-weight: bold; color: #607d8b;">Mena de Tungsteno (Tungsten Ore)</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">El Nether Abisal</td>
+                                <td style="padding: 1rem 0.5rem; color: #f44336;">Capa Y: 8 a 24</td>
+                                <td style="padding: 1rem 0.5rem; color: #ccc;">Prob: 15% | Veta: 3 bloques</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+    </script>
+</body>
+
+</html>

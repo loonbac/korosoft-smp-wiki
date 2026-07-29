@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefes del Overworld - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .boss-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: border-color 0.3s ease;
+        }
+
+        .boss-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .boss-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .boss-title {
+            font-size: 1.6rem;
+            font-family: var(--font-heading);
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .boss-badge {
+            background: rgba(228, 33, 54, 0.2);
+            border: 1px solid #e42136;
+            color: #ff6b6b;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 4px;
+        }
+
+        .phase-container {
+            margin-top: 1.5rem;
+        }
+
+        .phase-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1rem;
+        }
+
+        .phase-box.fase-2 {
+            border-left-color: #e67e22;
+        }
+
+        .phase-box.fase-3 {
+            border-left-color: #c0392b;
+        }
+
+        .phase-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+        }
+
+        .skill-list li {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 0.4rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "<img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate">";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 0.8rem;
+        }
+
+        .tips-box {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px dashed var(--accent-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .tips-title {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar"
+        style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..."
+                style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div
+            style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS CON LISTA Y VIÑETAS AZULES) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li>
+                        <a href="jefes.html" class="active">Jefes del Overworld</a>
+                        <ul class="sidebar-sub-menu">
+                            <li><a href="#galahad">Galahad El Inmortal</a></li>
+                            <li><a href="#jack-cosechador">Jack el Cosechador</a></li>
+                            <li><a href="#oso-espiritu">Oso Espíritu Ancestral</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL DE LA WIKI -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Jefes de Mundo (Overworld Bosses)</h1>
+                <p>Guía de combate y estadísticas para enfrentar a las amenazas supremas del reino.</p>
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: rgba(162, 217, 130, 0.1); border-left: 4px solid #A2D982; border-radius: 4px;">
+                    <strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/nether_star.png" class="mc-icon" alt="magia"> Invocadores:</strong> Todos los ítems necesarios para invocar a estos jefes se craftean
+                    exclusivamente en la <strong>Estación de Encantamientos</strong> de MMOItems.
+                </div>
+            </header>
+
+            <!-- GALAHAD EL INMORTAL -->
+            <div class="boss-card" id="galahad">
+                <div class="boss-header">
+                    <h2 class="boss-title"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> Galahad "El Inmortal"</h2>
+                    <span class="boss-badge"
+                        style="border-color: #34495E; color: #34495E; background: rgba(52, 73, 94, 0.15);">Jefe
+                        Inicial</span>
+                </div>
+
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">
+                    El primer gran desafío del Overworld. Un guerrero implacable que ataca de frente y penaliza a los
+                    que intentan pelear a distancia.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Salud Total</div>
+                        <div class="stat-value" style="color: #ff4444;">650 HP</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Daño Base</div>
+                        <div class="stat-value" style="color: #ffb74d;">25 DMG</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Armadura</div>
+                        <div class="stat-value" style="color: #379BDE;">22 DEF</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Dureza</div>
+                        <div class="stat-value" style="color: #a060ff;">12</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Tiempo Límite</div>
+                        <div class="stat-value" style="color: #f5d86c;">10 min</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <div class="tips-title"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glowstone_dust.png" class="mc-icon" alt="consejo"> Consejos de Combate</div>
+                    <p style="margin: 0; color: #ccc;">
+                        Galahad es <strong>resistente a los proyectiles</strong>. Debes enfrentarlo en combate cuerpo a
+                        cuerpo. Coordina tus ataques en grupo y ten cuidado con sus cortes veloces.
+                    </p>
+                </div>
+
+                <div class="loot-box"
+                    style="margin-top: 1.5rem; background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 1rem; border: 1px solid var(--border-color);">
+                    <h3 style="color: #34495E; font-size: 1.1rem; margin-top: 0; margin-bottom: 0.8rem;">🎒 Botín de la
+                        Bolsa de Galahad</h3>
+                    <ul class="skill-list">
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/nether_star.png" class="mc-icon" alt="magia"> Experiencia:</strong> 100 - 200 Orbes</li>
+                        <li><strong>💰 Economía:</strong> 10-20 Monedas de Cobre, 1-3 Monedas de Plata</li>
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> Materiales:</strong> 1-6 Fragmentos de Acero Antiguo, 1-3 Esencias Arcanas</li>
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> Botín Épico (10%):</strong> Talwar (Espada a Dos Manos)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- JACK EL COSECHADOR -->
+            <div class="boss-card" id="jack-cosechador">
+                <div class="boss-header">
+                    <h2 class="boss-title">🎃🌾 Jack el Cosechador Macabro</h2>
+                    <span class="boss-badge">Jefe de Evento / Bosque</span>
+                </div>
+
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">
+                    Jack el Cosechador es una entidad temible armada con vides malditas y semillas explosivas. Su
+                    combate requiere constante movimiento para sobrevivir a sus emboscadas.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Salud Total</div>
+                        <div class="stat-value" style="color: #ff4444;">1,125 HP</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Daño Base</div>
+                        <div class="stat-value" style="color: #ffb74d;">35 DMG</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Armadura</div>
+                        <div class="stat-value" style="color: #379BDE;">26 DEF</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Dureza</div>
+                        <div class="stat-value" style="color: #a060ff;">16</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Tiempo Límite</div>
+                        <div class="stat-value" style="color: #f5d86c;">10 min</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <div class="tips-title"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glowstone_dust.png" class="mc-icon" alt="consejo"> Consejos de Combate</div>
+                    <p style="margin: 0; color: #ccc;">
+                        Mantén la distancia cuando plante semillas explosivas. Te será indispensable llevar pociones de
+                        movilidad listas para esquivar su embestida o escapar de sus ataduras de enraizamiento.
+                    </p>
+                </div>
+
+                <div class="loot-box"
+                    style="margin-top: 1.5rem; background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 1rem; border: 1px solid var(--border-color);">
+                    <h3 style="color: #FF6F00; font-size: 1.1rem; margin-top: 0; margin-bottom: 0.8rem;">🎒 Botín de la
+                        Bolsa de Jack</h3>
+                    <ul class="skill-list">
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/nether_star.png" class="mc-icon" alt="magia"> Experiencia:</strong> 200 - 300 Orbes</li>
+                        <li><strong>💰 Economía:</strong> 5-15 Monedas de Cobre, 2-5 Monedas de Plata</li>
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> Materiales:</strong> 2-5 Montón de Musgo, 1-3 Esencias Arcanas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- OSO ESPÍRITU ANCESTRAL -->
+            <div class="boss-card" id="oso-espiritu">
+                <div class="boss-header">
+                    <h2 class="boss-title">🐻🌿 Oso Espíritu Ancestral</h2>
+                    <span class="boss-badge"
+                        style="border-color: #269600; color: #269600; background: rgba(38,150,0,0.15);">Jefe Ancestral /
+                        Bosque</span>
+                </div>
+
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">
+                    Guardián legendario de los bosques. Es una bestia de resistencia extrema que se vuelve cada vez más
+                    letal conforme avanza el combate.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Salud Total</div>
+                        <div class="stat-value" style="color: #ff4444;">1,565 HP</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Daño Base</div>
+                        <div class="stat-value" style="color: #ffb74d;">45 / 55 / 65 DMG</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Armadura</div>
+                        <div class="stat-value" style="color: #379BDE;">30 DEF</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Dureza</div>
+                        <div class="stat-value" style="color: #a060ff;">20</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Tiempo Límite</div>
+                        <div class="stat-value" style="color: #f5d86c;">10 min</div>
+                    </div>
+                </div>
+
+                <div class="tips-box">
+                    <div class="tips-title"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glowstone_dust.png" class="mc-icon" alt="consejo"> Consejos de Combate</div>
+                    <p style="margin: 0; color: #ccc;">
+                        <strong>Prioridad Absoluta:</strong> Elimina de inmediato a los súbditos que invoca
+                        (Carnivoradores Venenosos), de lo contrario curarán al Oso constantemente y perderás la batalla
+                        por falta de tiempo.
+                    </p>
+                </div>
+
+                <div class="loot-box"
+                    style="margin-top: 1.5rem; background: rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 1rem; border: 1px solid var(--border-color);">
+                    <h3 style="color: #269600; font-size: 1.1rem; margin-top: 0; margin-bottom: 0.8rem;">🎒 Botín de la
+                        Bolsa del Espíritu Oso</h3>
+                    <ul class="skill-list">
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/nether_star.png" class="mc-icon" alt="magia"> Experiencia:</strong> 300 - 500 Orbes</li>
+                        <li><strong>💰 Economía:</strong> 2-5 Monedas de Oro</li>
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> Materiales:</strong> 1-2 Pieles de Oso, 2-4 Garras, 1-3 Esencias Arcanas</li>
+                        <li><strong><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> Botín Épico (15%):</strong> Garra de oso (Guanteletes Rápidos)</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Drakonia SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

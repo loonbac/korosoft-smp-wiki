@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  korosoft-wiki:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: korosoft-wiki
+    restart: always
+    ports:
+      - "8086:8086"
+    environment:
+      - PORT=8086
+      - NODE_ENV=production
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+          cpus: '0.5'
+        reservations:
+          memory: 32M

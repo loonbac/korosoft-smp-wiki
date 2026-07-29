@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos del Servidor - DRAKONIA SMP</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS CON LISTA Y VIÑETAS AZULES) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html" class="active">Comandos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Comandos del Servidor</h1>
+                <p>Aprende a usar los comandos esenciales de subastas, canje de premios, matrimonios y gestión de personaje.</p>
+            </header>
+
+            <div class="container">
+        <!-- Subastas y Comercio -->
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Mercado & Subastas (/ah)</h2>
+        <div class="grid" style="margin-bottom: 3rem;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">/ah (Auction House)</h3>
+                </div>
+                <div class="card-content">
+                    <p>Abre el mercado público donde todos los jugadores compran y venden objetos custom, minerales y accesorios.</p>
+                    <div style="margin-top: 1rem; background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; font-size: 0.9rem;">
+                        <p><strong>Comandos útiles:</strong></p>
+                        <ul style="margin-left: 1.2rem; margin-top: 0.4rem; color: var(--text-muted);">
+                            <li><code>/ah sell &lt;precio&gt;</code>: Vende el item en mano.</li>
+                            <li><code>/ah expired</code>: Recupera items no vendidos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canjear Códigos -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">/canjear &lt;código&gt;</h3>
+                </div>
+                <div class="card-content">
+                    <p>Canjea códigos promocionales, regalos de eventos, recompensas de redes sociales y paquetes de monedas.</p>
+                    <div style="margin-top: 1rem; background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; font-size: 0.9rem;">
+                        <p><strong>Uso:</strong> Escribe <code>/canjear REGALO2026</code> para recibir tus objetos en el inventario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matrimonios y Parejas -->
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Sistema de Parejas (/marry)</h2>
+        <div class="grid" style="margin-bottom: 3rem;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">/marry &lt;jugador&gt;</h3>
+                </div>
+                <div class="card-content">
+                    <p>Propón matrimonio a otro jugador para desbloquear mecánicas exclusivas de compañeros.</p>
+                    <div style="margin-top: 1rem; background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; font-size: 0.9rem;">
+                        <ul style="margin-left: 1.2rem; color: var(--text-muted);">
+                            <li><code>Shift + C</code>: Abre el Cofre Compartido de Pareja.</li>
+                            <li><code>/marry tp</code>: Teletranspórtate instantáneamente junto a tu pareja.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estadísticas y MMOCore -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">/profile & /skills</h3>
+                </div>
+                <div class="card-content">
+                    <p>Consulta tus puntos de atributo, nivel de personaje, mana, stamina y habilidades de clase.</p>
+                    <div style="margin-top: 1rem; background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 4px; font-size: 0.9rem;">
+                        <ul style="margin-left: 1.2rem; color: var(--text-muted);">
+                            <li><code>/profile</code>: Menú principal de stats de MMOCore.</li>
+                            <li><code>/skills</code>: Arbol de habilidades activas e inactivas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Drakonia SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

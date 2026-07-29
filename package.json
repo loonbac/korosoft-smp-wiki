@@ -1,0 +1,14 @@
+{
+  "name": "korosoft-smp-wiki",
+  "version": "2.0.0",
+  "description": "Wiki Oficial Dinámica de Korosoft SMP impulsada por Bun",
+  "module": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "~/.bun/bin/bun --watch src/server.ts",
+    "start": "~/.bun/bin/bun src/server.ts"
+  },
+  "keywords": ["minecraft", "korosoft", "smp", "wiki", "bun", "api"],
+  "author": "Korosoft SMP Team",
+  "license": "MIT"
+}

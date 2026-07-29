@@ -122,3 +122,13 @@ $$\text{Reducción} = \min\left(20, \max\left(\frac{\text{Armadura}}{5}, \text{A
 $$\text{Daño Neto} = \text{Daño Base} \times \left(1 - \frac{\text{Reducción}}{25}\right)$$
 $$\text{Hits} = \left\lceil \frac{\text{Vida Escala (Lv. 1 a 15)}}{\text{Daño Neto}} \right\rceil$$
 
+---
+
+## 7. Reglas de Despliegue en Producción (Coolify & Docker)
+
+> [!WARNING]
+> **Sincronización del Dockerfile Obligatoria:**
+> El despliegue de la Wiki en el servidor de producción (Coolify) se realiza compilando un contenedor Docker basado en Bun (`Dockerfile`).
+> - Si **creas, eliminas o renombras** archivos estáticos en la raíz del proyecto (por ejemplo, al añadir un nuevo archivo `.js` de utilidades, renombrar o borrar una página HTML vieja), debes **actualizar inmediatamente la instrucción `COPY`** en el [Dockerfile](file:///c:/Users/Insent/Desktop/Korosoft_wiki/Dockerfile).
+> - De lo contrario, la construcción de la imagen de Docker fallará en el servidor por un error de referencia de archivos no encontrados ("failed to calculate checksum: not found").
+

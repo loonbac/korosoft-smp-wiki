@@ -56,6 +56,9 @@ Para cada conjunto de artefactos y reliquias (`accesorios.html`):
 
 ## 2. Sistema de Niveles y Estadísticas (Niveles 1 al 15)
 
+> [!IMPORTANT]
+> **No Auditar MMOCore:** Dado que los comandos `/profile` y `/skills` de MMOCore han sido deshabilitados/eliminados del servidor por no usarse, **no se deben documentar** estadísticas de niveles de RPG del jugador ni sus árboles de habilidades en la Wiki. Solo auditamos niveles y estadísticas de criaturas de MythicMobs.
+
 Todas las criaturas en Korosoft-SMP aparecen con un nivel aleatorio entre **Lv.1 y Lv.15**. Jamás se debe asumir una tasa fija de escalado; es **MANDATORIO** extraer los modificadores `LevelModifiers` específicos de cada `.yml`:
 
 1. **Salud (`Health`)**:

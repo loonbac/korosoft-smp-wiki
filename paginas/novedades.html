@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .update-container {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .update-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .update-date {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            font-weight: bold;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .update-title {
+            color: #fff;
+            font-size: 1.45rem;
+            margin: 0;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+        }
+
+        .update-desc {
+            color: #ccc;
+            font-style: italic;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+
+        .update-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .update-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .update-card:hover {
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .update-card-title {
+            color: var(--accent-color);
+            margin-top: 0;
+            margin-bottom: 0.6rem;
+            font-size: 1.05rem;
+            font-family: var(--font-heading);
+            letter-spacing: 0.5px;
+        }
+
+        .update-card-content {
+            color: #ccc;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .update-card-list {
+            margin-top: 0.6rem;
+            margin-bottom: 0.6rem;
+            padding-left: 1.2rem;
+            color: #ccc;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .update-card-list li {
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="logo">KOROSOFT SMP</div>
+            <a href="../index.html" style="color: var(--text-color); font-size: 0.9rem; text-decoration: none; transition: color 0.3s; margin-right: 1rem;">Inicio</a>
+            <a href="../paginas/novedades.html" style="background-color: #2c2c2c; border: 1px solid var(--accent-color); color: var(--accent-color); padding: 0.4rem 0.8rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; font-family: var(--font-heading); transition: all 0.3s ease; box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);" onmouseover="this.style.backgroundColor='var(--accent-color)'; this.style.color='#000';" onmouseout="this.style.backgroundColor='#2c2c2c'; this.style.color='var(--accent-color)';">ACTUALIZACIONES</a>
+        </div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="novedades.html" class="active">Novedades</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                    <li><a href="crianza.html">Crianza de Animales</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Novedades e Implementaciones</h1>
+                <p>Mantente al día con los últimos cambios, actualizaciones y parches de Korosoft SMP.</p>
+            </header>
+
+            <div class="container">
+                <div class="update-container">
+                    <div class="update-header">
+                        <span class="update-date">📅 29 de Julio, 2026 — 14:00 UTC</span>
+                        <h2 class="update-title">🔮 ACTUALIZACIÓN: Misticismo & Calidad de Vida</h2>
+                    </div>
+                    
+                    <p class="update-desc">
+                        ¡La magia, el progreso y la comodidad se renuevan en el reino! Hemos dividido y especializado las estaciones mágicas, añadido nuevas mecánicas culinarias, facilitado el acceso a misiones semanales y flexibilizado las recetas de madera en todas las mesas de trabajo.
+                    </p>
+
+                    <div class="update-grid">
+                        <!-- Misiones -->
+                        <div class="update-card">
+                            <h3 class="update-card-title">📜 ¡Nuevo Ítem Crafteable: Tablero de Misiones!</h3>
+                            <p class="update-card-content">
+                                ¡Hemos implementado el <strong>Tablero de misiones</strong>! Este nuevo y útil mueble decorativo puede ser crafteado por cualquier jugador y te servirá como punto de acceso directo para gestionar tus aventuras. Al interactuar con él, abrirá automáticamente nuestro menú interactivo de misiones, permitiéndote revisar fácilmente **las misiones semanales** sin necesidad de usar comandos. ¡Ideal para decorar tu base y no perderte ninguna recompensa!
+                            </p>
+                        </div>
+
+                        <!-- Cocina -->
+                        <div class="update-card">
+                            <h3 class="update-card-title">🍲 ¡Mesa de Cocina Renovada y Nuevas Recetas!</h3>
+                            <p class="update-card-content">
+                                ¡La gastronomía del servidor recibe una gran actualización! Hemos hecho <strong>ajustes importantes en los crafteos de las comidas</strong>, dándole protagonismo a ingredientes que antes estaban olvidados, como la <em>Grasa Animal</em>, la <em>Hoja de Repollo</em> y la <em>Baya Luminosa Fermentada</em>. Además, el menú culinario ha sido reorganizado de menor a mayor complejidad para un progreso más natural.
+                            </p>
+                        </div>
+
+                        <!-- Estaciones Magicas -->
+                        <div class="update-card">
+                            <h3 class="update-card-title">🔮 ¡Renovación Mágica: Estación de Magia y Encantamientos Avanzados!</h3>
+                            <p class="update-card-content">
+                                ¡Hemos dividido y mejorado nuestra antigua mesa de encantamientos! Ahora contamos con dos bloques especializados para tus necesidades místicas:
+                            </p>
+                            <ul class="update-card-list">
+                                <li><strong>Estación de Magia:</strong> El bloque original se especializa exclusivamente en la creación de runas y esencias mágicas.</li>
+                                <li><strong>Estación de Encantamientos Avanzada:</strong> ¡Una mesa totalmente nueva! Aquí podrás forjar los encantamientos Vanilla de nivel máximo.</li>
+                            </ul>
+                            <p class="update-card-content">
+                                Además, los **Libros Encantados** producidos aquí ya no son simples libros aburridos. Han sido rediseñados como objetos épicos de 3 estrellas con nombres mágicos e inmersivos (como el <em>Tomo de la Roca Eterna</em> o el <em>Grimorio de la Codicia</em>).
+                            </p>
+                        </div>
+
+                        <!-- Pocion de XP -->
+                        <div class="update-card">
+                            <h3 class="update-card-title">🧪 ¡Nueva Receta: Poción de Experiencia!</h3>
+                            <p class="update-card-content">
+                                Como ayuda para tus aventuras mágicas, hemos añadido una nueva receta en la <strong>Estación de Encantamientos Avanzada</strong>. Ahora puedes fabricar una <strong>Poción de Experiencia</strong> instantánea utilizando <em>1 Esencia Arcana, 1 Frasco de Cristal y 1 Lapislázuli</em>. ¡Ideal para esos momentos en los que necesitas un empujoncito extra de XP!
+                            </p>
+                        </div>
+
+                        <!-- Maderas -->
+                        <div class="update-card">
+                            <h3 class="update-card-title">🪓 ¡Mejoras de Calidad de Vida en los Crafteos!</h3>
+                            <p class="update-card-content">
+                                ¡Se acabaron las limitaciones de madera! Escuchamos sus sugerencias y corregimos una gran cantidad de recetas en las mesas de CustomCrafting (como el Tablero de Misiones, herramientas básicas y mesas avanzadas). <strong>¡A partir de ahora, estos crafteos aceptarán cualquier tipo de madera o de tronco!</strong> Ya no estarás limitado a usar solo roble; siéntete libre de usar madera de cerezo, abeto, abedul o la que prefieras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

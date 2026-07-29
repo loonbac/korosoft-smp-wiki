@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY src/ ./src/
-COPY index.html style.css updates.html README.md ./
+COPY index.html style.css search.js README.md ./
 COPY assets/ ./assets/
 COPY paginas/ ./paginas/
 

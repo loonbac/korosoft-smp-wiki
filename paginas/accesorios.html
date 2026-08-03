@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -83,6 +83,7 @@
                 <ul class="sidebar-menu">
                     <li><a href="guia.html">Guía de Inicio</a></li>
                     <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="canjear.html">Códigos /canjear</a></li>
                     <li><a href="novedades.html">Novedades</a></li>
                 </ul>
             </div>
@@ -90,7 +91,7 @@
             <div class="sidebar-section">
                 <div class="sidebar-category">Bestiario & Jefes</div>
                 <ul class="sidebar-menu">
-                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="mobs.html">Bestiario (82 Mobs)</a></li>
                     <li><a href="jefes.html">Jefes del Overworld</a></li>
                 </ul>
             </div>
@@ -99,11 +100,19 @@
                 <div class="sidebar-category">Equipamiento</div>
                 <ul class="sidebar-menu">
                     <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="armas.html">Armas</a></li>
                     <li>
                         <a href="accesorios.html" class="active">Accesorios</a>
                         <ul class="sidebar-sub-menu">
                             <li><a href="#set-caza">Set Caza Monstruos</a></li>
                             <li><a href="#set-aventura">Set de Aventura</a></li>
+                            <li><a href="#set-marino">Set Marino del Abismo</a></li>
+                            <li><a href="#set-vitalidad">Set Vitalidad Ancestral</a></li>
+                            <li><a href="#set-vendaval">Set Vendaval Ágil</a></li>
+                            <li><a href="#set-acechador">Set Acechador Feroz</a></li>
+                            <li><a href="#set-romeo">Set Romeo y Julieta</a></li>
+                            <li><a href="#set-apostador">Set Apostador</a></li>
+                            <li><a href="#set-minero">Set Minero Experto</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -134,330 +143,1125 @@
                     <p>En Korosoft-SMP, las bonificaciones por llevar varias piezas del mismo conjunto <strong>SE ACUMULAN</strong>. Esto significa que si un jugador equipa <strong>4 piezas</strong>, obtiene la bonificación del escalón de 2 piezas <strong>MÁS</strong> la bonificación del escalón de 4 piezas. Si equipa <strong>6 piezas</strong>, suma los beneficios de los tres escalones (2 + 4 + 6).</p>
                 </div>
 
-        <!-- 1. Set Caza Monstruos -->
-        <h2 style="text-align: center; margin-bottom: 1.5rem;">Set Caza Monstruos (PvE)</h2>
-        <div class="card" style="margin-bottom: 3rem; border-color: #8B0000;">
-            <div class="card-header">
-                <div>
-                    <h3 class="card-title" style="color: #ff4444;">Set Caza Monstruos (Reliquias de Criaturas)</h3>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Daño contra Criaturas & Combate PvE</div>
-                </div>
-            </div>
-            <div class="card-content">
-                <p>Artefactos arcanos forjados con restos de criaturas subterráneas y nocturnas.</p>
-
-                <!-- Resumen Estimado del Set Completo Equipado (6 Piezas) -->
-                <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--accent-color); border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-                        <h4 style="color: var(--accent-color); margin: 0; font-size: 1.05rem;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/paper.png" class="mc-icon" alt="stats"> Estimación Total con Set Completo Equipado (6 Piezas):</h4>
-                        <span style="font-size: 0.78rem; background: var(--accent-color); color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base + Bonos de Set (6/6)</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_sword.png" class="mc-icon" alt="daño"> <strong>Daño PvE Extra:</strong> <span style="color: #A2D982;">+47.0 a +63.0 Daño PvE</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> <strong>Daño de Ataque:</strong> <span style="color: #ff4444;">+3.3 a +5.3 Atq</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> <strong>Armadura Total:</strong> <span style="color: #379BDE;">+5.0 a +6.0 Def</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/iron_chestplate.png" class="mc-icon" alt="defensa"> <strong>Dureza Armadura:</strong> <span style="color: #00E676;">+1.0 Toughness</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glistering_melon_slice.png" class="mc-icon" alt="vida"> <strong>Vida Máxima Extra:</strong> <span style="color: #ff4444;">+3.0 a +6.0 HP</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/target.png" class="mc-icon" alt="origen"> <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+5.5% Crítico</span></div>
-                    </div>
-                </div>
-
-                <!-- Acordeón Desplegable de Bonos de Set -->
-                <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
-                    <summary style="font-weight: bold; color: var(--accent-color); outline: none; font-size: 0.95rem;">
-                        <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/spyglass.png" class="mc-icon" alt="buscar"> Ver Desglose de Bonos de Escalón de Set (2, 4 y 6 Piezas)
-                    </summary>
-                    <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 2 Piezas:</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>+5.0 Daño PvE | +0.3 Daño de Ataque Base</span>
-                            </div>
-                        </div>
-
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>Total Acumulado: <strong>+12.0 Daño PvE</strong> | <strong>+0.8 Daño de Ataque</strong> | <strong>+1.0 Armadura</strong></span>
-                            </div>
-                        </div>
-
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 6 Piezas (Acumula 2 + 4 + 6):</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>Total Acumulado Supremo: <strong>+21.0 Daño PvE</strong> | <strong>+1.8 Daño de Ataque</strong> | <strong>+2.5 Armadura</strong></span>
-                            </div>
+                <!-- 1. Set Caza Monstruos -->
+                <h2 id="set-caza" style="text-align: center; margin-bottom: 1.5rem;">Set Caza Monstruos (PvE)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #8B0000;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #ff4444;">Set Caza Monstruos (Reliquias de Criaturas)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Daño contra Criaturas & Combate PvE</div>
                         </div>
                     </div>
-                </details>
+                    <div class="card-content">
+                        <p>Artefactos arcanos forjados con restos de criaturas subterráneas y nocturnas.</p>
 
-                <!-- Lista de Artefactos con Raridad, Estrellas y Bordes según MMOITEMS_GUIA.md -->
-                <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Caza Monstruos</h4>
-                <div class="grid" style="margin-top: 0.8rem;">
-                    <!-- Carne Podrida (COMUN - 1 Estrella) -->
-                    <div class="card rarity-comun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #ADADAD;">Carne Podrida</h3>
-                                <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                        <!-- Resumen Estimado del Set Completo Equipado (6 Piezas) -->
+                        <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--accent-color); border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: var(--accent-color); margin: 0; font-size: 1.05rem;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/paper.png" class="mc-icon" alt="stats"> Estimación Total Máxima (Set Completo 6/6 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: var(--accent-color); color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Obtenido de Zombies de Superficie / Cueva</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+1.0 a +2.0 Armadura</span><br>
-                                <span>+3.0 a +5.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Corazón Podrido (NO COMUN - 2 Estrellas) -->
-                    <div class="card rarity-nocomun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #A2D982;">Corazón Podrido</h3>
-                                <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop raro de criaturas cavernarias</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+2.0 a +4.0 Vida Máxima</span><br>
-                                <span>+1.0 Armadura | +4.0 a +6.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jalea de Slime (NO COMUN - 2 Estrellas) -->
-                    <div class="card rarity-nocomun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #A2D982;">Jalea de Slime</h3>
-                                <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Slimes Azules de la superficie</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+0.5 a +1.5 Daño de Ataque</span><br>
-                                <span>+0.5 Dureza Armadura | +4.0 a +6.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ojo de Araña (NO COMUN - 2 Estrellas) -->
-                    <div class="card rarity-nocomun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #A2D982;">Ojo de Araña</h3>
-                                <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de arácnidos de cavernas</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+3.5% Probabilidad Crítica</span><br>
-                                <span>+4.0 a +6.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Falange (RARO - 3 Estrellas) -->
-                    <div class="card rarity-raro">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #379BDE;">Falange</h3>
-                                <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia rara de esqueletos bélicos</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+0.5 a +1.5 Daño de Ataque</span><br>
-                                <span>+0.5 Armadura | +6.0 a +9.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sombrero de Bruja (RARO - 3 Estrellas) -->
-                    <div class="card rarity-raro">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #379BDE;">Sombrero de Bruja</h3>
-                                <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de brujas e ilusionistas de raids</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+0.5 Daño Ataque | +1.0 a +2.0 HP</span><br>
-                                <span>+2.0% Crítico | +5.0 a +10.0 Daño PvE</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2. Set de Aventura -->
-        <h2 style="text-align: center; margin-bottom: 1.5rem;">Set de Aventura (Exploración)</h2>
-        <div class="card" style="margin-bottom: 3rem; border-color: #379BDE;">
-            <div class="card-header">
-                <div>
-                    <h3 class="card-title" style="color: #379BDE;">Set de Aventura (Movilidad & Stamina)</h3>
-                    <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Movilidad, Velocidad & Críticos</div>
-                </div>
-            </div>
-            <div class="card-content">
-                <p>Instrumentos indispensables para viajar a través del Overworld a gran velocidad.</p>
-
-                <!-- Resumen Estimado del Set Completo Equipado (6 Piezas) -->
-                <div style="background: rgba(55, 155, 222, 0.1); border: 1px solid #379BDE; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-                        <h4 style="color: #379BDE; margin: 0; font-size: 1.05rem;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/paper.png" class="mc-icon" alt="stats"> Estimación Total con Set Completo Equipado (6 Piezas):</h4>
-                        <span style="font-size: 0.78rem; background: #379BDE; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base + Bonos de Set (6/6)</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
-                        <div>🏃 <strong>Velocidad Movimiento:</strong> <span style="color: #379BDE;">+12.0% a +25.0% Vel</span></div>
-                        <div>🌊 <strong>Velocidad Bajo Agua:</strong> <span style="color: #00E676;">+15.0% Vel. Agua</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond_sword.png" class="mc-icon" alt="combate"> <strong>Daño de Ataque:</strong> <span style="color: #ff4444;">+1.0 Atq</span></div>
-                        <div><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/target.png" class="mc-icon" alt="origen"> <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+7.5% a +14.5% Crítico</span></div>
-                        <div>💥 <strong>Poder Crítico:</strong> <span style="color: #ffb74d;">+17.0% a +29.0% Poder Crítico</span></div>
-                    </div>
-                </div>
-
-                <!-- Acordeón Desplegable de Bonos de Set -->
-                <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
-                    <summary style="font-weight: bold; color: #379BDE; outline: none; font-size: 0.95rem;">
-                        <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/spyglass.png" class="mc-icon" alt="buscar"> Ver Desglose de Bonos de Escalón de Set (2, 4 y 6 Piezas)
-                    </summary>
-                    <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 2 Piezas:</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>+2.0% Velocidad de Movimiento | +0.5 Daño Ataque | +1.5% Prob. Crítica | +3.0% Poder Crítico</span>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>⚔️ <strong>Daño PvE Máximo:</strong> <span style="color: #A2D982;">+63.0 Daño PvE</span></div>
+                                <div>🗡️ <strong>Daño de Ataque Físico:</strong> <span style="color: #ff4444;">+5.3 Atq</span></div>
+                                <div>🛡️ <strong>Armadura Total:</strong> <span style="color: #379BDE;">+6.0 Def</span></div>
+                                <div>💎 <strong>Dureza de Armadura:</strong> <span style="color: #00E676;">+0.5 Toughness</span></div>
+                                <div>❤️ <strong>Vida Máxima Extra:</strong> <span style="color: #ff4444;">+6.0 HP</span></div>
+                                <div>🎯 <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+5.5% Crítico</span></div>
                             </div>
                         </div>
 
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>Total Acumulado: <strong>+2.0% Velocidad</strong> | <strong>+4.0% Prob. Crítica</strong> | <strong>+8.0% Poder Crítico</strong> | <strong>+15% Vel. Agua</strong></span>
-                            </div>
-                        </div>
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: var(--accent-color); outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2, 4 y 6 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+5.0 Daño PvE | +0.3 Daño de Ataque Base</span>
+                                    </div>
+                                </div>
 
-                        <div class="set-bonus-level" style="margin-bottom: 0;">
-                            <strong>Bono de 6 Piezas (Acumula 2 + 4 + 6):</strong>
-                            <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
-                                <span>Total Acumulado Supremo: <strong>+5.0% Velocidad</strong> | <strong>+1.0 Daño Ataque</strong> | <strong>+7.5% Prob. Crítica</strong> | <strong>+15.0% Poder Crítico</strong></span>
-                            </div>
-                        </div>
-                    </div>
-                </details>
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado: <strong>+12.0 Daño PvE</strong> | <strong>+0.8 Daño de Ataque</strong> | <strong>+1.0 Armadura</strong></span>
+                                    </div>
+                                </div>
 
-                <!-- Lista de Artefactos con Raridad, Estrellas y Bordes según MMOITEMS_GUIA.md -->
-                <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set de Aventura</h4>
-                <div class="grid" style="margin-top: 0.8rem;">
-                    <!-- Brújula de Aventurero (COMUN - 1 Estrella) -->
-                    <div class="card rarity-comun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #ADADAD;">Brújula de Aventurero</h3>
-                                <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 6 Piezas (Acumula 2 + 4 + 6):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+21.0 Daño PvE</strong> | <strong>+1.8 Daño de Ataque</strong> | <strong>+2.5 Armadura</strong></span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Arqueros de Cueva (15% prob)</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+1.0% a +3.0% Velocidad de Movimiento</span>
-                            </div>
-                        </div>
-                    </div>
+                        </details>
 
-                    <!-- Cantimplora de Aventurero (COMUN - 1 Estrella) -->
-                    <div class="card rarity-comun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #ADADAD;">Cantimplora de Aventurero</h3>
-                                <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Caza Monstruos</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Carne Podrida -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Carne Podrida</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Obtenido de Zombies de Superficie / Cueva</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +2.0 Armadura</span><br>
+                                        <span>+1.0 a +5.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Slimes de Jungla (15% prob)</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+2.0 a +4.0 Stamina Máxima</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Anillo de Acechador (NO COMUN - 2 Estrellas) -->
-                    <div class="card rarity-nocomun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #A2D982;">Anillo de Acechador</h3>
-                                <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                            <!-- Corazón Podrido -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Corazón Podrido</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop raro de criaturas cavernarias</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+2.0 a +4.0 Vida Máxima</span><br>
+                                        <span>+1.0 Armadura | +4.0 a +6.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Espadachines de Cueva (10% prob)</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+0.5 a +1.0 Daño de Ataque</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Botas de Viajero (NO COMUN - 2 Estrellas) -->
-                    <div class="card rarity-nocomun">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #A2D982;">Botas de Viajero</h3>
-                                <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                            <!-- Jalea de Slime -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Jalea de Slime</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Slimes Azules de la superficie</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.5 a +1.5 Daño de Ataque</span><br>
+                                        <span>+0.5 Dureza Armadura | +4.0 a +6.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Areneros del Desierto (10% prob)</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+5% a +10% Eficiencia Mov. en Agua</span><br>
-                                <span>+1.0% a +3.0% Velocidad de Movimiento</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Catalejo de Explorador (RARO - 3 Estrellas) -->
-                    <div class="card rarity-raro">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #379BDE;">Catalejo de Explorador</h3>
-                                <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                            <!-- Ojo de Araña -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Ojo de Araña</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de arácnidos de cavernas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+3.5% Probabilidad Crítica</span><br>
+                                        <span>+4.0 a +6.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia de cofres en estructuras</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+1.5% a +3.0% Probabilidad Crítica</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Mapa de Caminos (RARO - 3 Estrellas) -->
-                    <div class="card rarity-raro">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" style="color: #379BDE;">Mapa de Caminos</h3>
-                                <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                            <!-- Falange -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Falange</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia rara de esqueletos bélicos</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.5 a +1.5 Daño de Ataque</span><br>
+                                        <span>+0.5 Armadura | +6.0 a +9.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia de cofres de cartografía</p>
-                            <div style="margin-top: 0.6rem; font-size: 0.88rem;">
-                                <span>+2.0% a +4.0% Poder Crítico</span><br>
-                                <span>+1.0% a +2.0% Velocidad de Movimiento</span>
+
+                            <!-- Sombrero de Bruja -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Sombrero de Bruja</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de brujas e ilusionistas de raids</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.5 Daño Ataque | +1.0 a +2.0 HP</span><br>
+                                        <span>+2.0% Crítico | +5.0 a +10.0 Daño PvE</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- 2. Set de Aventura -->
+                <h2 id="set-aventura" style="text-align: center; margin-bottom: 1.5rem;">Set de Aventura (Exploración)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #379BDE;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #379BDE;">Set de Aventura (Movilidad & Stamina)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Movilidad, Velocidad & Críticos</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Instrumentos indispensables para viajar a través del Overworld a gran velocidad.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (6 Piezas) -->
+                        <div style="background: rgba(55, 155, 222, 0.1); border: 1px solid #379BDE; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #379BDE; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 6/6 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #379BDE; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>🏃 <strong>Velocidad Movimiento:</strong> <span style="color: #379BDE;">+13.0% Vel</span></div>
+                                <div>🌊 <strong>Velocidad Bajo Agua:</strong> <span style="color: #00E676;">+25.0% Vel. Agua</span></div>
+                                <div>🗡️ <strong>Daño de Ataque:</strong> <span style="color: #ff4444;">+2.0 Atq</span></div>
+                                <div>⚡ <strong>Stamina Máxima Extra:</strong> <span style="color: #ffd54f;">+4.0 Stamina</span></div>
+                                <div>🎯 <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+10.5% Crítico</span></div>
+                                <div>💥 <strong>Poder Crítico:</strong> <span style="color: #ffb74d;">+19.0% Poder Crítico</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #379BDE; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2, 4 y 6 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+2.0% Velocidad de Movimiento | +0.5 Daño Ataque | +1.5% Prob. Crítica | +3.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado: <strong>+2.0% Velocidad</strong> | <strong>+4.0% Prob. Crítica</strong> | <strong>+8.0% Poder Crítico</strong> | <strong>+15% Vel. Agua</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 6 Piezas (Acumula 2 + 4 + 6):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+5.0% Velocidad</strong> | <strong>+1.0 Daño Ataque</strong> | <strong>+7.5% Prob. Crítica</strong> | <strong>+15.0% Poder Crítico</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set de Aventura</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Brújula de Aventurero -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Brújula de Aventurero</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Arqueros de Cueva (15% prob)</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0% a +3.0% Velocidad de Movimiento</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cantimplora de Aventurero -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Cantimplora de Aventurero</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Slimes de Jungla (15% prob)</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+2.0 a +4.0 Stamina Máxima</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Anillo de Acechador -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Anillo de Acechador</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Espadachines de Cueva (10% prob)</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.5 a +1.0 Daño de Ataque</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Botas de Viajero -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Botas de Viajero</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop de Areneros del Desierto (10% prob)</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5% a +10% Eficiencia Mov. en Agua</span><br>
+                                        <span>+1.0% a +3.0% Velocidad de Movimiento</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Catalejo de Explorador -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Catalejo de Explorador</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia de cofres en estructuras</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.5% a +3.0% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa de Caminos -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Mapa de Caminos</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia de cofres de cartografía</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+2.0% a +4.0% Poder Crítico</span><br>
+                                        <span>+1.0% a +2.0% Velocidad de Movimiento</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 3. Set Marino del Abismo -->
+                <h2 id="set-marino" style="text-align: center; margin-bottom: 1.5rem;">Set Marino del Abismo (Acuático)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #00bcd4;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #00bcd4;">Set Marino del Abismo (Dominio Océanico)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Movilidad Bajo Agua, Daño Elemental & Gracia de Delfín</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Reliquias rescatadas del lecho marino y los profundos monumentos oceánicos.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (4 Piezas) -->
+                        <div style="background: rgba(0, 188, 212, 0.1); border: 1px solid #00bcd4; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #00bcd4; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 4/4 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #00bcd4; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>🌊 <strong>Eficiencia Mov. Agua:</strong> <span style="color: #00E676;">+155.0% Vel. Agua</span></div>
+                                <div>💧 <strong>Daño Elemental Agua:</strong> <span style="color: #00bcd4;">+13.0 Daño Agua</span></div>
+                                <div>⚔️ <strong>Daño PvE Extra:</strong> <span style="color: #A2D982;">+10.0 Daño PvE</span></div>
+                                <div>🗡️ <strong>Daño de Ataque:</strong> <span style="color: #ff4444;">+3.5 Atq</span></div>
+                                <div>🛡️ <strong>Armadura Total:</strong> <span style="color: #379BDE;">+2.5 Def</span></div>
+                                <div>✨ <strong>Efecto Pasivo:</strong> <span style="color: #ffd54f;">Gracia de Delfín I Permanente</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #00bcd4; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 4 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+15.0% Eficiencia de Movimiento en Agua</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+50.0% Eficiencia en Agua</strong> | <strong>+8.0 Daño Elemental Agua</strong> | <strong>Gracia de Delfín I Permanente</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Marino del Abismo</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Resto de Alga Flotante -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Resto de Alga Flotante</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Encontrado en ruinas marinas y algas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +5.0 Daño PvE</span><br>
+                                        <span>+1% a +10% Eficiencia en Agua</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fragmento de Caparazón -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Fragmento de Caparazón</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Obtenido de tortugas marinas antiguas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.5 a +1.5 Daño de Ataque</span><br>
+                                        <span>+1.0 a +2.5 Armadura | +5% a +15% Eficiencia Agua</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Anillo Del Mar -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Anillo Del Mar</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Drop raro de Guardianes de Monumentos</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +5.0 Daño PvE</span><br>
+                                        <span>+1.0% a +5.0% Vel | +10% a +30% Eficiencia Agua</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Núcleo del Océano -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Núcleo del Océano</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Tesoros de los monumentos sumergidos</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+0.1 a +2.0 Daño Atq | +10 a +25 Stamina</span><br>
+                                        <span>+1.0 a +5.0 Daño Agua | +15% a +50% Efic. Agua</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Set Vitalidad Ancestral -->
+                <h2 id="set-vitalidad" style="text-align: center; margin-bottom: 1.5rem;">Set Vitalidad Ancestral (Tanque de Vida)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #A2D982;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #A2D982;">Set Vitalidad Ancestral (Salud Máxima & Regeneración)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Tanques, Supervivencia & Salud Masiva</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Amuletos imbuidos con la energía pura del bosque primordial.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (4 Piezas) -->
+                        <div style="background: rgba(162, 217, 130, 0.1); border: 1px solid #A2D982; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #A2D982; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 4/4 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #A2D982; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>❤️ <strong>Vida Máxima Extra:</strong> <span style="color: #ff4444;">+107.5 HP (+53 Corazones)</span></div>
+                                <div>💖 <strong>Regeneración de Vida:</strong> <span style="color: #00E676;">+0.45 HP/s</span></div>
+                                <div>🛡️ <strong>Armadura Total:</strong> <span style="color: #379BDE;">+1.5 Def</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #A2D982; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 4 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+15.0 Vida Máxima (HP)</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+50.0 Vida Máxima (HP)</strong> | <strong>+0.20 Regeneración de Vida</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Vitalidad Ancestral</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Diente de León Silvestre -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Diente de León Silvestre</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Cosechado en praderas vivaces</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +7.5 Vida Máxima</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Corazón de Roble Antiguo -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Corazón de Roble Antiguo</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Corteza mística de árboles milenarios</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +10.0 Vida Máxima</span><br>
+                                        <span>+0.5 a +1.5 Armadura</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Amuleto de Vitalidad -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Amuleto de Vitalidad</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia tallada en esmeralda purificada</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +15.0 Vida Máxima</span><br>
+                                        <span>+0.05 a +0.10 Reg. Vida</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vial de Aliento Vital -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Vial de Aliento Vital</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Esencia vital del fénix guardián</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +25.0 Vida Máxima</span><br>
+                                        <span>+0.05 a +0.15 Reg. Vida</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Set Vendaval Ágil -->
+                <h2 id="set-vendaval" style="text-align: center; margin-bottom: 1.5rem;">Set Vendaval Ágil (Stamina & Viento)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #ADADAD;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #ADADAD;">Set Vendaval Ágil (Reserva de Stamina & Daño Viento)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Habilidades Continuas & Movilidad de Viento</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Artefactos livianos alimentados por las corrientes del cielo alto.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (4 Piezas) -->
+                        <div style="background: rgba(173, 173, 173, 0.1); border: 1px solid #ADADAD; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #ADADAD; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 4/4 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #ADADAD; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>⚡ <strong>Stamina Máxima Extra:</strong> <span style="color: #ffd54f;">+205.0 Stamina</span></div>
+                                <div>🔄 <strong>Regeneración de Stamina:</strong> <span style="color: #00E676;">+0.65 Stamina/s</span></div>
+                                <div>🏃 <strong>Velocidad de Movimiento:</strong> <span style="color: #379BDE;">+9.0% Vel</span></div>
+                                <div>🌪️ <strong>Daño Elemental Viento:</strong> <span style="color: #E0E0E0;">+5.0 Daño Viento</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #ADADAD; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 4 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+25.0 Stamina Máxima | +3.0% Velocidad de Movimiento</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+85.0 Stamina Máxima</strong> | <strong>+0.30 Reg. Stamina</strong> | <strong>+9.0% Velocidad de Movimiento</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Vendaval Ágil</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Pluma Ligera -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Pluma Ligera</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Caída de aves de montaña</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +15.0 Stamina Máxima</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Piedra del Viento -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Piedra del Viento</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Gema porosa que canaliza ráfagas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+10.0 a +20.0 Stamina</span><br>
+                                        <span>+0.05 a +0.10 Reg. Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cinta de Borrasca -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Cinta de Borrasca</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Tela mística soplada por tempestades</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +35.0 Stamina</span><br>
+                                        <span>+0.05 a +0.15 Reg. Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pluma Angélica Celestial -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Pluma Angélica Celestial</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Reliquia bendecida de los picos más altos</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+10.0 a +50.0 Stamina | +0.05 a +0.10 Reg</span><br>
+                                        <span>+1.0 a +5.0 Daño Elemental Viento</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Set Acechador Feroz -->
+                <h2 id="set-acechador" style="text-align: center; margin-bottom: 1.5rem;">Set Acechador Feroz (Críticos Puros)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #9D4EDD;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #9D4EDD;">Set Acechador Feroz (Probabilidad & Poder Crítico)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Daño Masivo en Golpes Críticos</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Reliquias oscuras diseñadas para potenciar los golpes mortales al máximo.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (4 Piezas) -->
+                        <div style="background: rgba(157, 78, 221, 0.1); border: 1px solid #9D4EDD; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #9D4EDD; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 4/4 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #9D4EDD; color: #ffffff; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>🎯 <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+29.0% Crítico</span></div>
+                                <div>💥 <strong>Poder Crítico Extra:</strong> <span style="color: #ffb74d;">+100.0% Poder Crítico</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #9D4EDD; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 4 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+4.0% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+12.0% Probabilidad Crítica</strong> | <strong>+25.0% Poder Crítico</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Acechador Feroz</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Hueso Pesado -->
+                            <div class="card rarity-comun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #ADADAD;">Hueso Pesado</h3>
+                                        <div class="stars-badge" style="color: #ADADAD;">✦✧✧✧✧ (COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Resto fosilizado de depredadores antiguos</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0% a +2.5% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ojo del Acechador -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Ojo del Acechador</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Orbe perturbador que detecta puntos débiles</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.5% a +4.5% Prob. Crítica</span><br>
+                                        <span>+5.0% a +15.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Anillo de Ferocidad -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Anillo de Ferocidad</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Sortija forjada en sangre berserker</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+2.5% a +5.0% Prob. Crítica</span><br>
+                                        <span>+10.0% a +25.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cristal del Vacío -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Cristal del Vacío</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Gema repleta de energía abisal destructiva</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0% a +5.0% Prob. Crítica</span><br>
+                                        <span>+15.0% a +35.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Set Romeo y Julieta -->
+                <h2 id="set-romeo" style="text-align: center; margin-bottom: 1.5rem;">Set Romeo y Julieta (Dualidad Romántica)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #ff69b4;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #ff69b4;">Set Romeo y Julieta (Salud, Stamina & Regeneración)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Dúo Armónico, Equilibrio Vital & Regeneración</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Dos accesorios legendarios cuya sinergia perfecta sana el cuerpo y la mente.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (2 Piezas) -->
+                        <div style="background: rgba(255, 105, 180, 0.1); border: 1px solid #ff69b4; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #ff69b4; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 2/2 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #ff69b4; color: #ffffff; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>❤️ <strong>Vida Máxima Extra:</strong> <span style="color: #ff4444;">+30.0 HP</span></div>
+                                <div>⚡ <strong>Stamina Máxima Extra:</strong> <span style="color: #ffd54f;">+35.0 Stamina</span></div>
+                                <div>🏃 <strong>Velocidad Movimiento:</strong> <span style="color: #379BDE;">+4.0% Vel</span></div>
+                                <div>🎯 <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+5.0% Crítico</span></div>
+                                <div>💖 <strong>Regeneración de Vida:</strong> <span style="color: #00E676;">+0.10 HP/s</span></div>
+                                <div>🔄 <strong>Regeneración de Stamina:</strong> <span style="color: #00E676;">+0.15 Stamina/s</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #ff69b4; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bono de Set (2 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+15.0 Vida Máxima</strong> | <strong>+0.15 Reg. Stamina</strong> | <strong>+0.10 Reg. Vida</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Romeo y Julieta</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Sello de Romeo -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Sello de Romeo</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Sello nobiliario marcado con lavanda</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +35.0 Stamina</span><br>
+                                        <span>+2.0% a +4.0% Velocidad de Movimiento</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Colgante de Julieta -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Colgante de Julieta</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Dije delicado con fragancia a rosas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+5.0 a +15.0 Vida Máxima</span><br>
+                                        <span>+2.0% a +5.0% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Set Apostador -->
+                <h2 id="set-apostador" style="text-align: center; margin-bottom: 1.5rem;">Set Apostador (Fortuna & Esquiva)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #FFD700;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #FFD700;">Set Apostador (Suerte, Esquiva & Críticos Extremos)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Esquiva de Daño, Críticos & Fortuna</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Objetos bendecidos por la dama suerte para aquellos que arriesgan todo en combate.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (4 Piezas) -->
+                        <div style="background: rgba(255, 215, 0, 0.1); border: 1px solid #FFD700; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #FFD700; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 4/4 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #FFD700; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>🎯 <strong>Probabilidad Crítica:</strong> <span style="color: #ffd54f;">+34.0% Crítico</span></div>
+                                <div>💥 <strong>Poder Crítico Extra:</strong> <span style="color: #ffb74d;">+100.0% Poder Crítico</span></div>
+                                <div>🌀 <strong>Esquiva (Dodge Rating):</strong> <span style="color: #00E676;">+13.0 Esquiva</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #FFD700; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 4 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+5.0% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 4 Piezas (Acumula 2 + 4):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+17.0% Probabilidad Crítica</strong> | <strong>+30.0% Poder Crítico</strong> | <strong>+8.0 Esquiva</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Apostador</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Dado de la Fortuna -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Dado de la Fortuna</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Dado cargado con energía estelar</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0% a +5.0% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Moneda de la Suerte -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Moneda de la Suerte</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Moneda de oro antiguo que nunca cae cruz</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+10.0% a +25.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Naipe del As -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Naipe del As</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Carta encantada que distorsiona los ataques enemigas</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+2.0 a +5.0 Esquiva (Dodge Rating)</span><br>
+                                        <span>+2.0% a +4.5% Probabilidad Crítica</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Anillo de Jade -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Anillo de Jade</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Sortija de jade oriental bendecida</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+3.0% a +7.5% Prob. Crítica</span><br>
+                                        <span>+10.0% a +45.0% Poder Crítico</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Set Minero Experto -->
+                <h2 id="set-minero" style="text-align: center; margin-bottom: 1.5rem;">Set Minero Experto (Subterráneo & Tierra)</h2>
+                <div class="card" style="margin-bottom: 3rem; border-color: #8B0000;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" style="color: #ff7043;">Set Minero Experto (Defensa Tierra, Armadura & Prisa)</h3>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);">Especialización: Minería Eficiente, Tanque de Tierra & Resistencia</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Herramientas arcanas esenciales para resistir en las cavidades más profundas de las minas.</p>
+
+                        <!-- Resumen Estimado del Set Completo Equipado (3 Piezas) -->
+                        <div style="background: rgba(255, 112, 67, 0.1); border: 1px solid #ff7043; border-radius: 6px; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <h4 style="color: #ff7043; margin: 0; font-size: 1.05rem;">📋 Estimación Total Máxima (Set Completo 3/3 Equipado):</h4>
+                                <span style="font-size: 0.78rem; background: #ff7043; color: #121212; padding: 2px 8px; border-radius: 4px; font-weight: bold;">Stats Base Máx + Bonos Acumulados</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--text-color);">
+                                <div>⛰️ <strong>Defensa Elemental Tierra:</strong> <span style="color: #A2D982;">+95.0 Def. Tierra</span></div>
+                                <div>🪨 <strong>Daño Elemental Tierra:</strong> <span style="color: #ff7043;">+7.5 Daño Tierra</span></div>
+                                <div>🛡️ <strong>Armadura Total:</strong> <span style="color: #379BDE;">+7.0 Def</span></div>
+                                <div>💎 <strong>Dureza de Armadura:</strong> <span style="color: #00E676;">+5.0 Toughness</span></div>
+                                <div>🧱 <strong>Resistencia al Empuje:</strong> <span style="color: #ffd54f;">+25.0% Res. Empuje</span></div>
+                                <div>⛏️ <strong>Efecto Pasivo:</strong> <span style="color: #00bcd4;">Prisa Minera II (Haste II) Permanente</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón Desplegable de Bonos de Set -->
+                        <details style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; cursor: pointer;">
+                            <summary style="font-weight: bold; color: #ff7043; outline: none; font-size: 0.95rem;">
+                                🔍 Ver Desglose de Bonos de Escalón de Set (2 y 3 Piezas)
+                            </summary>
+                            <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 2 Piezas:</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>+15.0 Defensa Elemental Tierra | +2.0 Armadura</span>
+                                    </div>
+                                </div>
+
+                                <div class="set-bonus-level" style="margin-bottom: 0;">
+                                    <strong>Bono de 3 Piezas (Acumula 2 + 3):</strong>
+                                    <div style="color: var(--text-color); font-size: 0.9rem; margin-top: 2px;">
+                                        <span>Total Acumulado Supremo: <strong>+45.0 Defensa Tierra</strong> | <strong>+2.0 Armadura</strong> | <strong>Poción Prisa Minera II (Haste II) Permanente</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Lista de Artefactos -->
+                        <h4 style="margin-top: 1.5rem; color: var(--accent-color);">Piezas del Set Minero Experto</h4>
+                        <div class="grid" style="margin-top: 0.8rem;">
+                            <!-- Lámpara de Minero -->
+                            <div class="card rarity-nocomun">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #A2D982;">Lámpara de Minero</h3>
+                                        <div class="stars-badge" style="color: #A2D982;">✦✦✧✧✧ (NO COMÚN)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Ilumina los túneles más oscuros</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +10.0 Def. Tierra</span><br>
+                                        <span>+1.0 a +5.0 Armadura</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Amuleto de Bismuto -->
+                            <div class="card rarity-raro">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #379BDE;">Amuleto de Bismuto</h3>
+                                        <div class="stars-badge" style="color: #379BDE;">✦✦✦✧✧ (RARO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Mineral arcoíris con propiedades protectoras</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +2.5 Daño Tierra | +5.0 a +15.0 Def. Tierra</span><br>
+                                        <span>+1.0 a +5.0 Dureza Armadura</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Corazón de la Montaña -->
+                            <div class="card rarity-epico">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title" style="color: #9D4EDD;">Corazón de la Montaña</h3>
+                                        <div class="stars-badge" style="color: #9D4EDD;">✦✦✦✦✧ (ÉPICO)</div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Núcleo geotérmico de las profundidades de la tierra</p>
+                                    <div style="margin-top: 0.6rem; font-size: 0.88rem;">
+                                        <span>+1.0 a +5.0 Daño Tierra | +5.0 a +25.0 Def. Tierra</span><br>
+                                        <span>+10% a +25% Resistencia al Empuje</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>
@@ -468,5 +1272,5 @@
 <script src="../search.js" defer></script>
 </body>
 
-<!-- v1.0.2 -->
+<!-- v1.1.0 -->
 </html>

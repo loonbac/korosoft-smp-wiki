@@ -46,7 +46,7 @@
         "command": "/canjear <código>",
         "permission": "Todos los jugadores",
         "desc": "Canjea un código de premio promocional o recompensa de evento en el servidor.",
-        "example": "/canjear BIENVENIDA2026"
+        "example": "/canjear MIPRIMERKIT"
       },
       {
         "command": "/marry <jugador>",

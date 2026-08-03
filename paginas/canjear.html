@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos de Canjeo (/canjear) - DRAKONIA SMP</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <!-- ÍNDICE LATERAL (ESTILO DOCS REPLEGABLE) -->
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="canjear.html" class="active">Códigos /canjear</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (82 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="armas.html">Armas</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                    <li><a href="crianza.html">Crianza de Animales</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>🎁 Sistema de Códigos de Canjeo</h1>
+                <p>Aprende cómo usar el comando <code>/canjear</code>, descubre la lista de códigos promocionales vigentes y reclama objetos exclusivos para tu aventura.</p>
+            </header>
+
+            <div class="container">
+                <!-- TUTORIAL PASO A PASO CON GUI E IMÁGENES -->
+                <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--accent-color);">📖 Tutorial Paso a Paso: ¿Cómo Canjear tus Códigos?</h2>
+                
+                <div class="grid" style="margin-bottom: 3rem;">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Paso 1: Abrir el Menú (/canjear)</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Escribe el comando <code>/canjear</code> en el chat del servidor para desplegar la <strong>interfaz especial de canjeo</strong> en pantalla.</p>
+                            <div style="margin-top: 1rem; border-radius: 6px; overflow: hidden; border: 1px dashed rgba(212, 175, 55, 0.4); background: rgba(0,0,0,0.3); text-align: center; padding: 0.5rem;">
+                                <img src="../assets/img/canjear/paso1.png" alt="Paso 1: Abrir menú /canjear" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 0 auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <div style="display: none; padding: 1.5rem 0.5rem; color: var(--text-muted); font-size: 0.85rem;">
+                                    📷 <em>Coloca tu captura en: <code>assets/img/canjear/paso1.png</code></em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Paso 2: Introducir Código & Clic</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Se abrirá una ventana interactiva. Introduce el código en el cuadro de texto y haz clic en el botón de <strong>Canjear</strong>.</p>
+                            <div style="margin-top: 1rem; border-radius: 6px; overflow: hidden; border: 1px dashed rgba(212, 175, 55, 0.4); background: rgba(0,0,0,0.3); text-align: center; padding: 0.5rem;">
+                                <img src="../assets/img/canjear/paso2.png" alt="Paso 2: Ventana e ingresar código" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 0 auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <div style="display: none; padding: 1.5rem 0.5rem; color: var(--text-muted); font-size: 0.85rem;">
+                                    📷 <em>Coloca tu captura en: <code>assets/img/canjear/paso2.png</code></em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Paso 3: Botón Recoger Regalo</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Aparecerá la pantalla con los objetos del premio. Haz clic en el botón <strong>Recoger Regalo</strong> para transferir las recompensas a tu inventario.</p>
+                            <div style="margin-top: 1rem; border-radius: 6px; overflow: hidden; border: 1px dashed rgba(212, 175, 55, 0.4); background: rgba(0,0,0,0.3); text-align: center; padding: 0.5rem;">
+                                <img src="../assets/img/canjear/paso3.png" alt="Paso 3: Pantalla de premio y botón Recoger Regalo" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin: 0 auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <div style="display: none; padding: 1.5rem 0.5rem; color: var(--text-muted); font-size: 0.85rem;">
+                                    📷 <em>Coloca tu captura en: <code>assets/img/canjear/paso3.png</code></em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LISTA DE CÓDIGOS DISPONIBLES -->
+                <h2 style="text-align: center; margin-bottom: 1rem; color: var(--accent-color);">📜 Lista de Códigos Disponibles</h2>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Estos son los códigos activos que puedes canjear actualmente en el servidor.</p>
+
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.4); margin-bottom: 3rem;">
+                    <table class="drop-table" style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(212, 175, 55, 0.1); color: var(--accent-color); font-family: var(--font-heading);">
+                                <th style="padding: 0.8rem; text-align: left;">Código</th>
+                                <th style="padding: 0.8rem; text-align: left;">Recompensas Incluidas</th>
+                                <th style="padding: 0.8rem; text-align: center;">Estado</th>
+                                <th style="padding: 0.8rem; text-align: center;">Requisito / Límite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.8rem;"><code style="background: rgba(255,255,255,0.08); color: #2ecc71; padding: 0.3rem 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.95rem;">MIPRIMERKIT</code></td>
+                                <td style="padding: 0.8rem;"><strong>Kit Inicial de Bienvenida:</strong> Equipamiento básico de aventurero + Suministros e ítems esenciales para iniciar tu viaje</td>
+                                <td style="padding: 0.8rem; text-align: center;"><span style="background: rgba(46, 204, 113, 0.15); color: #2ecc71; padding: 0.25rem 0.7rem; border-radius: 12px; font-size: 0.8rem; border: 1px solid #2ecc71; font-weight: bold;">🟢 Activo</span></td>
+                                <td style="padding: 0.8rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">1 uso por jugador</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.8rem;"><code style="background: rgba(255,255,255,0.08); color: #f39c12; padding: 0.3rem 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.95rem;">MIPRIMERAARMA</code></td>
+                                <td style="padding: 0.8rem;"><strong>Kit Arsenal Inicial (11 Armas de Madera):</strong> Martillo, Mazo Estrellado, Garras, Dagas, Hoz, Glaive, Katana, Cuchilla Doble, Hacha Nórdica, Espada Helénica y Sable de Madera</td>
+                                <td style="padding: 0.8rem; text-align: center;"><span style="background: rgba(46, 204, 113, 0.15); color: #2ecc71; padding: 0.25rem 0.7rem; border-radius: 12px; font-size: 0.8rem; border: 1px solid #2ecc71; font-weight: bold;">🟢 Activo</span></td>
+                                <td style="padding: 0.8rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">1 uso por jugador</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.8rem;"><code style="background: rgba(255,255,255,0.08); color: #9b59b6; padding: 0.3rem 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.95rem;">KOROSOFTFIRSTDAY</code></td>
+                                <td style="padding: 0.8rem;"><strong>Recompensa Primer Día:</strong> 1x Espada de Piedra + Manzanas Doradas + Monedas de Cobre y Plata</td>
+                                <td style="padding: 0.8rem; text-align: center;"><span style="background: rgba(46, 204, 113, 0.15); color: #2ecc71; padding: 0.25rem 0.7rem; border-radius: 12px; font-size: 0.8rem; border: 1px solid #2ecc71; font-weight: bold;">🟢 Activo</span></td>
+                                <td style="padding: 0.8rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">1 uso por jugador</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.8rem;"><code style="background: rgba(255,255,255,0.08); color: #e74c3c; padding: 0.3rem 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.95rem;">MYFIRSTBOSS</code></td>
+                                <td style="padding: 0.8rem;"><strong>Invocador de Jefe:</strong> 1x Invocador de Galahad El Inmortal</td>
+                                <td style="padding: 0.8rem; text-align: center;"><span style="background: rgba(46, 204, 113, 0.15); color: #2ecc71; padding: 0.25rem 0.7rem; border-radius: 12px; font-size: 0.8rem; border: 1px solid #2ecc71; font-weight: bold;">🟢 Activo</span></td>
+                                <td style="padding: 0.8rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">1 uso por jugador</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(52, 152, 219, 0.08); border-left: 4px solid #3498db; border-radius: 4px; font-size: 0.9rem; color: #ccc;">
+                        💡 <strong>Notas Importantes:</strong>
+                        <ul style="margin-left: 1.2rem; margin-top: 0.5rem; list-style: square;">
+                            <li>Los códigos no son acumulables si ya han sido canjeados previamente por tu cuenta.</li>
+                            <li>Mantén espacio libre en tu inventario antes de canjear para evitar caídas de ítems al suelo.</li>
+                            <li>Si un código ha expirado o está desactivado, el juego te notificará en rojo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Drakonia SMP - Todos los derechos reservados.</p>
+    </footer>
+    <script src="../search.js" defer></script>
+</body>
+</html>

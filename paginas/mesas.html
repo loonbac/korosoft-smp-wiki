@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -66,6 +66,7 @@
                 <ul class="sidebar-menu">
                     <li><a href="guia.html">Guía de Inicio</a></li>
                     <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="canjear.html">Códigos /canjear</a></li>
                     <li><a href="novedades.html">Novedades</a></li>
                 </ul>
             </div>
@@ -73,7 +74,7 @@
             <div class="sidebar-section">
                 <div class="sidebar-category">Bestiario & Jefes</div>
                 <ul class="sidebar-menu">
-                    <li><a href="mobs.html">Bestiario (42 Mobs)</a></li>
+                    <li><a href="mobs.html">Bestiario (82 Mobs)</a></li>
                     <li><a href="jefes.html">Jefes del Overworld</a></li>
                 </ul>
             </div>
@@ -82,6 +83,7 @@
                 <div class="sidebar-category">Equipamiento</div>
                 <ul class="sidebar-menu">
                     <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="armas.html">Armas</a></li>
                     <li><a href="accesorios.html">Accesorios</a></li>
                 </ul>
             </div>
@@ -143,12 +145,17 @@
                         </p>
                     </div>
                     
-                    <div class="station-card">
+                    <div class="station-card" style="border-color: var(--accent-color);">
                         <div class="station-icon">🔮</div>
                         <h3>Estación de Magia</h3>
                         <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.95rem;">
-                            Lugar místico donde se elaboran runas mágicas, esencias y los <strong>Invocadores de Jefes</strong> (Galahad, Harvester, Bear Spirit).
+                            Lugar místico donde se elaboran runas, esencias y los <strong>Invocadores de Jefes</strong> (Galahad, Harvester, Bear Spirit).
                         </p>
+                        <div style="background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); padding: 0.8rem; margin-top: 0.8rem; border-radius: 4px; font-size: 0.88rem;">
+                            <strong style="color: var(--accent-color); display: block; margin-bottom: 0.3rem;">✨ Item Clave: Poción Curativa (Reanimador 3 Usos)</strong>
+                            Fabricable en esta estación usando un Tótem de la Inmortalidad. Es un ítem de <strong>3 usos que permite revivir a un compañero de equipo en modo "Alma"</strong> dándole un simple clic derecho sobre él. 
+                            <br><span style="color: #aae; font-size: 0.82rem;">🎁 Tip de Inicio: ¡Recibirás una Poción Curativa de regalo gratis mediante un código de canjeo de bienvenida en <code>/canjear</code>!</span>
+                        </div>
                     </div>
 
                     <div class="station-card">
@@ -171,10 +178,47 @@
                 <!-- SECCIÓN ESPECIAL: MESA DE JOYERÍA Y GEMAS -->
                 <div class="station-card" style="margin-top: 2rem; border-color: #379BDE;">
                     <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/diamond.png" class="mc-icon" alt="diamante"></div>
-                    <h2 style="color: #379BDE; margin-bottom: 1rem;">Mesa de Joyería & Sistema de Gemas</h2>
+                    <h2 style="color: #379BDE; margin-bottom: 1rem;">Mesa de Joyería & Guía Completa de Gemas</h2>
                     <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                        La Mesa de Joyería es la estación especializada en pulir <strong>Vetas de Gemas</strong> (obtenidas en la minería) para convertirlas en Gemas en Bruto y posteriormente refinarlas. Las Gemas se engastan en armaduras y accesorios para obtener mejoras increíbles. Existen 4 Tiers: <span style="color: #ADADAD;">Pepita (Común)</span>, <span style="color: #ADADAD;">Fragmento (Común)</span>, <span style="color: #A2D982;">Fino (Poco Común)</span> y <span style="color: #379BDE;">Final (Raro)</span>.
+                        La Mesa de Joyería es la estación especializada en craftear, pulir y engastar gemas místicas en tus armas, armaduras y accesorios para otorgarles atributos legendarios.
                     </p>
+
+                    <!-- TUTORIAL PASO A PASO: CRAFTEO Y EXTRACCIÓN DE GEMAS -->
+                    <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(55, 155, 222, 0.3); border-radius: 6px; padding: 1.2rem; margin-bottom: 1.8rem;">
+                        <h3 style="color: #64b5f6; margin-top: 0; margin-bottom: 1rem; font-size: 1.1rem;">💎 Tutorial: ¿Cómo Conseguir, Craftear y Retirar Gemas?</h3>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.2rem;">
+                            <!-- Paso 1 -->
+                            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 6px; border-left: 3px solid #3498db;">
+                                <strong style="color: #3498db; display: block; margin-bottom: 0.4rem;">1. Minería de Minerales Multicolores:</strong>
+                                <span style="font-size: 0.88rem; color: #ccc;">Picando en las minas principales encontrarás menas multicolores mágicas. Al minarlas, obtendrás las <strong>Gemas en Bruto</strong> sin procesar.</span>
+                            </div>
+
+                            <!-- Paso 2 -->
+                            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 6px; border-left: 3px solid #9b59b6;">
+                                <strong style="color: #9b59b6; display: block; margin-bottom: 0.4rem;">2. Crafteo de la Lima de Obsidiana:</strong>
+                                <span style="font-size: 0.88rem; color: #ccc;">Fabrica una <strong>Lima de Obsidiana</strong> usando obsidiana. Encontrarás la receta detallada en tu <em>Libro de Crafteos</em> dentro de la sección <strong>Materiales</strong>.</span>
+                            </div>
+
+                            <!-- Paso 3 -->
+                            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 6px; border-left: 3px solid #2ecc71;">
+                                <strong style="color: #2ecc71; display: block; margin-bottom: 0.4rem;">3. Pulido en la Mesa de Joyería:</strong>
+                                <span style="font-size: 0.88rem; color: #ccc;">Combina en la Mesa de Joyería la <strong>Gema en Bruto + Botella de Agua + Lima de Obsidiana</strong> para craftear y pulir las gemas listas para engastar.</span>
+                            </div>
+
+                            <!-- Paso 4 -->
+                            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 6px; border-left: 3px solid #f1c40f;">
+                                <strong style="color: #f1c40f; display: block; margin-bottom: 0.4rem;">4. Limas de Extracción (Sección Varios):</strong>
+                                <span style="font-size: 0.88rem; color: #ccc;">Consigue las <strong>Limas de Extracción</strong> en la sección <strong>Varios</strong> del Libro de Crafteos. Estas limas son esenciales tanto para craftear joyas como para <strong>retirar gemas ya incrustadas</strong>.</span>
+                            </div>
+                        </div>
+
+                        <!-- MECÁNICA DE EXTRACCIÓN -->
+                        <div style="background: rgba(230, 126, 34, 0.1); border-left: 4px solid #e67e22; padding: 0.9rem; border-radius: 4px; font-size: 0.88rem; color: #eee;">
+                            ⚠️ <strong>Mecánica de Extracción por Probabilidad:</strong><br>
+                            Si deseas retirar una gema de un arma o armadura para reutilizarla en otro objeto, coloca la <strong>Lima de Extracción encima del arma con la gema incrustada</strong>. El éxito del desengaste dependerá del <strong>porcentaje de probabilidad de la lima utilizada</strong> (a mayor calidad de lima, mayor probabilidad de recuperar la gema intacta).
+                        </div>
+                    </div>
 
                     <div style="overflow-x: auto;">
                         <table class="gem-table">

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas & Sets - KOROSOFT SMP</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .set-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+        }
+        .piece-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.8rem;
+            margin-top: 1rem;
+            background: rgba(0,0,0,0.3);
+            padding: 0.8rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+        .piece-item {
+            font-size: 0.85rem;
+        }
+        .piece-item strong {
+            color: var(--accent-color);
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 2rem;">
+        <div class="logo">KOROSOFT SMP</div>
+        <div style="flex-grow: 1; max-width: 550px; margin: 0 2rem; position: relative;">
+            <input type="text" id="global-search" placeholder="Buscar mobs, biomas, drops, crafteos o comandos..." style="width: 100%; padding: 0.55rem 1.2rem; border-radius: 20px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.4); color: var(--text-color); font-size: 0.9rem; outline: none; transition: all 0.3s ease;">
+        </div>
+        <div style="font-size: 0.85rem; color: var(--accent-color); font-family: var(--font-heading); font-weight: bold; letter-spacing: 1px;">
+            WIKI OFICIAL
+        </div>
+    </nav>
+
+    <div class="wiki-wrapper">
+        <aside class="wiki-sidebar">
+            <div class="sidebar-header">
+                <span><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/book.png" class="mc-icon" alt="wiki"> Páginas de Wiki</span>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">General</div>
+                <ul class="sidebar-menu">
+                    <li><a href="guia.html">Guía de Inicio</a></li>
+                    <li><a href="comandos.html">Comandos</a></li>
+                    <li><a href="canjear.html">Códigos /canjear</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Bestiario & Jefes</div>
+                <ul class="sidebar-menu">
+                    <li><a href="mobs.html">Bestiario (82 Mobs)</a></li>
+                    <li><a href="jefes.html">Jefes del Overworld</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Equipamiento</div>
+                <ul class="sidebar-menu">
+                    <li><a href="armaduras.html">Armaduras</a></li>
+                    <li><a href="armas.html" class="active">Armas</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-category">Recursos & Crafteos</div>
+                <ul class="sidebar-menu">
+                    <li><a href="cocina.html">Guía de Cocina</a></li>
+                    <li><a href="minerales.html">Minerales & Bloques</a></li>
+                    <li><a href="mesas.html">Mesas & Estaciones</a></li>
+                    <li><a href="crianza.html">Crianza de Animales</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="wiki-content">
+            <header class="hero" style="padding: 2rem 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h1>Armería del Reino</h1>
+                <p>Conoce los tipos de armas, sus escalados y sus mecánicas de ataque especiales.</p>
+            </header>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #379BDE;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma Ligera - 1 Mano</span>
+                    <h3 class="card-title" style="color: #379BDE;">KATANAS</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Las Katanas son armas enfocadas en la agilidad extrema y la probabilidad de asestar golpes críticos letales.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(55, 155, 222, 0.08); border-left: 3px solid #379BDE; border-radius: 4px;">
+                    <strong style="color: #379BDE; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Velocidad de Movimiento:</strong> +1.5% al tenerla en la mano principal.</li>
+                        <li><strong>Rango Extra:</strong> +0.2 Bloques (Rango Total: 3.2).</li>
+                        <li><strong>Costo de Estamina:</strong> 7.5 por ataque.</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 3.5 a 9.5</span>
+                        <span><strong>Probabilidad Crítica:</strong> 10% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #D1114D;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma Pesada - 2 Manos</span>
+                    <h3 class="card-title" style="color: #D1114D;">SABLES</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas pesadas que requieren el uso de ambas manos. Imparten un daño devastador y cuentan con habilidades especiales que consumen más estamina.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(209, 17, 77, 0.08); border-left: 3px solid #D1114D; border-radius: 4px;">
+                    <strong style="color: #D1114D; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Velocidad de Movimiento:</strong> -5.0% (Te ralentiza debido a su peso).</li>
+                        <li><strong>Rango Extra:</strong> +0.7 Bloques (Rango Total: 3.7 - Muy largo alcance).</li>
+                        <li><strong>Costo de Estamina:</strong> 9.0 por ataque.</li>
+                        <li><strong>Habilidad Única (Corte Feroz):</strong> Lanza una onda de corte que viaja 5 bloques haciendo doble daño (Coste: 15 Estamina, 15s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 6.5 a 15.0</span>
+                        <span><strong>Probabilidad Crítica:</strong> 5% (Netherita)</span>
+                        <span><strong>Poder Crítico:</strong> 75% Extra (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #A2D982;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma Ligera - 2 Manos</span>
+                    <h3 class="card-title" style="color: #A2D982;">CUCHILLAS DOBLES</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas exóticas y rítmicas que se empuñan en ambas manos. Permiten ráfagas de cortes a gran velocidad y danzar por el campo de batalla dañando múltiples objetivos en área.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(162, 217, 130, 0.08); border-left: 3px solid #A2D982; border-radius: 4px;">
+                    <strong style="color: #A2D982; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango de Combate:</strong> 3.0 Bloques (Alcance medio).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 2.0 (Equilibrada).</li>
+                        <li><strong>Costo de Estamina:</strong> 7.0 por ataque básico.</li>
+                        <li><strong>Habilidad Única (Rastro Cortante):</strong> Ejecuta un salto acrobático evasivo hacia atrás (4 bloques) para desorientar y esquivar al enemigo, lanzando inmediatamente un proyectil de rastro cortante que viaja 7 bloques en línea recta. Al impactar en un objetivo, detona en un anillo de choque brillante de 1.5 bloques de radio que inflige un 150% del daño de ataque (Coste: 20.0 Estamina, 7s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 5.0 a 10.0</span>
+                        <span><strong>Probabilidad Crítica:</strong> 5% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #e67e22;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma Ágil - 1 Mano</span>
+                    <h3 class="card-title" style="color: #e67e22;">ESPADAS HELÉNICAS</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Estoques sumamente ágiles que permiten ataques veloces y constantes, perfectos para escaramuzas rápidas.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(230, 126, 34, 0.08); border-left: 3px solid #e67e22; border-radius: 4px;">
+                    <strong style="color: #e67e22; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Velocidad de Ataque:</strong> 1.7 (Ataques rápidos).</li>
+                        <li><strong>Velocidad de Movimiento:</strong> +1.0% de velocidad pasiva.</li>
+                        <li><strong>Costo de Estamina:</strong> 6.0 por ataque.</li>
+                        <li><strong>Habilidad Única (Corte Audaz):</strong> Te otorga un impulso masivo de velocidad (Velocidad III) durante 3 segundos para atacar o escapar rápidamente (Coste: 10 Maná, 7.5s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 3.5 a 7.5</span>
+                        <span><strong>Probabilidad Crítica:</strong> 10% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #e74c3c;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma Corta - 1 Mano</span>
+                    <h3 class="card-title" style="color: #e74c3c;">GARRAS</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas de puño a corta distancia de una velocidad devastadora. Castigan a los enemigos a muy corta distancia.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(231, 76, 60, 0.08); border-left: 3px solid #e74c3c; border-radius: 4px;">
+                    <strong style="color: #e74c3c; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango de Combate:</strong> 2.0 Bloques (Muy corto alcance).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 3.0 (Extremadamente rápida).</li>
+                        <li><strong>Costo de Estamina:</strong> 3.5 por ataque.</li>
+                        <li><strong>Habilidad Única (Ataque Rápido):</strong> Lanza una ráfaga instantánea de 3 zarpazos veloces en tu mira ignorando inmunidades. El 3.er zarpazo inflige <strong>Sangrado Continuo</strong> con pérdida de 3 ticks de vida y expulsión de sangre (Coste: 5.0 Estamina, 5s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 3.2 a 6.5</span>
+                        <span><strong>Probabilidad Crítica:</strong> 5% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #2ecc71;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Asesino - 1 Mano</span>
+                    <h3 class="card-title" style="color: #2ecc71;">DAGAS</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Las armas predilectas para los asesinos. Ligeras y perfectas para infligir críticos y reposicionarse en el campo de batalla.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(46, 204, 113, 0.08); border-left: 3px solid #2ecc71; border-radius: 4px;">
+                    <strong style="color: #2ecc71; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango de Combate:</strong> 2.5 Bloques (Corto alcance).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 2.5 (Rápida).</li>
+                        <li><strong>Costo de Estamina:</strong> 2.5 por ataque.</li>
+                        <li><strong>Habilidad Única (Desplazamiento):</strong> Realiza un deslizamiento acrobático a ras de suelo (6 bloques). Al finalizar, otorga <strong>Velocidad II (2s)</strong> e <strong>Invisibilidad efímera (0.8s)</strong> para reposicionarte al instante (Coste: 7.5 Estamina, 5s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 2.5 a 5.0</span>
+                        <span><strong>Probabilidad Crítica:</strong> 10% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #95a5a6;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Destrucción - 2 Manos</span>
+                    <h3 class="card-title" style="color: #95a5a6;">MARTILLOS</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas colosales capaces de triturar bloques y cráneos. Su peso ralentiza tus movimientos, pero su fuerza destructiva es inigualable.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(149, 165, 166, 0.08); border-left: 3px solid #95a5a6; border-radius: 4px;">
+                    <strong style="color: #95a5a6; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Velocidad de Ataque:</strong> 0.5 (Extremadamente lenta).</li>
+                        <li><strong>Velocidad de Movimiento:</strong> -3.0% (Penalización por peso).</li>
+                        <li><strong>Costo de Estamina:</strong> 15.0 por golpe.</li>
+                        <li><strong>Habilidad Pasiva (Excavación):</strong> Permite minar bloques en un área de 3x3 de forma nativa. No cuenta con habilidades activas.</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 10.0 a 20.0</span>
+                        <span><strong>Probabilidad Crítica:</strong> 7.5% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #9b59b6;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Maza de Asedio - 2 Manos</span>
+                    <h3 class="card-title" style="color: #9b59b6;">MAZO ESTRELLADO</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Mazas brutales diseñadas para causar conmociones masivas y golpear con fuerza crítica abrumadora.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(155, 89, 182, 0.08); border-left: 3px solid #9b59b6; border-radius: 4px;">
+                    <strong style="color: #9b59b6; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Velocidad de Ataque:</strong> 0.8.</li>
+                        <li><strong>Velocidad de Movimiento:</strong> -2.0% (Ralentización ligera).</li>
+                        <li><strong>Costo de Estamina:</strong> 10.0 por golpe.</li>
+                        <li><strong>Habilidad Pasiva Única (Onda Estelar):</strong> Al golpear (ON_HIT), libera una onda expansiva de 4 bloques con un impacto retumbante que estremece la vista y aturde a los enemigos por 3 segundos (Coste: 25.0 Estamina, 30s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 7.5 a 15.0</span>
+                        <span><strong>Probabilidad Crítica:</strong> 2.5% (Netherita)</span>
+                        <span><strong>Poder Crítico Máximo:</strong> +75% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #3498db;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Distancia - 2 Manos</span>
+                    <h3 class="card-title" style="color: #3498db;">GLAIVES</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas híbridas que combinan el largo alcance de una lanza con el tajo de un hacha. Su gran diseño permite ser arrojadas a distancias extremas.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(52, 152, 219, 0.08); border-left: 3px solid #3498db; border-radius: 4px;">
+                    <strong style="color: #3498db; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango Extra:</strong> +1.5 Bloques (Rango Total: 4.5).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 1.1.</li>
+                        <li><strong>Costo de Estamina:</strong> 8.0 por golpe.</li>
+                        <li><strong>Habilidad Única (Lanzar Arma):</strong> Arroja la Glaive a máxima velocidad (v=35.0) en una trayectoria aerodinámica; al colisionar, estalla e inflige 100% de daño y <strong>Lentitud por 5 segundos</strong> (Coste: 13.5 Estamina, 3.5s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 6.0 a 12.5</span>
+                        <span><strong>Probabilidad Crítica:</strong> 15% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #d35400;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Impacto - 2 Manos</span>
+                    <h3 class="card-title" style="color: #d35400;">HACHA NÓRDICA</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Hachas pesadas y brutales de diseño simplificado. Asestan tajos circulares demoledores en su trayectoria máxima.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(211, 84, 0, 0.08); border-left: 3px solid #d35400; border-radius: 4px;">
+                    <strong style="color: #d35400; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango de Combate:</strong> 2.0 Bloques (Corto alcance).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 0.8.</li>
+                        <li><strong>Velocidad de Movimiento:</strong> -3.0% (ralentización).</li>
+                        <li><strong>Costo de Estamina:</strong> 10.0 por golpe.</li>
+                        <li><strong>Habilidad Única (Tajo Nórdico):</strong> Un poderoso corte horizontal que viaja 5 bloques hacia adelante, asestando 150% de daño y <strong>empujando hacia atrás violentamente a todos los enemigos</strong> en su recorrido (Coste: 25.0 Estamina, 10s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 6.8 a 17.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #1abc9c;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Choque - 2 Manos</span>
+                    <h3 class="card-title" style="color: #1abc9c;">LANZAS DE JUSTA</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Lanzas largas de caballería diseñadas para embestir a gran velocidad, infligiendo un daño crítico masivo en la carga.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(26, 188, 156, 0.08); border-left: 3px solid #1abc9c; border-radius: 4px;">
+                    <strong style="color: #1abc9c; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango Extra:</strong> +1.0 Bloques (Rango Total: 4.0).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 1.0.</li>
+                        <li><strong>Costo de Estamina:</strong> 7.0 por golpe.</li>
+                        <li><strong>Habilidad Única (Carga):</strong> Embeste a ras de suelo hacia el frente (6 bloques); al chocar físicamente con un enemigo o jugador en tiempo real, te frena en seco, inflige 120% de daño, lo lanza por el aire y lo <strong>aturde por 3 segundos (Stun de 3s)</strong> (Coste: 15.0 Estamina, 5s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 6.5 a 13.5</span>
+                        <span><strong>Potencia Crítica Máxima:</strong> +50% (Netherita)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2.5rem; border-color: #16a085;">
+            <div class="card-header">
+                <div>
+                    <span class="set-badge">Arma de Cosecha - 2 Manos</span>
+                    <h3 class="card-title" style="color: #16a085;">HOCES</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Armas de siega de gran tamaño que se empuñan a dos manos. Poseen un enorme barrido en área capaz de limpiar oleadas de enemigos.</p>
+                
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(22, 160, 133, 0.08); border-left: 3px solid #16a085; border-radius: 4px;">
+                    <strong style="color: #16a085; font-size: 1rem; display: block; margin-bottom: 0.4rem;">Características Constantes:</strong>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #ccc; list-style: square;">
+                        <li><strong>Rango Extra:</strong> +1.5 Bloques (Rango Total: 4.5).</li>
+                        <li><strong>Velocidad de Ataque:</strong> 1.15.</li>
+                        <li><strong>Costo de Estamina:</strong> 8.0 por golpe.</li>
+                        <li><strong>Habilidad Única (Danza Cortante):</strong> Ejecuta una ráfaga rítmica de 5 cortes circulares expansivos a tu alrededor (de 1.5m a 3.5m de radio) dañando a todas las entidades en el área de cada barrido (Coste: 15.0 Estamina, 10s Cooldown).</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1rem; padding: 0.8rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-color); border-radius: 4px;">
+                    <strong style="color: var(--accent-color); font-size: 1rem; display: block; margin-bottom: 0.4rem;">Escalado de Tiers (Madera a Netherita):</strong>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.92rem; color: var(--text-color); align-items: center;">
+                        <span><strong>Daño:</strong> 6.0 a 12.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Korosoft SMP - Todos los derechos reservados.</p>
+    </footer>
+<script src="../search.js" defer></script>
+</body>
+</html>
+

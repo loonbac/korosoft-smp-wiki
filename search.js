@@ -3,7 +3,7 @@ const SEARCH_DATA = [
   // General
   { title: "📖 Guía de Inicio", category: "General", path: "paginas/guia.html", keywords: "guia inicio tutorial empezar tutoriales" },
   { title: "💬 Comando /ah (Subastas)", category: "Comandos", path: "paginas/comandos.html", keywords: "ah subastas mercado economia comando comandos" },
-  { title: "💬 Comando /canjear", category: "Comandos", path: "paginas/comandos.html", keywords: "canjear codigos recompensas comando comandos" },
+  { title: "🎁 Códigos /canjear", category: "General", path: "paginas/canjear.html", keywords: "canjear codigos regalo recompensas promo promocional bienvenido2026 korosoft2026 miprimerkit miprimeraarma myfirstboss kit armas inicio" },
   { title: "💬 Comando /marry (Matrimonios)", category: "Comandos", path: "paginas/comandos.html", keywords: "marry matrimonio casarse casamiento comando comandos" },
   { title: "🔮 Novedades & Parches", category: "General", path: "paginas/novedades.html", keywords: "novedades actualizacion actualizaciones parches cambios noticias" },
   
@@ -114,5 +114,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput.value.trim()) {
       resultsContainer.style.display = 'block';
     }
+  });
+});
+
+// Lógica universal de menú lateral replegable / desplegable (Índice de Wiki)
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.sidebar-category').forEach(category => {
+    // Insertar flecha indicadora si no existe
+    if (!category.querySelector('.toggle-icon')) {
+      const icon = document.createElement('span');
+      icon.className = 'toggle-icon';
+      icon.innerHTML = '▼';
+      category.appendChild(icon);
+    }
+
+    // Evento de clic para desplegar / replegar la categoría
+    category.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const section = category.closest('.sidebar-section') || category.parentElement;
+      section.classList.toggle('collapsed');
+    });
   });
 });

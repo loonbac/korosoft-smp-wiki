@@ -348,89 +348,125 @@ footer {
     font-size: 0.95rem;
     font-weight: bold;
     color: #4ba3e3;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem 0.6rem;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.sidebar-category:hover {
+    color: #93c5fd;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.sidebar-category .toggle-icon {
+    font-size: 0.7rem;
+    transition: transform 0.25s ease;
+    color: #64b5f6;
+    margin-left: 0.5rem;
+}
+
+.sidebar-section.collapsed .sidebar-menu {
+    display: none;
+}
+
+.sidebar-section.collapsed .sidebar-category .toggle-icon {
+    transform: rotate(-90deg);
 }
 
 .sidebar-menu {
     list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+    padding-left: 0.2rem;
+    margin: 0.2rem 0 0.4rem 0;
 }
 
 .sidebar-menu li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
     position: relative;
 }
 
+/* Links de texto limpios sin aspecto de botón */
 .sidebar-menu > li > a {
-    display: block;
-    padding: 0.5rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    color: #4ba3e3;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0.38rem 0.6rem;
+    font-size: 0.88rem;
+    color: #b0bec5;
+    background: transparent;
+    border: none;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-menu > li > a::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #64b5f6;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .sidebar-menu > li > a:hover {
-    background: rgba(75, 163, 227, 0.1);
     color: #64b5f6;
-    border-color: rgba(75, 163, 227, 0.3);
+    background: rgba(75, 163, 227, 0.06);
     text-decoration: none;
-    transform: translateX(4px);
+    transform: translateX(3px);
+}
+
+.sidebar-menu > li > a:hover::before {
+    opacity: 1;
+    transform: scale(1.3);
 }
 
 .sidebar-menu > li > a.active {
-    background: rgba(212, 175, 55, 0.15);
     color: var(--accent-color);
-    font-weight: bold;
-    border: 1px solid rgba(212, 175, 55, 0.4);
-    border-left: 4px solid var(--accent-color);
+    font-weight: 700;
+    background: rgba(212, 175, 55, 0.08);
+    border-left: 3px solid var(--accent-color);
 }
 
-/* Sub-listas desplegables en hover */
+.sidebar-menu > li > a.active::before {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+/* Sub-listas en línea fijas (sin menús flotantes al pasar el mouse) */
 .sidebar-sub-menu {
     list-style-type: none;
-    padding-left: 0;
-    margin: 4px 0 0 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    border-left: 2px solid rgba(75, 163, 227, 0.3);
-}
-
-.sidebar-menu li:hover .sidebar-sub-menu {
+    padding-left: 0.8rem;
+    margin: 0.2rem 0 0.4rem 0.6rem;
+    border-left: 1px solid rgba(75, 163, 227, 0.25);
     display: block;
-    animation: fadeIn 0.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-3px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 .sidebar-sub-menu li {
-    margin-bottom: 0;
+    margin-bottom: 0.15rem;
 }
 
 .sidebar-sub-menu a {
-    display: block;
-    font-size: 0.82rem;
-    color: #81d4fa;
-    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.83rem;
+    color: #90caf9;
+    padding: 0.25rem 0.5rem;
     text-decoration: none;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
+    border-radius: 4px;
 }
 
 .sidebar-sub-menu a:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateX(2px);
 }
 
 .wiki-content {

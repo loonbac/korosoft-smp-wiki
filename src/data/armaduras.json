@@ -54,20 +54,62 @@
     "name": "Set de Guerrero de Acero",
     "color": "#379BDE",
     "specialization": "Clase: Guerrero",
-    "desc": "Armadura balanceada enfocada en maximizar el daño directo y los golpes críticos pesados.",
-    "totalDef": "+18.0 Def",
-    "totalHp": "+45.0 HP",
+    "desc": "Armadura balanceada enfocada en maximizar el daño directo, los golpes críticos pesados y el robo de vida (lifesteal).",
+    "totalDef": "+15.0 Def",
+    "totalHp": "+55.0 HP",
     "totalStamina": "+200.0 Stamina",
-    "totalToughness": "+5.0 Toughness",
     "setBonus": {
-      "twoPieces": "+10% Daño Crítico | +2.0 Daño de Ataque Base",
-      "fourPieces": "+15% Probabilidad Crítica | Impacto Pesado (+20% Daño acumulado)"
+      "twoPieces": "+20 Stamina | +10 HP | +2.5% Daño PvE | +4% Daño Físico | +1.5% Crit Chance | +2% Lifesteal",
+      "fourPieces": "+30 Stamina | +15 HP | +5% Daño PvE | +6% Daño Físico | +35% Crit Power | +1% Crit Chance | +3% Lifesteal | +5% Daño de Arma"
     },
     "pieces": [
-      { "name": "Casco de Guerrero de Acero", "def": "+3.0 Def | +1.0 Tough", "stats": "+8.0 HP | +40 Stamina | +3% Crit" },
-      { "name": "Pechera de Guerrero de Acero", "def": "+7.5 Def | +2.0 Tough", "stats": "+18.0 HP | +80 Stamina | +5% Crit" },
-      { "name": "Pantalones de Guerrero de Acero", "def": "+5.0 Def | +1.5 Tough", "stats": "+13.0 HP | +55 Stamina | +4% Crit" },
-      { "name": "Botas de Guerrero de Acero", "def": "+2.5 Def | +0.5 Tough", "stats": "+6.0 HP | +25 Stamina | +3% Crit" }
+      { "name": "Casco de Guerrero de Acero", "def": "+2.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +0.5% Crit | +10 Crit Power" },
+      { "name": "Pechera de Guerrero de Acero", "def": "+6.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +1% Crit | +10 Crit Power" },
+      { "name": "Pantalones de Guerrero de Acero", "def": "+5.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +0.5% Crit | +10 Crit Power" },
+      { "name": "Botas de Guerrero de Acero", "def": "+2.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +0.5% Crit | +10 Crit Power" }
+    ]
+  },
+  {
+    "id": "acero_asesino",
+    "tier": "Tier 4: Especialización",
+    "name": "Set de Asesino de Acero",
+    "color": "#9D4EDD",
+    "specialization": "Clase: Asesino",
+    "desc": "Armadura ligera para letalidad veloz, centrada en probabilidad de críticos, evasión y movilidad extrema.",
+    "totalDef": "+15.0 Def",
+    "totalHp": "+40.0 HP",
+    "totalStamina": "+175.0 Stamina",
+    "setBonus": {
+      "twoPieces": "+20 Stamina | +10 HP | +4% Esquivar | +2% Velocidad | +5% Velocidad Sigilosa | +10% Nado",
+      "fourPieces": "+30 Stamina | +15 HP | +6% Esquivar | +25% Crit Power | +3% Velocidad | +5% Velocidad Sigilosa | +10% Salto"
+    },
+    "pieces": [
+      { "name": "Casco de Asesino de Acero", "def": "+2.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +3.5% Crit" },
+      { "name": "Pechera de Asesino de Acero", "def": "+6.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +5% Crit" },
+      { "name": "Pantalones de Asesino de Acero", "def": "+5.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +4% Crit" },
+      { "name": "Botas de Asesino de Acero", "def": "+2.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +2.5% Crit" }
+    ]
+  },
+  {
+    "id": "acero_tanque",
+    "tier": "Tier 4: Especialización",
+    "name": "Set de Tanque de Acero",
+    "color": "#D1114D",
+    "specialization": "Clase: Tanque (Stalwart)",
+    "desc": "Armadura pesada colosal. Convierte al usuario en una fortaleza andante, sacrificando movilidad por supervivencia absoluta.",
+    "totalDef": "+19.0 Def",
+    "totalHp": "+80.0 HP",
+    "totalStamina": "+250.0 Stamina",
+    "totalToughness": "+6.0 Toughness",
+    "setBonus": {
+      "twoPieces": "+40 Stamina | +14 HP | +5% Resistencia Empuje | +0.5 Regen de Vida | -0.5% Velocidad",
+      "fourPieces": "+70 Stamina | +22 HP | +10% Resistencia Empuje | +5% Reducción Daño Físico | +5% Reducción Daño Mágico | +10% Reducción Daño PvE | +0.5 Regen de Vida | +30 Absorción (15 corazones) | -1% Velocidad"
+    },
+    "pieces": [
+      { "name": "Casco de Tanque de Acero", "def": "+3.0 Def | +1.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" },
+      { "name": "Pechera de Tanque de Acero", "def": "+7.0 Def | +2.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" },
+      { "name": "Pantalones de Tanque de Acero", "def": "+6.0 Def | +2.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" },
+      { "name": "Botas de Tanque de Acero", "def": "+3.0 Def | +1.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" }
     ]
   }
 ]

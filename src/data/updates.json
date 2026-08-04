@@ -1,5 +1,15 @@
 [
   {
+    "date": "4 de Agosto, 2026",
+    "version": "v2.5 - Forja de Acero & Crafteos",
+    "title": "Forja de Acero Renovada, Crafteo Inverso de Madera & Balance de Sets",
+    "changes": [
+      "⚒️ Forja de Armaduras: los Sets de Acero ya no piden garras ni piel de oso; ahora requieren Placa de Acero y Plomo.",
+      "🪵 Nuevo crafteo inverso de madera: 1 Leño (bloque de madera) → 2 Troncos, disponible para las 9 maderas.",
+      "⚖️ Balance de los 3 Sets de Acero: el Tanque gana regeneración, reducciones de daño y 15 corazones de absorción; el Guerrero gana lifesteal y daño de arma; el Asesino mantiene su foco en crítico y movilidad."
+    ]
+  },
+  {
     "date": "28 de Julio, 2026",
     "version": "v2.4 - Actualización de Rendimiento & Bun Server",
     "title": "Migración a Servidor Dinámico Bun & Corrección de Tumbas",

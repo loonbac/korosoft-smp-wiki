@@ -67,7 +67,19 @@
       { "name": "Pechera de Guerrero de Acero", "def": "+6.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +1% Crit | +10 Crit Power" },
       { "name": "Pantalones de Guerrero de Acero", "def": "+5.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +0.5% Crit | +10 Crit Power" },
       { "name": "Botas de Guerrero de Acero", "def": "+2.0 Def", "stats": "+7.5 HP | +37.5 Stamina | +0.5% Crit | +10 Crit Power" }
-    ]
+    ],
+    "craft": {
+      "station": "Forja de Armaduras",
+      "equalCost": true,
+      "note": "Los 3 Sets de Acero (Guerrero, Asesino y Tanque) se forjan con EXACTAMENTE los mismos materiales: elige tu clase por estilo de juego, no por coste.",
+      "pieces": {
+        "Casco": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel",
+        "Pechera": "1 Pieza de Malla + 8 Lingote de acero + 4 Placa de hierro + 4 Hilo de Hierro + 4 Lingote de Plomo + 3 Lámina de acero + 3 Fragmento de Acero Antiguo + 5 Lingote de Niquel",
+        "Pantalones": "1 Pieza de Malla + 6 Lingote de acero + 3 Placa de hierro + 3 Hilo de Hierro + 3 Lingote de Plomo + 2 Lámina de acero + 2 Fragmento de Acero Antiguo + 4 Lingote de Niquel",
+        "Botas": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel"
+      },
+      "totalSet": "4 Piezas de Malla + 22 Lingote de acero + 11 Placa de hierro + 11 Hilo de Hierro + 11 Lingote de Plomo + 7 Lámina de acero + 7 Fragmento de Acero Antiguo + 13 Lingote de Niquel"
+    }
   },
   {
     "id": "acero_asesino",
@@ -88,7 +100,19 @@
       { "name": "Pechera de Asesino de Acero", "def": "+6.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +5% Crit" },
       { "name": "Pantalones de Asesino de Acero", "def": "+5.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +4% Crit" },
       { "name": "Botas de Asesino de Acero", "def": "+2.0 Def", "stats": "+3.75 HP | +31.25 Stamina | +2.5% Crit" }
-    ]
+    ],
+    "craft": {
+      "station": "Forja de Armaduras",
+      "equalCost": true,
+      "note": "Los 3 Sets de Acero (Guerrero, Asesino y Tanque) se forjan con EXACTAMENTE los mismos materiales: elige tu clase por estilo de juego, no por coste.",
+      "pieces": {
+        "Casco": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel",
+        "Pechera": "1 Pieza de Malla + 8 Lingote de acero + 4 Placa de hierro + 4 Hilo de Hierro + 4 Lingote de Plomo + 3 Lámina de acero + 3 Fragmento de Acero Antiguo + 5 Lingote de Niquel",
+        "Pantalones": "1 Pieza de Malla + 6 Lingote de acero + 3 Placa de hierro + 3 Hilo de Hierro + 3 Lingote de Plomo + 2 Lámina de acero + 2 Fragmento de Acero Antiguo + 4 Lingote de Niquel",
+        "Botas": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel"
+      },
+      "totalSet": "4 Piezas de Malla + 22 Lingote de acero + 11 Placa de hierro + 11 Hilo de Hierro + 11 Lingote de Plomo + 7 Lámina de acero + 7 Fragmento de Acero Antiguo + 13 Lingote de Niquel"
+    }
   },
   {
     "id": "acero_tanque",
@@ -110,6 +134,18 @@
       { "name": "Pechera de Tanque de Acero", "def": "+7.0 Def | +2.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" },
       { "name": "Pantalones de Tanque de Acero", "def": "+6.0 Def | +2.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" },
       { "name": "Botas de Tanque de Acero", "def": "+3.0 Def | +1.0 Tough", "stats": "+11 HP | +35 Stamina | +5% Resist. Empuje" }
-    ]
+    ],
+    "craft": {
+      "station": "Forja de Armaduras",
+      "equalCost": true,
+      "note": "Los 3 Sets de Acero (Guerrero, Asesino y Tanque) se forjan con EXACTAMENTE los mismos materiales: elige tu clase por estilo de juego, no por coste.",
+      "pieces": {
+        "Casco": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel",
+        "Pechera": "1 Pieza de Malla + 8 Lingote de acero + 4 Placa de hierro + 4 Hilo de Hierro + 4 Lingote de Plomo + 3 Lámina de acero + 3 Fragmento de Acero Antiguo + 5 Lingote de Niquel",
+        "Pantalones": "1 Pieza de Malla + 6 Lingote de acero + 3 Placa de hierro + 3 Hilo de Hierro + 3 Lingote de Plomo + 2 Lámina de acero + 2 Fragmento de Acero Antiguo + 4 Lingote de Niquel",
+        "Botas": "1 Pieza de Malla + 4 Lingote de acero + 2 Placa de hierro + 2 Hilo de Hierro + 2 Lingote de Plomo + 1 Lámina de acero + 1 Fragmento de Acero Antiguo + 2 Lingote de Niquel"
+      },
+      "totalSet": "4 Piezas de Malla + 22 Lingote de acero + 11 Placa de hierro + 11 Hilo de Hierro + 11 Lingote de Plomo + 7 Lámina de acero + 7 Fragmento de Acero Antiguo + 13 Lingote de Niquel"
+    }
   }
 ]

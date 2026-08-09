@@ -3,7 +3,7 @@
     "id": "estacion_forja",
     "name": "Estación de Forja Pesada",
     "recipe": "4 Lingotes de Hierro + 2 Bloques de Piedra + 1 Yunque",
-    "use": "Permite forjar Armaduras de Bronce, Sets de Acero y armas pesadas custom de Korosoft SMP.",
+    "use": "Permite forjar Armaduras de Bronce, Sets de Acero y armas pesadas custom de Korosoft SMP. Los 3 Sets de Acero (Guerrero, Asesino, Tanque) piden los mismos materiales: elige tu clase libremente.",
     "category": "Forja & Armas"
   },
   {

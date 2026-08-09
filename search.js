@@ -16,7 +16,7 @@ const SEARCH_DATA = [
   { title: "☠️ Oso Espíritu Ancestral", category: "Jefes", path: "paginas/jefes.html", keywords: "oso espiritu ancestral boss jefe jefes" },
   
   // Equipamiento
-  { title: "🛡️ Armaduras Crafteables", category: "Equipamiento", path: "paginas/armaduras.html", keywords: "cuero basico malla bronce armadura armaduras sets" },
+  { title: "🛡️ Armaduras Crafteables", category: "Equipamiento", path: "paginas/armaduras.html", keywords: "cuero basico malla bronce acero guerrero asesino tanque clase armadura armaduras sets forja mismo coste materiales" },
   { title: "💍 Set Caza Monstruos", category: "Equipamiento", path: "paginas/accesorios.html", keywords: "caza monstruos set accesorios anillo collar" },
   { title: "💍 Set de Aventura", category: "Equipamiento", path: "paginas/accesorios.html", keywords: "aventura set accesorios catalejo mapa" },
   
@@ -27,6 +27,7 @@ const SEARCH_DATA = [
   { title: "⛏️ Mithril", category: "Minerales", path: "paginas/minerales.html", keywords: "mithril mineral bloque mitril mena" },
   { title: "⚙️ Estación de Magia", category: "Mesas", path: "paginas/mesas.html", keywords: "estacion magia mesa runas esencias nexo" },
   { title: "⚙️ Estación de Encantamientos Avanzados", category: "Mesas", path: "paginas/mesas.html", keywords: "estacion encantamientos avanzada mesa libros" },
+  { title: "⚒️ Forja de Armaduras (Sets de Acero)", category: "Mesas", path: "paginas/mesas.html", keywords: "forja armaduras acero guerrero asesino tanque sets mesa estacion mismo coste materiales" },
   { title: "🌾 Crianza de Animales", category: "Recursos", path: "paginas/crianza.html", keywords: "crianza animales mantenimiento reproduccion ganado oveja vaca cerdo" }
 ];
 

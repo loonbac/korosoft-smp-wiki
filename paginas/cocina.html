@@ -70,11 +70,236 @@
                 <p>Descubre las recetas más deliciosas del servidor.</p>
             </header>
 
-            <div style="text-align: center; padding: 4rem 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px;">
-                <h2 style="color: var(--accent-color); font-size: 2rem; margin-bottom: 1rem;"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/crafting_table.png" class="mc-icon" alt="crafteo"> Sección en Mantenimiento</h2>
-                <p style="color: #ccc; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
-                    Estamos preparando un <strong>gran rework</strong> para todo el sistema de cocina. Nuevas recetas, ingredientes y mecánicas llegarán muy pronto a Drakonia SMP. ¡Mantente atento a las próximas actualizaciones!
+            <div class="container">
+
+                <!-- MESA DE COCINA -->
+                <h2 style="color: var(--accent-color); margin-bottom: 1rem;">🍳 La Mesa de Cocina</h2>
+                <p style="color: #ccc; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Todo el sistema de cocina gira alrededor de la <strong style="color:#fff;">Mesa de Cocina</strong>, una estación
+                    interactiva donde combinarás <strong style="color:#fff;">ingredientes</strong> para preparar platos. Ábrela con el comando
+                    <code style="background:rgba(0,0,0,0.5); padding:0.15rem 0.5rem; border-radius:4px; color:#ffd54f;">/cocina</code>
+                    (o <code style="background:rgba(0,0,0,0.5); padding:0.15rem 0.5rem; border-radius:4px; color:#ffd54f;">/cocinastation</code>).
                 </p>
+                <div class="grid" style="margin-bottom: 2rem;">
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/cauldron.png" class="mc-icon" alt="cocina"></div>
+                        <h3>Calidades y Tiempos</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.9rem;">
+                            Los platos se organizan por <strong style="color:#fff;">calidad</strong> (1★ a 5★). A mayor calidad,
+                            más tiempo de cocción (4s a 20s) pero mejores beneficios y rareza del plato.
+                        </p>
+                    </div>
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/wheat.png" class="mc-icon" alt="ingredientes"></div>
+                        <h3>Ingredientes</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.9rem;">
+                            Combina <strong style="color:#fff;">ingredientes custom</strong> (MMOItems) con materiales de
+                            <strong style="color:#fff;">Minecraft vanilla</strong>. Cada plato tiene su receta exacta visible en la GUI.
+                        </p>
+                    </div>
+                    <div class="station-card">
+                        <div class="station-icon"><img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/textures/item/glistering_melon_slice.png" class="mc-icon" alt="especias"></div>
+                        <h3>Sazonado (Especias)</h3>
+                        <p style="color: #ccc; margin-top: 0.5rem; font-size: 0.9rem;">
+                            Los platos con <strong style="color:#fff;">ranura de especia</strong> pueden mejorarse aplicando
+                            condimentos (Pimienta, Jengibre, Canela...).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CÓMO CONSEGUIR INGREDIENTES -->
+                <h2 style="color: var(--accent-color); margin: 2rem 0 1rem;">📦 ¿Cómo conseguir los ingredientes?</h2>
+                <p style="color: #ccc; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Cada ingrediente se obtiene de una fuente distinta: <strong style="color:#fff;">rompiendo hojas o pasto</strong>,
+                    <strong style="color:#fff;">cazando mobs</strong> o <strong style="color:#fff;">procesándolo en crafteos</strong>.
+                    Aquí tienes el catálogo completo de fuentes.
+                </p>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🍎 Frutas silvestres — rompiendo hojas de árboles</h3>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--accent-color);">
+                            <th style="padding: 0.75rem 0.5rem;">Fruta</th>
+                            <th style="padding: 0.75rem 0.5rem;">Árbol / Hojas</th>
+                            <th style="padding: 0.75rem 0.5rem;">Probabilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Melocotón</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Manzana Verde</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pera</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Abedul</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">15%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Mango</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Aguacate</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Naranja</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Acacia</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Higo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Acacia</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Arándano</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">15%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Limón</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Mangle</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">15%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Kiwi</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Azalea (y Azalea en Flor)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">15%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Lichi</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">15%</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Hojas de Té</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble y Abedul</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Plátano</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Piña</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Carambola</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pitaya</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Coco</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Melón Cantalupo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Melón Verde</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Selva</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Dátil</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Acacia</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ff5252; text-decoration: line-through;">Pomelo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">⚠️ Inhabilitado (sin receta)</td><td style="padding: 0.6rem 0.5rem; color: #ff5252;">—</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Mora</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Frambuesa</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Grosella</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Saúco</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Arándano Rojo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Fresa</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Roble Oscuro</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Lima</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Mangle</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Uva</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Azalea</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Cereza</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Albaricoque</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Nectarina</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Ciruela</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Caqui</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Kumquat</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Aceituna</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cerezo</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">7.5%</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🥬 Verduras y hierbas — rompiendo pasto</h3>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--accent-color);">
+                            <th style="padding: 0.75rem 0.5rem;">Verdura</th>
+                            <th style="padding: 0.75rem 0.5rem;">Fuente</th>
+                            <th style="padding: 0.75rem 0.5rem;">Probabilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Lechuga</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Cebolla</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Tomate</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Hoja de Repollo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Arroz</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Ajo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pepino</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Maíz</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Berenjena</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Brócoli</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Coliflor</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Espinaca</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Col Rizada</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pimiento Morrón</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Calabacín</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Apio</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Puerro</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Cebolleta</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Boniato</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Nabo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Rábano</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Tomatillo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Chile Picante</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Alcachofa</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Espárrago</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Lúpulo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pasto (corto y alto) — para cervezas</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">3%</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🐟 Mariscos, pescados y carnes — de mobs</h3>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--accent-color);">
+                            <th style="padding: 0.75rem 0.5rem;">Ingrediente</th>
+                            <th style="padding: 0.75rem 0.5rem;">Fuente</th>
+                            <th style="padding: 0.75rem 0.5rem;">Probabilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Calamar Crudo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Calamar y Calamar Luminoso (vanilla)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">80%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Ancas de Rana Crudas</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Rana de Selva Amarilla</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">60%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Carne Cruda de Bisonte</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Bisonte</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">100%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #9D4EDD;">Carne Marmoleada Cruda</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Mob de superficie</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">75%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #A2D982;">Filete Celestial Cocido</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Mariposa Luminosa / Avispa Reja</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">20% / 35%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Grasa Animal</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Animales vanilla (Vaca, Cerdo, Oveja, Pollo...)</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">100%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Keratina</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Strutheximus y Bisonte</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">20-30%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Diente Afilado</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pitón, Escupidor de Espinas, Arenero</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">10-35%</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #A2D982;">Jalea Real</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Mosquito Gigante</td><td style="padding: 0.6rem 0.5rem; color: #A2D982;">5%</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ff5252;">Carne de Cangrejo Cruda</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">⚠️ PENDIENTE — sin mob asignado aún</td><td style="padding: 0.6rem 0.5rem; color: #ff5252;">—</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🧀 Ingredientes procesados — crafteos (Mesa de Trabajo / Horno)</h3>
+                <p style="color: #ccc; line-height: 1.7; margin-bottom: 0.75rem;">
+                    Estos ingredientes se fabrican en la <strong style="color:#fff;">mesa de trabajo</strong> o en el
+                    <strong style="color:#fff;">horno/ahumador</strong> a partir de materiales vanilla o de otros ingredientes.
+                </p>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--accent-color);">
+                            <th style="padding: 0.75rem 0.5rem;">Ingrediente</th>
+                            <th style="padding: 0.75rem 0.5rem;">Receta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Harina</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">3 Trigo → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Sal</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">9 Algas (Kelp) → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pan Crudo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">3 Harina → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Pasta Cruda</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Harina + Huevo → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Masa para Tarta</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Huevo + Azúcar + Trigo → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Queso</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cubo de Leche (horno) → 5</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Mantequilla</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cubo de Leche → 3</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Crema de Leche</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Cubo de Leche + Azúcar → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Tocino</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Chuleta de Cerdo → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Cortes de Pollo</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Pollo Crudo → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Filete de Bacalao</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Bacalao → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Filete de Salmón</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Salmón → 3</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Papas Cortadas</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Patata → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Salsa de Tomate</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">5 Tomates → 2</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Carne Picada de Bisonte</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Carne Cruda de Bisonte → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Filete de Bisonte</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Carne Picada (horno/ahumador) → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Panqueca de Carne</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Carne de Vaca → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Café Molido</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">3 Granos de Café → 1</td></tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);"><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Granos de Café</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Romper Hojas de Selva (7.5%)</td></tr>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Comidas cocinadas</td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Horno/Ahumador: Filete, Chuleta, Pollo, Bacalao, Salmón, Cordero, Conejo, Patata Asada, Huevo Frito, Tocino Cocido, Pan, Alga Seca</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🍳 Platos de la Mesa de Cocina</h3>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); color: var(--accent-color);">
+                            <th style="padding: 0.75rem 0.5rem;">Plato</th>
+                            <th style="padding: 0.75rem 0.5rem;">Receta (Mesa de Cocina)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td style="padding: 0.6rem 0.5rem; font-weight: bold; color: #ADADAD;">Salchicha Artesanal <span style="color:#A2D982; font-size:0.8rem;">(Comida)</span></td><td style="padding: 0.6rem 0.5rem; color: #ccc;">Carne Picada + Grasa Animal + Sal (8s) — se consume directamente</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🌶️ Especias y Sazonado</h3>
+                <div style="background: rgba(255, 179, 71, 0.08); border: 1px solid rgba(255, 179, 71, 0.3); border-radius: 8px; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem;">
+                    <p style="color: #ffb74d; line-height: 1.7; margin: 0;">
+                        ⚠️ <strong>Desactivado por ahora.</strong> El sistema de sazonado con especias (Pimienta, Jengibre,
+                        Cúrcuma, Comino, Canela, Azafrán y Nuez Moscada) está <strong style="color:#fff;">en revisión y deshabilitado</strong>.
+                        Se reimplementará en una futura actualización.
+                    </p>
+                </div>
+
+                <h3 style="color:#a5d6ff; margin: 1.5rem 0 0.75rem;">🍽️ Platos que puedes preparar (Mesa de Cocina)</h3>
+                <p style="color: #ccc; line-height: 1.7; margin-bottom: 0.75rem;">
+                    Además de los platos clásicos, con las frutas y verduras nuevas puedes preparar
+                    <strong style="color:#fff;">mermeladas</strong> (Fresa, Uva, Cereza, Frambuesa, Mora, Albaricoque, Durazno, Saúco, Caqui), <strong style="color:#fff;">batidos</strong> (Plátano, Fresa, Col Rizada),
+                    <strong style="color:#fff;">ensaladas</strong> (de Frutas con 8 frutas, de Pepino), <strong style="color:#fff;">platos al vapor/asados</strong> (Brócoli, Col Rizada, Nabos, Rábanos, Espárragos, Berenjena Parmesana, Alcachofa Rellena, Arroz con Coliflor)
+                    y la <strong style="color:#fff;">Tarta de Cereza</strong>.
+                </p>
+
+                <div style="background: rgba(255, 179, 71, 0.08); border: 1px solid rgba(255, 179, 71, 0.3); border-radius: 8px; padding: 1.2rem 1.5rem; margin-top: 1.5rem;">
+                    <h3 style="color:#ffb74d; margin-bottom: 0.5rem;">⚠️ Próximamente / Pendientes</h3>
+                    <ul style="color:#ccc; line-height: 1.8; margin-left: 1.2rem;">
+                        <li><strong style="color:#fff;">Carne de Cangrejo Cruda</strong> — pendiente de asignar a un mob marino.</li>
+                        <li><strong style="color:#fff;">Especias (Sazonado)</strong> — desactivadas; el sistema está en revisión.</li>
+                        <li><strong style="color:#fff;">Pomelo</strong> — inhabilitado temporalmente (sin receta). Se reactivará cuando tenga uso.</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>

@@ -142,5 +142,984 @@
         "desc": "Pergamino místico que traza el relieve subterráneo."
       }
     ]
+  },
+  {
+    "id": "set-serpiente",
+    "name": "Set Serpiente Blanca (白蛇传)",
+    "type": "Leyenda China",
+    "color": "#9D4EDD",
+    "desc": "La historia de amor entre la hechicera serpiente blanca Bai Suzhen y el joven Xu Xian, y el monje que los separa.",
+    "summary": {
+      "magicDmg": "+3 a +10 Daño Mágico",
+      "mana": "+10 a +20 Maná",
+      "hp": "+5 a +10 HP",
+      "regen": "+0.05 a +0.15 Regen"
+    },
+    "bonuses": {
+      "pieces2": "+4 Daño Mágico | +10 Vida Máx",
+      "pieces3": "+8 Daño Mágico | +20 Vida Máx | +2 Armadura"
+    },
+    "pieces": [
+      {
+        "name": "Collar de Bai Suzhen",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3.0 a +6.0 Daño Mágico", "+10 a +20 Maná"],
+        "source": "Píton (PELIGRO 4, 3.5%, Lv.6+)",
+        "desc": "La perla de la hechicera serpiente."
+      },
+      {
+        "name": "Anillo de Xu Xian",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+5.0 a +10.0 Vida Máx", "+0.05 a +0.15 Regen"],
+        "source": "Hada Revoltosa (PELIGRO 4, 5%, Lv.4+)",
+        "desc": "El anillo del joven mortal."
+      },
+      {
+        "name": "Ídolo de Fahai",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2.0 a +4.0 Daño Mágico", "+1.0 a +2.0 Armadura"],
+        "source": "Bruja (PELIGRO 3, 5%, Lv.4+)",
+        "desc": "El ídolo del monje que separó a los amantes."
+      }
+    ]
+  },
+  {
+    "id": "set-tesoros",
+    "name": "Set Tres Tesoros Sagrados (三種の神器)",
+    "type": "Mitología Japonesa",
+    "color": "#9D4EDD",
+    "desc": "Los 3 regalos de la diosa Amaterasu: la espada Kusanagi, el espejo Yata y la joya Yasakani.",
+    "summary": {
+      "atkDmg": "+2 a +4 Atq",
+      "crit": "+10 a +20% Crítico",
+      "armor": "+1 a +2 Def",
+      "hp": "+5 a +10 HP"
+    },
+    "bonuses": {
+      "pieces2": "+2 Daño Ataque | +2 Armadura",
+      "pieces3": "+3% Crítico | +0.15 Regen"
+    },
+    "pieces": [
+      {
+        "name": "Espada Kusanagi",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+2.0 a +4.0 Daño Ataque", "+10.0 a +20.0% Crítico"],
+        "source": "Wimdz (PELIGRO 6, 3%, Lv.8+)",
+        "desc": "La espada que corta el viento."
+      },
+      {
+        "name": "Espejo Yata",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+1.0 a +2.0 Armadura", "+0.05 a +0.15 Regen"],
+        "source": "Yurei (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "El espejo que refleja el alma."
+      },
+      {
+        "name": "Joya Yasakani",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+5.0 a +10.0 Vida Máx", "+5.0 a +15.0 Stamina"],
+        "source": "Espíritu Natural (PELIGRO 3, 5%, Lv.5+)",
+        "desc": "La joya de la serenidad."
+      }
+    ]
+  },
+  {
+    "id": "set-shinto",
+    "name": "Set Tríada Shinto (Amaterasu, Tsukuyomi, Susanoo)",
+    "type": "Tríada Shinto",
+    "color": "#9D4EDD",
+    "desc": "El sol, la luna y la tormenta: los 3 hijos de Izanagi.",
+    "summary": {
+      "fire": "+6 a +10 Daño Fuego",
+      "wind": "+6 a +10 Daño Viento",
+      "mana": "+10 a +25 Maná",
+      "crit": "+10 a +20% Crítico"
+    },
+    "bonuses": {
+      "pieces2": "+4 Daño Fuego | +4 Daño Viento",
+      "pieces3": "+8 Daño Fuego | +8 Daño Viento | +15 Maná"
+    },
+    "pieces": [
+      {
+        "name": "Sello de Amaterasu",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6.0 a +10.0 Daño Fuego", "+5.0 a +10.0 Vida Máx"],
+        "source": "Icepikes (PELIGRO 7, 2%, Lv.10+)",
+        "desc": "La diosa del sol."
+      },
+      {
+        "name": "Anillo de Tsukuyomi",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+10 a +25 Maná", "+10.0 a +20.0% Crítico"],
+        "source": "Espectro (PELIGRO 3, 3%, Lv.8+)",
+        "desc": "El dios de la luna."
+      },
+      {
+        "name": "Amuleto de Susanoo",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6.0 a +10.0 Daño Viento", "+0.2% a +0.4% Vel. Mov."],
+        "source": "Wimdz (PELIGRO 6, 3%, Lv.8+)",
+        "desc": "El dios de la tormenta."
+      }
+    ]
+  },
+  {
+    "id": "set-fortuna",
+    "name": "Set Dioses de la Fortuna (七福神)",
+    "type": "Folklore Japonés",
+    "color": "#FFD700",
+    "desc": "Los 7 dioses que traen suerte: set de colección de 6 piezas.",
+    "summary": {
+      "crit": "+4 a +12% Crítico",
+      "critPower": "+15 a +30 Poder Crítico",
+      "hp": "+20 Vida Máx"
+    },
+    "bonuses": {
+      "pieces2": "+3% Crítico",
+      "pieces4": "+6% Crítico | +15 Poder Crítico",
+      "pieces6": "+10% Crítico | +30 Poder Crítico | +20 Vida"
+    },
+    "pieces": [
+      {
+        "name": "Sello de Ebisu",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+4.0 a +7.0% Crítico", "+5 a +15 Stamina"],
+        "source": "Kappa (PELIGRO 2, 6%, Lv.4+)",
+        "desc": "Dios de la pesca y el trabajo."
+      },
+      {
+        "name": "Martillo de Daikokuten",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+7.0 a +12.0% Crítico", "+5 a +15 Poder Crítico"],
+        "source": "Verdugo de Cueva (PELIGRO 4, 4%, Lv.6+)",
+        "desc": "Dios de la riqueza."
+      },
+      {
+        "name": "Coraza de Bishamonten",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+1.0 a +3.0 Armadura", "+5 a +15 Vida Máx"],
+        "source": "Armadura Viviente (PELIGRO 3, 4%, Lv.8+)",
+        "desc": "Dios de la guerra."
+      },
+      {
+        "name": "Lira de Benzaiten",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+10 a +20 Maná", "+1.5 a +3.0 Daño Mágico"],
+        "source": "Bruja (PELIGRO 3, 4%, Lv.6+)",
+        "desc": "Diosa del arte y la música."
+      },
+      {
+        "name": "Pergamino de Fukurokuju",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+2.0 a +4.0 Daño Mágico", "+10 a +25 Maná"],
+        "source": "Ilusionista Arcano (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "Dios de la sabiduría."
+      },
+      {
+        "name": "Cáliz de Hotei",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+10 a +20 Vida Máx", "+0.05 a +0.15 Regen"],
+        "source": "Musgoso/Devastador (PELIGRO 3, 3%, Lv.8+)",
+        "desc": "Dios de la generosidad."
+      }
+    ]
+  },
+  {
+    "id": "set-reliquias-dragon",
+    "name": "Set Reliquias del Dragón",
+    "type": "JRPG Clásico",
+    "color": "#FF8C00",
+    "desc": "Las 6 reliquias mágicas con estrellas del 1 al 6: set de colección.",
+    "summary": {
+      "crit": "+2 a +12% Crítico por reliquia",
+      "critPower": "+25 Poder Crítico (6 piezas)"
+    },
+    "bonuses": {
+      "pieces3": "+5% Crítico",
+      "pieces6": "+12% Crítico | +25 Poder Crítico"
+    },
+    "pieces": [
+      {
+        "name": "Reliquia del Dragón 1★",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+2.0 a +4.0% Crítico"],
+        "source": "Slime Azul (PELIGRO 1, 10%, Lv.1+)",
+        "desc": "Una estrella de citrino."
+      },
+      {
+        "name": "Reliquia del Dragón 2★",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+2.0 a +4.0% Crítico"],
+        "source": "Arenero (PELIGRO 2, 8%, Lv.2+)",
+        "desc": "Dos estrellas de topacio."
+      },
+      {
+        "name": "Reliquia del Dragón 3★",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+4.0 a +7.0% Crítico", "+0.5 a +1.0 Daño Ataque"],
+        "source": "Jaguar (PELIGRO 5, 6%, Lv.5+)",
+        "desc": "Tres estrellas de rubí."
+      },
+      {
+        "name": "Reliquia del Dragón 4★",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+4.0 a +7.0% Crítico", "+3 a +6 Vida Máx"],
+        "source": "Ceramtotecid (PELIGRO 5, 5%, Lv.5+)",
+        "desc": "Cuatro estrellas de jade."
+      },
+      {
+        "name": "Reliquia del Dragón 5★",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+7.0 a +12.0% Crítico", "+5 a +10 Maná"],
+        "source": "Hipopótamo (PELIGRO 5, 4%, Lv.6+)",
+        "desc": "Cinco estrellas de zafiro."
+      },
+      {
+        "name": "Reliquia del Dragón 6★",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+7.0 a +12.0% Crítico", "+1.0 a +2.0 Daño Mágico"],
+        "source": "Wendigo (PELIGRO 7, 2%, Lv.8+)",
+        "desc": "Seis estrellas de diamante."
+      }
+    ]
+  },
+  {
+    "id": "set-clases",
+    "name": "Set Clases de Aventurero",
+    "type": "JRPG (Job Stones)",
+    "color": "#379BDE",
+    "desc": "Un accesorio por clase, como las Job Stones de Final Fantasy: set de colección de 6 piezas.",
+    "summary": {
+      "atkDmg": "+1 a +6 Daño Ataque",
+      "magicDmg": "+1 a +6 Daño Mágico",
+      "armor": "+2 Def (6 piezas)"
+    },
+    "bonuses": {
+      "pieces3": "+3 Daño Ataque | +3 Daño Mágico",
+      "pieces6": "+6 Daño Ataque | +6 Daño Mágico | +2 Armadura | +15 Vida"
+    },
+    "pieces": [
+      {
+        "name": "Gema del Guerrero",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +2.0 Daño Ataque"],
+        "source": "Espadachín (PELIGRO 2, 6%, Lv.4+)",
+        "desc": "Fuerza bruta."
+      },
+      {
+        "name": "Gema del Mago",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +2.0 Daño Mágico"],
+        "source": "Bruja (PELIGRO 3, 5%, Lv.4+)",
+        "desc": "Magia arcana."
+      },
+      {
+        "name": "Gema del Sanador",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+3 a +6 Vida Máx", "+0.05 a +0.10 Regen"],
+        "source": "Espíritu Natural (PELIGRO 3, 5%, Lv.4+)",
+        "desc": "Soporte y curación."
+      },
+      {
+        "name": "Gema del Pícaro",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+7.0 a +12.0% Crítico", "+2 a +4 Esquiva"],
+        "source": "Pantera Negra (PELIGRO 5, 4%, Lv.6+)",
+        "desc": "Agilidad y críticos."
+      },
+      {
+        "name": "Gema del Arquero",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+0.2% a +0.4% Vel. Mov.", "+2 a +4 Daño PvE"],
+        "source": "Arquero de Cueva (PELIGRO 1, 6%, Lv.4+)",
+        "desc": "Distancia y precisión."
+      },
+      {
+        "name": "Gema del Tanque",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+1.0 a +2.0 Armadura", "+5 a +10 Vida Máx"],
+        "source": "Armadura Viviente (PELIGRO 3, 3%, Lv.6+)",
+        "desc": "Protección del grupo."
+      }
+    ]
+  },
+  {
+    "id": "set-oni",
+    "name": "Set Máscaras del Oni",
+    "type": "Folklore Japonés (Youkai)",
+    "color": "#9D4EDD",
+    "desc": "Las 6 máscaras de los demonios youkai: set de colección.",
+    "summary": {
+      "atkDmg": "+1 a +4 Daño Ataque",
+      "dodge": "+4 a +8 Esquiva",
+      "crit": "+5% Crítico (6 piezas)"
+    },
+    "bonuses": {
+      "pieces3": "+2 Daño Ataque | +4 Esquiva",
+      "pieces6": "+4 Daño Ataque | +8 Esquiva | +5% Crítico"
+    },
+    "pieces": [
+      {
+        "name": "Máscara de la Furia",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+1.0 a +2.0 Daño Ataque", "+7.0 a +12.0% Crítico"],
+        "source": "Yurei (PELIGRO 5, 4%, Lv.6+)",
+        "desc": "Ira desatada."
+      },
+      {
+        "name": "Máscara del Miedo",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2 a +4 Esquiva", "+1.0 a +2.0 Daño Mágico"],
+        "source": "Espectro (PELIGRO 3, 5%, Lv.5+)",
+        "desc": "Terror paralizante."
+      },
+      {
+        "name": "Máscara de la Fe",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+1.0 a +2.0 Armadura", "+0.05 a +0.10 Regen"],
+        "source": "Espíritu Natural (PELIGRO 3, 5%, Lv.5+)",
+        "desc": "Protección divina."
+      },
+      {
+        "name": "Máscara de la Dicha",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+3 a +6 Vida Máx", "+5 a +10 Stamina"],
+        "source": "Hada Revoltosa (PELIGRO 4, 5%, Lv.5+)",
+        "desc": "Alegría pura."
+      },
+      {
+        "name": "Máscara de la Miseria",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +2.0 Daño Mágico", "+5 a +10 Maná"],
+        "source": "Lamento (PELIGRO 2, 6%, Lv.4+)",
+        "desc": "Sufrimiento."
+      },
+      {
+        "name": "Máscara de la Rage",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+2.0 a +4.0 Daño Ataque", "+1 a +2 Lifesteal"],
+        "source": "Zombie Bruto (PELIGRO 7, 2%, Lv.10+)",
+        "desc": "Rabia ancestral."
+      }
+    ]
+  },
+  {
+    "id": "set-kitsune",
+    "name": "Set Kitsune (Zorro de Nueve Colas)",
+    "type": "Mitología Japonesa",
+    "color": "#FF9800",
+    "desc": "El espíritu zorro astuto y su magia de ilusión.",
+    "summary": {
+      "dodge": "+3 a +6 Esquiva",
+      "crit": "+7 a +20% Crítico",
+      "speed": "+0.2% a +0.4% Vel. Mov."
+    },
+    "bonuses": {
+      "pieces2": "+3 Esquiva | +0.4% Vel. Mov.",
+      "pieces3": "+6 Esquiva | +4% Crítico | +3 Daño Mágico"
+    },
+    "pieces": [
+      {
+        "name": "Colmillo del Kitsune",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2 a +4 Esquiva", "+7.0 a +12.0% Crítico"],
+        "source": "Pantera Negra (PELIGRO 5, 4%, Lv.6+)",
+        "desc": "El espíritu zorro astuto."
+      },
+      {
+        "name": "Cola del Kitsune",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+0.2% a +0.4% Vel. Mov.", "+5 a +10 Stamina"],
+        "source": "Hada Revoltosa (PELIGRO 4, 5%, Lv.5+)",
+        "desc": "Una de sus nueve colas."
+      },
+      {
+        "name": "Ilusión del Kitsune",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+2.0 a +4.0 Daño Mágico", "+10.0 a +20.0% Crítico"],
+        "source": "Ilusionista Arcano (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "Su magia de ilusión."
+      }
+    ]
+  },
+  {
+    "id": "set-momotaro",
+    "name": "Set Momotarō (桃太郎)",
+    "type": "Cuento Popular Japonés",
+    "color": "#FF7043",
+    "desc": "El niño que nació de un durazno y partió con sus 3 compañeros animales a vencer a los oni.",
+    "summary": {
+      "atkDmg": "+1 a +4 Daño Ataque",
+      "crit": "+7 a +20% Crítico",
+      "dodge": "+2 a +5 Esquiva",
+      "hp": "+3 a +10 Vida Máx"
+    },
+    "bonuses": {
+      "pieces2": "+2 Daño Ataque | +2% Crítico",
+      "pieces4": "+4 Daño Ataque | +4% Crítico | +5 Esquiva | +10 Vida"
+    },
+    "pieces": [
+      {
+        "name": "Durazno de Momotarō",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+3 a +6 Vida Máx", "+0.05 a +0.10 Regen"],
+        "source": "Slime Azul (PELIGRO 1, 8%, Lv.3+)",
+        "desc": "El durazno del que nació Momotarō."
+      },
+      {
+        "name": "Garra del Perro",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+1.0 a +2.0 Daño Ataque", "+7.0 a +12.0% Crítico"],
+        "source": "Musgoso (PELIGRO 3, 4%, Lv.5+)",
+        "desc": "El perro que se unió al viaje."
+      },
+      {
+        "name": "Colmillo del Mono",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2 a +4 Esquiva", "+0.2% a +0.4% Vel. Mov."],
+        "source": "Mono (PELIGRO 0, 7%, Lv.3+)",
+        "desc": "El mono travieso."
+      },
+      {
+        "name": "Pluma del Faisán",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+10.0 a +20.0% Crítico", "+0.3% a +0.5% Vel. Mov."],
+        "source": "Hada Revoltosa (PELIGRO 4, 3%, Lv.6+)",
+        "desc": "El faisán que vuela."
+      }
+    ]
+  },
+  {
+    "id": "set-houyi-change",
+    "name": "Set Hou Yi y Chang'e (后羿与嫦娥)",
+    "type": "Leyenda China",
+    "color": "#9D4EDD",
+    "desc": "El arquero que derribó los 9 soles y su esposa que ascendió a la luna.",
+    "summary": {
+      "pveDmg": "+2 a +4 Daño PvE",
+      "speed": "+0.2% a +0.4% Vel. Mov.",
+      "mana": "+10 a +20 Maná"
+    },
+    "bonuses": {
+      "pieces2": "+4 Daño PvE | +10 Maná"
+    },
+    "pieces": [
+      {
+        "name": "Flecha de Hou Yi",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2.0 a +4.0 Daño PvE", "+0.2% a +0.4% Vel. Mov."],
+        "source": "Arquero de Cueva (PELIGRO 1, 6%, Lv.4+)",
+        "desc": "El arquero legendario."
+      },
+      {
+        "name": "Gema de Chang'e",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+10 a +20 Maná", "+10.0 a +20.0% Crítico"],
+        "source": "Espectro (PELIGRO 3, 3%, Lv.8+)",
+        "desc": "La diosa de la luna."
+      }
+    ]
+  },
+  {
+    "id": "rol-defensa",
+    "name": "Accesorios de Rol: Defensa",
+    "type": "Items Individuales",
+    "color": "#9D4EDD",
+    "desc": "Accesorios individuales enfocados en protección (no forman set).",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Anillo de Hierro",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+1.0 a +2.0 Armadura", "+2 a +4 Vida Máx"],
+        "source": "Zombie de Superficie (PELIGRO 1, 10%, Lv.1+)",
+        "desc": "Anillo básico de hierro."
+      },
+      {
+        "name": "Amuleto de Protección",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +3.0 Armadura", "+0.5 a +1.5 Toughness"],
+        "source": "Armadura Viviente (PELIGRO 3, 6%, Lv.4+)",
+        "desc": "Amuleto encadenado de protección."
+      },
+      {
+        "name": "Collar de la Cruz",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2.0 a +4.0 Armadura", "+4 a +8 Vida Máx"],
+        "source": "Vindicador (PELIGRO 2, 5%, Lv.4+)",
+        "desc": "Collar sagrado de la cruz."
+      },
+      {
+        "name": "Amuleto Sagrado",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3.0 a +5.0 Armadura", "+1.0 a +2.0 Toughness", "+5 a +10 Vida Máx"],
+        "source": "Ilusionista Arcano (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "Ídolo sagrado de protección divina."
+      },
+      {
+        "name": "Amuleto Abisal",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+4.0 a +6.0 Armadura", "+1.5 a +3.0 Toughness", "+8 a +15 Vida Máx"],
+        "source": "Wendigo (PELIGRO 7, 2%, Lv.10+)",
+        "desc": "Amuleto forjado en las profundidades."
+      }
+    ]
+  },
+  {
+    "id": "rol-ataque",
+    "name": "Accesorios de Rol: Ataque",
+    "type": "Items Individuales",
+    "color": "#9D4EDD",
+    "desc": "Accesorios individuales enfocados en daño (no forman set).",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Amuleto de Fuerza",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+0.5 a +1.0 Daño Ataque"],
+        "source": "Zombie de Cueva (PELIGRO 1, 10%, Lv.1+)",
+        "desc": "Amuleto que canaliza fuerza bruta."
+      },
+      {
+        "name": "Anillo Agresivo",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +2.0 Daño Ataque", "+2 a +4 Daño PvE"],
+        "source": "Espadachín (PELIGRO 2, 7%, Lv.3+)",
+        "desc": "Anillo que incrementa la agresividad."
+      },
+      {
+        "name": "Colgante de Fuego",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+4.0 a +6.0 Daño Fuego", "+1.0 a +2.0 Daño Ataque"],
+        "source": "Strutheximus (PELIGRO 3, 5%, Lv.5+)",
+        "desc": "Colgante de llamas ardientes."
+      },
+      {
+        "name": "Colgante de Espinas",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+2.0 a +4.0 Daño Ataque", "+10.0 a +20.0% Crítico"],
+        "source": "Yurei (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "Colgante cubierto de espinas afiladas."
+      },
+      {
+        "name": "Sello de la Calamidad",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3.0 a +5.0 Daño Ataque", "+10 a +20 Poder Crítico"],
+        "source": "Icepikes (PELIGRO 7, 2%, Lv.10+)",
+        "desc": "Sello que augura calamidad."
+      }
+    ]
+  },
+  {
+    "id": "rol-agilidad",
+    "name": "Accesorios de Rol: Agilidad",
+    "type": "Items Individuales",
+    "color": "#9D4EDD",
+    "desc": "Accesorios individuales enfocados en movilidad y esquiva (no forman set).",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Tobillera de Arena",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+0.1% a +0.2% Vel. Mov."],
+        "source": "Arenero (PELIGRO 2, 8%, Lv.2+)",
+        "desc": "Tobillera ligera de arena."
+      },
+      {
+        "name": "Moneda de la Suerte",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+2 a +4 Esquiva", "+0.1% a +0.3% Vel. Mov."],
+        "source": "Mono (PELIGRO 0, 7%, Lv.3+)",
+        "desc": "Moneda que trae buena fortuna."
+      },
+      {
+        "name": "Cuerda Dorada",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+0.2% a +0.4% Vel. Mov.", "+2 a +5 Esquiva"],
+        "source": "Arquero de Cueva (PELIGRO 1, 5%, Lv.3+)",
+        "desc": "Cuerda del arco dorado."
+      },
+      {
+        "name": "Capa del Cazador",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+0.3% a +0.6% Vel. Mov.", "+3 a +6 Esquiva"],
+        "source": "Hipopótamo (PELIGRO 5, 3%, Lv.8+)",
+        "desc": "Capa que oculta al cazador."
+      },
+      {
+        "name": "Capa Etérea",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+0.4% a +0.8% Vel. Mov.", "+10 a +20 Stamina"],
+        "source": "Wimdz (PELIGRO 6, 2%, Lv.8+)",
+        "desc": "Capa tejida con el viento de las cumbres."
+      }
+    ]
+  },
+  {
+    "id": "rol-magia",
+    "name": "Accesorios de Rol: Magia",
+    "type": "Items Individuales",
+    "color": "#9D4EDD",
+    "desc": "Accesorios individuales enfocados en magia y maná (no forman set).",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Anillo Ancestral",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+1.0 a +2.0 Daño Mágico"],
+        "source": "Bruja (PELIGRO 3, 8%, Lv.3+)",
+        "desc": "Anillo de sabiduría ancestral."
+      },
+      {
+        "name": "Anillo del Sufrimiento",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+1.0 a +3.0 Daño Mágico", "+5 a +10 Maná"],
+        "source": "Verdugo de Cueva (PELIGRO 4, 6%, Lv.4+)",
+        "desc": "Anillo que canaliza el dolor."
+      },
+      {
+        "name": "Collar de Escarcha",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+4.0 a +6.0 Daño Hielo", "+1.0 a +2.0 Daño Mágico"],
+        "source": "Congelado (PELIGRO 5, 4%, Lv.6+)",
+        "desc": "Collar de escarcha glacial."
+      },
+      {
+        "name": "Anillo de Sumisión",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3.0 a +6.0 Daño Mágico", "+10 a +20 Maná"],
+        "source": "Tragavenenos (PELIGRO 6, 3%, Lv.8+)",
+        "desc": "Anillo que somete la magia."
+      },
+      {
+        "name": "Sello de Almas",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+4.0 a +7.0 Daño Mágico", "+10 a +25 Poder Crítico"],
+        "source": "Centinela Sombrío (PELIGRO 5, 2%, Lv.10+)",
+        "desc": "Sello que captura almas."
+      }
+    ]
+  },
+  {
+    "id": "rol-exploracion",
+    "name": "Accesorios de Rol: Exploración",
+    "type": "Items Individuales",
+    "color": "#9D4EDD",
+    "desc": "Accesorios individuales para exploradores (no forman set).",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Talismán del Espeleólogo",
+        "rarity": "COMÚN",
+        "stars": "1 Estrella",
+        "starIcon": "✦✧✧✧✧",
+        "color": "#ADADAD",
+        "stats": ["+1.0 a +2.0 Daño PvE"],
+        "source": "Minero de Cueva (PELIGRO 2, 8%, Lv.4+)",
+        "desc": "Talismán para explorar cuevas."
+      },
+      {
+        "name": "Tótem del Coro",
+        "rarity": "NO COMÚN",
+        "stars": "2 Estrellas",
+        "starIcon": "✦✦✧✧✧",
+        "color": "#A2D982",
+        "stats": ["+5 a +10 Stamina", "+0.1% a +0.3% Vel. Mov."],
+        "source": "Rockve (PELIGRO 3, 5%, Lv.4+)",
+        "desc": "Tótem de la fruta del coro."
+      },
+      {
+        "name": "Tótem Enderman",
+        "rarity": "RARO",
+        "stars": "3 Estrellas",
+        "starIcon": "✦✦✦✧✧",
+        "color": "#379BDE",
+        "stats": ["+2.0 a +4.0 Daño PvE", "+2 a +4 Esquiva"],
+        "source": "Badmads (PELIGRO 4, 4%, Lv.5+)",
+        "desc": "Tótem que imita al enderman."
+      },
+      {
+        "name": "Cinturón de Trofeos",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3.0 a +6.0 Daño PvE", "+5 a +10 Vida Máx"],
+        "source": "Devastador (PELIGRO 3, 3%, Lv.8+)",
+        "desc": "Cinturón con trofeos de cacería."
+      },
+      {
+        "name": "Capa del Crepúsculo",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+0.2% a +0.5% Vel. Mov.", "+3 a +6 Esquiva", "+5 a +10 Vida Máx"],
+        "source": "Espectro (PELIGRO 3, 2%, Lv.8+)",
+        "desc": "Capa que oculta al caer la noche."
+      }
+    ]
+  },
+  {
+    "id": "exclusivos-jefes",
+    "name": "Accesorios Exclusivos de Jefes",
+    "type": "Recompensas de Jefe",
+    "color": "#D1114D",
+    "desc": "Accesorios legendarios exclusivos de cada jefe del Overworld. Solo se obtienen derrotando al jefe.",
+    "summary": {},
+    "bonuses": {},
+    "pieces": [
+      {
+        "name": "Sello del Inmortal",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+3 a +5 Armadura", "+1 a +2 Toughness", "+10 a +20 Vida Máx"],
+        "source": "Galahad 'El Inmortal' (8%)",
+        "desc": "Colgante del caballero inmortal."
+      },
+      {
+        "name": "Cáliz de la Cosecha Maldita",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+5 a +10 Daño PvE", "+2 a +4 Lifesteal", "+6 a +10 Daño Fuego"],
+        "source": "Jack el Cosechador (8%)",
+        "desc": "Cáliz ígneo que siega vida."
+      },
+      {
+        "name": "Collar de Torngarsuk",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6 a +10 Daño Hielo", "+2 a +4 Armadura", "+10 a +20 Vida Máx"],
+        "source": "Oso Espíritu Ancestral (5%)",
+        "desc": "Collar del dios oso de la taiga."
+      },
+      {
+        "name": "Corazón de Veneno",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6 a +10 Daño Fuego", "+5 a +9 Daño PvE", "+8 a +15 Vida Máx"],
+        "source": "Flor Mutante Tóxica (6%)",
+        "desc": "Corazón corrupto de la flor tóxica."
+      },
+      {
+        "name": "Talismán del Oni",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6 a +10 Daño Viento", "+2 a +4 Daño Ataque", "+10 a +20% Crítico"],
+        "source": "Oni / Tengu (Yokai) (6%)",
+        "desc": "Máscara del demonio oni."
+      },
+      {
+        "name": "Amuleto de Fuego Infernal",
+        "rarity": "ÉPICO",
+        "stars": "4 Estrellas",
+        "starIcon": "✦✦✦✦✧",
+        "color": "#9D4EDD",
+        "stats": ["+6 a +10 Daño Fuego", "+3 a +5 Armadura", "+10 a +20 Vida Máx"],
+        "source": "Warlord Kragan 'The Bloodfury' (pendiente)",
+        "desc": "Núcleo fundido del protector del inframundo."
+      }
+    ]
   }
 ]

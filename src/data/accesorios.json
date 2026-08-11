@@ -748,12 +748,17 @@
   },
   {
     "id": "rol-defensa",
-    "name": "Accesorios de Rol: Defensa",
-    "type": "Items Individuales",
-    "color": "#9D4EDD",
-    "desc": "Accesorios individuales enfocados en protección (no forman set).",
+    "name": "Set de Defensa (Rol)",
+    "type": "Set de Rol",
+    "color": "#379BDE",
+    "desc": "Accesorios individuales enfocados en protección. Al equipar varias piezas del Set de Defensa se activan bonos de set acumulados (2, 3, 4 y 5 piezas).",
     "summary": {},
-    "bonuses": {},
+    "bonuses": {
+      "pieces2": "+2 Armadura | +5 Vida Máx",
+      "pieces3": "Acumulado (2+3): +5 Armadura | +1 Toughness | +15 Vida Máx",
+      "pieces4": "Acumulado (2+3+4): +10 Armadura | +3 Toughness | +30 Vida Máx | +10% Resist. Knockback",
+      "pieces5": "Acumulado (2+3+4+5): +17 Armadura | +6 Toughness | +55 Vida Máx | +30% Resist. Knockback"
+    },
     "pieces": [
       {
         "name": "Anillo de Hierro",
@@ -809,12 +814,17 @@
   },
   {
     "id": "rol-ataque",
-    "name": "Accesorios de Rol: Ataque",
-    "type": "Items Individuales",
-    "color": "#9D4EDD",
-    "desc": "Accesorios individuales enfocados en daño (no forman set).",
+    "name": "Set de Ataque (Rol)",
+    "type": "Set de Rol",
+    "color": "#D1114D",
+    "desc": "Accesorios individuales enfocados en daño. Al equipar varias piezas del Set de Ataque se activan bonos de set acumulados (2, 3, 4 y 5 piezas).",
     "summary": {},
-    "bonuses": {},
+    "bonuses": {
+      "pieces2": "+1 Daño Ataque | +3 Daño PvE",
+      "pieces3": "Acumulado (2+3): +3 Daño Ataque | +8 Daño PvE | +3% Crítico",
+      "pieces4": "Acumulado (2+3+4): +6 Daño Ataque | +16 Daño PvE | +8% Crítico",
+      "pieces5": "Acumulado (2+3+4+5): +10 Daño Ataque | +26 Daño PvE | +16% Crítico | +1.5 Lifesteal"
+    },
     "pieces": [
       {
         "name": "Amuleto de Fuerza",
@@ -870,12 +880,17 @@
   },
   {
     "id": "rol-agilidad",
-    "name": "Accesorios de Rol: Agilidad",
-    "type": "Items Individuales",
-    "color": "#9D4EDD",
-    "desc": "Accesorios individuales enfocados en movilidad y esquiva (no forman set).",
+    "name": "Set de Agilidad (Rol)",
+    "type": "Set de Rol",
+    "color": "#A2D982",
+    "desc": "Accesorios individuales enfocados en movilidad y esquiva. Al equipar varias piezas del Set de Agilidad se activan bonos de set acumulados (2, 3, 4 y 5 piezas).",
     "summary": {},
-    "bonuses": {},
+    "bonuses": {
+      "pieces2": "+0.4% Vel. Mov. | +3 Esquiva",
+      "pieces3": "Acumulado (2+3): +1.0% Vel. Mov. | +8 Esquiva | +15 Stamina",
+      "pieces4": "Acumulado (2+3+4): +1.8% Vel. Mov. | +16 Esquiva | +40 Stamina",
+      "pieces5": "Acumulado (2+3+4+5): +3.0% Vel. Mov. | +28 Esquiva | +80 Stamina | +0.20 Reg. Stamina"
+    },
     "pieces": [
       {
         "name": "Tobillera de Arena",
@@ -931,12 +946,17 @@
   },
   {
     "id": "rol-magia",
-    "name": "Accesorios de Rol: Magia",
-    "type": "Items Individuales",
+    "name": "Set de Magia (Rol)",
+    "type": "Set de Rol",
     "color": "#9D4EDD",
-    "desc": "Accesorios individuales enfocados en magia y maná (no forman set).",
+    "desc": "Accesorios individuales enfocados en magia y maná. Al equipar varias piezas del Set de Magia se activan bonos de set acumulados (2, 3, 4 y 5 piezas).",
     "summary": {},
-    "bonuses": {},
+    "bonuses": {
+      "pieces2": "+2 Daño Mágico | +10 Maná",
+      "pieces3": "Acumulado (2+3): +5 Daño Mágico | +25 Maná | +10 Poder Crítico",
+      "pieces4": "Acumulado (2+3+4): +10 Daño Mágico | +50 Maná | +25 Poder Crítico",
+      "pieces5": "Acumulado (2+3+4+5): +17 Daño Mágico | +85 Maná | +45 Poder Crítico"
+    },
     "pieces": [
       {
         "name": "Anillo Ancestral",
@@ -992,12 +1012,17 @@
   },
   {
     "id": "rol-exploracion",
-    "name": "Accesorios de Rol: Exploración",
-    "type": "Items Individuales",
-    "color": "#9D4EDD",
-    "desc": "Accesorios individuales para exploradores (no forman set).",
+    "name": "Set de Exploración (Rol)",
+    "type": "Set de Rol",
+    "color": "#FF8C00",
+    "desc": "Accesorios individuales para exploradores. Al equipar varias piezas del Set de Exploración se activan bonos de set acumulados (2, 3, 4 y 5 piezas).",
     "summary": {},
-    "bonuses": {},
+    "bonuses": {
+      "pieces2": "+3 Daño PvE | +0.3% Vel. Mov.",
+      "pieces3": "Acumulado (2+3): +8 Daño PvE | +0.8% Vel. Mov. | +15 Stamina",
+      "pieces4": "Acumulado (2+3+4): +16 Daño PvE | +1.5% Vel. Mov. | +40 Stamina | +4 Esquiva",
+      "pieces5": "Acumulado (2+3+4+5): +26 Daño PvE | +2.5% Vel. Mov. | +75 Stamina | +10 Esquiva | +10 Vida Máx"
+    },
     "pieces": [
       {
         "name": "Talismán del Espeleólogo",

@@ -44,6 +44,11 @@
       "id": "cap-5",
       "title": "Capítulo 5: Generación Mineral & Capas Y",
       "content": "El Estaño se genera entre Y: 20 y Y: 90. El Plomo entre Y: -10 y Y: 40. Para hallar Mithril deberás descender por debajo de la capa Y: -40 en las profundidades de pizarra abisal equipando al menos un Pico de Diamante."
+    },
+    {
+      "id": "cap-6",
+      "title": "Capítulo 6: El Nether - Peligros & Requisitos",
+      "content": "El Nether es la zona más hostil del servidor: NO puedes entrar sin el Sello del Titán Infernal (drop 100% de la Bolsa del Titán Infernal, tras derrotar a Kragan el Titán Infernal). Sin el sello recibes Wither 10 + Veneno 25 + daño directo continuo (2 HP/s que ignora armadura). Además, los piglins son de peligro 7-9 (Piglin, Asesino, Gladiador 7; Demoledor, Asechador y Brutos 8; Bruto Defensor 9 como minijefe de 3,200 HP y 90 de daño). Derrota al jefe guardián para conseguir el sello y poder explorar el Nether con seguridad."
     }
   ]
 }

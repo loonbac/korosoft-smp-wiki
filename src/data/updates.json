@@ -1,5 +1,18 @@
 [
   {
+    "date": "11 de Agosto, 2026",
+    "version": "v2.6 - Titán Infernal & Acceso al Nether",
+    "title": "Titán Infernal, Flor Mutante Renovada & Nether con Requisitos",
+    "changes": [
+      "🔥 Nuevo jefe Kragan, el Titán Infernal: 4,000 HP / 45 daño / 47.5 armadura, 1 fase, 10 min. Su Bolsa da la Estocada Infernal (espada 4★) y el Sello del Titán Infernal.",
+      "🌋 El Nether ahora exige el Sello del Titán: sin él recibes Wither + Veneno + daño directo continuos.",
+      "🦟 Piglins del Nether mejorados a peligro 7-9 (el Bruto Defensor es un minijefe de 3,200 HP).",
+      "🌼 Flor Mutante renovada: esporas precisas, rayo solar más letal con aviso, enjambre de 7 abejas y patrón más pausado.",
+      "🎒 Ya se pueden craftear mochilas (de Cuero a Netherita) con mejoras de Autopickup, Horno y Mesa de Crafteo.",
+      "🛡️ Antitrampas mejorado: elimina golems cercanos a los jefes."
+    ]
+  },
+  {
     "date": "4 de Agosto, 2026",
     "version": "v2.5 - Forja de Acero & Crafteos",
     "title": "Forja de Acero Renovada, Crafteo Inverso de Madera & Balance de Sets",

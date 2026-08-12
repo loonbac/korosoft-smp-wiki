@@ -90,5 +90,84 @@
       { "item": "Monedas de Platino", "qty": "1-3", "prob": "100%" },
       { "item": "Experiencia masiva", "qty": "500 XP", "prob": "100%" }
     ]
+  },
+  {
+    "id": "flor_mutante",
+    "name": "Flor Mutante Tóxica",
+    "title": "Jefe Tóxico de la Selva",
+    "badge": "Jefe Supremo del Overworld",
+    "hp": "2,600 HP",
+    "dmg": "40.0 Tóxico / MAGIC",
+    "armor": "36 Def | 24 Toughness",
+    "speed": "0.01 (Torre estática)",
+    "location": "Jungla / Selva del Overworld",
+    "spawnConditions": "Invócala con el Invocador de la Flor Mutante (FLOR_MUTANTE).",
+    "desc": "Torre tóxica de UNA sola fase: raíces que atrapan, esporas explosivas precisas, aura de veneno, rayo solar giratorio y enjambre de 7 abejas mutantes.",
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Fase única: La Flor en plena furia (100% - 0% HP)",
+        "skills": [
+          "Raíces Enredaderas: ralentizan a quien corre (r=15).",
+          "Esporas explosivas: 4 semillas precisas (36 MAGIC) + 1 abeja cada una.",
+          "Rayo Solar: giratorio r=17 con anillo de aviso naranja (48 de daño).",
+          "Enjambre: 7 Abejas Mutantes.",
+          "Aura Tóxica de veneno (r=6)."
+        ]
+      }
+    ],
+    "tips": [
+      "Dispersaos: las esporas y el enjambre castigan amontonarse.",
+      "Las esporas marcan su zona en rojo antes de explotar — esquívalas.",
+      "Sal del anillo naranja cuando el rayo solar vaya a girar.",
+      "Elimina a las abejas mutantes para no perder el control.",
+      "10 minutos de timeout."
+    ],
+    "drops": [
+      { "item": "Corazón de Veneno (JEFE_FLOR)", "qty": "1", "prob": "6%" },
+      { "item": "Bolsa de la Flor Mutante", "qty": "1", "prob": "100%" },
+      { "item": "Placas de Mithril", "qty": "4-8", "prob": "100% (bolsa)" },
+      { "item": "Pegamento", "qty": "3-10", "prob": "100% (bolsa)" }
+    ]
+  },
+  {
+    "id": "titan_infernal",
+    "name": "Kragan, el Titán Infernal",
+    "title": "Guardián del Nether",
+    "badge": "Jefe Supremo del Nether",
+    "hp": "3,200 HP",
+    "dmg": "45.0 Físico / Fuego",
+    "armor": "38 Def | 26 Toughness",
+    "speed": "0.26 (Lento, devastador)",
+    "location": "Arena invocada con el Invocador del Titán Infernal",
+    "spawnConditions": "Invócalo con el Invocador del Titán Infernal (INVOCADOR_KRAGAN). Es el guardián que custodia la entrada al Nether.",
+    "desc": "Coloso guerrero de UNA sola fase que guarda el acceso al Nether. Combos melé, torbellinos, saltos sísmicos y espada infernal castigan sin piedad. Para entrar al Nether necesitas su Sello.",
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Fase única: El Titán en plena furia (100% - 0% HP)",
+        "skills": [
+          "Grito de Guerra: se buffea (Fuerza/Velocidad) y debuffea a los cercanos.",
+          "Combo melé: 3 cortes encadenados (36 / 45 / 54 de daño).",
+          "Knockup aéreo: lanza a todos en r=6 al aire.",
+          "Salto Sísmico: onda expansiva r=6 al caer + lanza hacia arriba.",
+          "Torbellino: 7 golpes en r=8.",
+          "Espada Infernal: castigo r=10 con fuego.",
+          "Furia pasiva: al acumular 40 hits entra en RAGE y lanza a todos."
+        ]
+      }
+    ],
+    "tips": [
+      "Esquiva los windup: cada ataque tiene animación previa.",
+      "Dispersaos: el torbellino y el salto sísmico castigan amontonarse.",
+      "10 minutos de timeout con 4 avisos.",
+      "Consigue el Sello del Titán (100% en su bolsa) o el Nether te matará con Wither 10 + Veneno 25."
+    ],
+    "drops": [
+      { "item": "Amuleto de Fuego Infernal (JEFE_KRAGAN)", "qty": "1", "prob": "6%" },
+      { "item": "Bolsa del Titán Infernal", "qty": "1", "prob": "100%" },
+      { "item": "Estocada Infernal (espada 4★)", "qty": "1", "prob": "100% (bolsa)" },
+      { "item": "Sello del Titán Infernal (permiso del Nether)", "qty": "1", "prob": "100% (bolsa)" }
+    ]
   }
 ]

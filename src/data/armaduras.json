@@ -119,7 +119,7 @@
     "tier": "Tier 4: Especialización",
     "name": "Set de Tanque de Acero",
     "color": "#D1114D",
-    "specialization": "Clase: Tanque (Stalwart)",
+    "specialization": "Clase: Tanque",
     "desc": "Armadura pesada colosal. Convierte al usuario en una fortaleza andante, sacrificando movilidad por supervivencia absoluta.",
     "totalDef": "+19.0 Def",
     "totalHp": "+80.0 HP",
@@ -147,5 +147,61 @@
       },
       "totalSet": "4 Piezas de Malla + 22 Lingote de acero + 11 Placa de hierro + 11 Hilo de Hierro + 11 Lingote de Plomo + 7 Lámina de acero + 7 Fragmento de Acero Antiguo + 13 Lingote de Niquel"
     }
+  },
+  {
+    "id": "mythril_asesino",
+    "tier": "Tier 5: Mythril",
+    "name": "Set de Asesino de Mythril",
+    "color": "#9D4EDD",
+    "specialization": "Clase: Asesino",
+    "desc": "Versión élite del set de Asesino forjada con Mithril: más vida y críticos redondeados al máximo.",
+    "totalDef": "+20.0 Def",
+    "totalHp": "+20.0 HP",
+    "totalStamina": "+128.0 Stamina",
+    "totalDurability": "5,750",
+    "pieces": [
+      { "name": "Casco de Mythril", "def": "+3.0 Def", "stats": "+5 HP | +32 Stamina | +5% Crit" },
+      { "name": "Pechera de Mythril", "def": "+8.0 Def", "stats": "+5 HP | +32 Stamina | +5% Crit" },
+      { "name": "Pantalones de Mythril", "def": "+6.0 Def", "stats": "+5 HP | +32 Stamina | +5% Crit" },
+      { "name": "Botas de Mythril", "def": "+3.0 Def", "stats": "+5 HP | +32 Stamina | +5% Crit" }
+    ]
+  },
+  {
+    "id": "mythril_guerrero",
+    "tier": "Tier 5: Mythril",
+    "name": "Set de Guerrero de Mythril",
+    "color": "#379BDE",
+    "specialization": "Clase: Guerrero",
+    "desc": "Versión élite del set de Guerrero forjada con Mithril: más vida, daño físico y críticos devastadores.",
+    "totalDef": "+20.0 Def",
+    "totalToughness": "+6.0 Toughness",
+    "totalHp": "+40.0 HP",
+    "totalStamina": "+152.0 Stamina",
+    "totalDurability": "5,750",
+    "pieces": [
+      { "name": "Casco de Guerrero de Mythril", "def": "+3.0 Def | +1.0 Tough", "stats": "+10 HP | +38 Stamina | +1.5 Daño Físico | +15 Crit Power" },
+      { "name": "Pechera de Guerrero de Mythril", "def": "+8.0 Def | +2.0 Tough", "stats": "+10 HP | +38 Stamina | +1.5 Daño Físico | +15 Crit Power" },
+      { "name": "Pantalones de Guerrero de Mythril", "def": "+6.0 Def | +2.0 Tough", "stats": "+10 HP | +38 Stamina | +1.5 Daño Físico | +15 Crit Power" },
+      { "name": "Botas de Guerrero de Mythril", "def": "+3.0 Def | +1.0 Tough", "stats": "+10 HP | +38 Stamina | +1.5 Daño Físico | +15 Crit Power" }
+    ]
+  },
+  {
+    "id": "mythril_tanque",
+    "tier": "Tier 5: Mythril",
+    "name": "Set de Tanque de Mythril",
+    "color": "#D1114D",
+    "specialization": "Clase: Tanque",
+    "desc": "Versión élite del set de Tanque forjada con Mithril: una fortaleza con 60 de vida extra.",
+    "totalDef": "+24.0 Def",
+    "totalToughness": "+10.0 Toughness",
+    "totalHp": "+60.0 HP",
+    "totalStamina": "+144.0 Stamina",
+    "totalDurability": "5,750",
+    "pieces": [
+      { "name": "Casco de Tanque de Mythril", "def": "+4.0 Def | +2.0 Tough", "stats": "+15 HP | +36 Stamina | +8% Resist. Empuje" },
+      { "name": "Pechera de Tanque de Mythril", "def": "+9.0 Def | +3.0 Tough", "stats": "+15 HP | +36 Stamina | +8% Resist. Empuje" },
+      { "name": "Pantalones de Tanque de Mythril", "def": "+7.0 Def | +3.0 Tough", "stats": "+15 HP | +36 Stamina | +8% Resist. Empuje" },
+      { "name": "Botas de Tanque de Mythril", "def": "+4.0 Def | +2.0 Tough", "stats": "+15 HP | +36 Stamina | +8% Resist. Empuje" }
+    ]
   }
 ]
